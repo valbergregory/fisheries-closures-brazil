@@ -1,0 +1,13 @@
+[project]
+name = "fisheries-closures-brazil-python"
+version = "0.0.1"
+description = "Camada Python auxiliar: extração de texto legal, validação de esquema, trajetórias AIS (se necessário)"
+requires-python = ">=3.13"
+# Dependências adicionadas somente quando efetivamente usadas (uv add ...).
+# O piloto atual usa apenas stdlib + matplotlib + pymupdf já presentes no sistema.
+# Candidatas (NÃO instaladas): pymupdf, pypdf, pydantic, jsonschema, geopandas,
+# shapely, polars, duckdb, pyarrow, movingpandas, hmmlearn, pytest.
+dependencies = []
+
+[tool.pytest.ini_options]
+testpaths = ["tests/python"]

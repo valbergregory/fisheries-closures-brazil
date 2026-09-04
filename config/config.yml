@@ -1,0 +1,38 @@
+# Configuração central do projeto (lida por R/01_config.R via yaml::read_yaml)
+project:
+  name: fisheries-closures-brazil
+  stage: feasibility          # feasibility | phase1 | phase2
+  seed: 20260903
+
+spatial:
+  crs_geographic: "EPSG:4326"
+  crs_metric_candidates: ["EPSG:5641", "EPSG:31983"]   # decidir na fase 1 (D4)
+  grid_step_deg: 0.25          # piloto; H3 res 6/7 candidato para fase 1 (D2)
+  buffer_inner_km: [10, 25, 50]
+  buffer_outer_km: [10, 25, 50, 100]
+
+temporal:
+  pilot_window: ["2016-01-01", "2020-12-31"]  # 2 anos pré / ~2,8 pós Decreto 9.312/2018
+  frequency_candidates: ["monthly", "weekly"]
+
+pilot_case:
+  name: "MONA/APA Trindade e Martim Vaz (Decreto 9.312/2018)"
+  treatment_date: "2018-03-19"
+  wfs_layer: "ICMBio:limiteucsfederais_a"
+  cql_filter: "nomeuc ILIKE '%trindade%'"
+
+secondary_case:
+  name: "Defeso camarão SE/S (Portaria SAP/MAPA 656/2022; mudança de calendário em 2023)"
+  rule_id: "PORT_SAP_MAPA_656_2022_r1"
+
+paths:
+  legal: data/legal
+  raw: data/raw
+  interim: data/interim
+  processed: data/processed
+  metadata: data/metadata
+  policies: outputs/policies
+  diagnostics: outputs/diagnostics
+
+credentials:
+  gfw_token_env: GFW_TOKEN     # em .Renviron, nunca em código

@@ -1,0 +1,29 @@
+# Desenhos empíricos candidatos (detalhes: docs/identification_strategy.md,
+# matriz de seleção: docs/feasibility_report.md)
+
+designs:
+  D_MPA_TRINDADE:
+    case: "Criação MONA+APA Trindade e Martim Vaz (Decreto 9.312, 19/03/2018)"
+    methods: [event_study, spatial_did, synthetic_did]
+    treatment_date: "2018-03-19"
+    treated_units: "células dentro do MONA (proibição total) e da APA (restrições)"
+    control_pool: "células oceânicas fora, mesma faixa latitudinal/profundidade, montes submarinos comparáveis (cadeia Vitória-Trindade fora da UC)"
+    status: selected_primary
+
+  D_DEFESO_CAMARAO_2023:
+    case: "Mudança de calendário do defeso camarão SE/S (Portaria 656/2022: mar-mai -> 28/01-30/04 a partir de 2023)"
+    methods: [event_study, did_calendar_shift]
+    identification: "variação REAL de calendário mantendo espécies/área — janelas jan-fev (novo defeso) e maio (liberado) identificam efeito separado de sazonalidade"
+    status: selected_secondary
+
+  D_RDD_GEO_MPA:
+    case: "RDD geográfica na fronteira da APA/MONA"
+    methods: [geographic_rdd, donut_rdd]
+    caveats: "fronteiras retilíneas em mar aberto; verificar continuidade de profundidade/produtividade; poucos clusters"
+    status: candidate_conditional
+
+  D_SEGURO_DEFESO:
+    case: "Resposta ao Seguro-Defeso (microdados CGU município×mês×indivíduo)"
+    methods: [event_study_payment_timing, dose_response]
+    identification: "atraso/tempestividade de pagamento entre municípios como variação; NÃO interpretar pagamento agregado como adesão individual"
+    status: candidate_conditional

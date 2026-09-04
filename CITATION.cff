@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this research compendium, please cite it as below."
+title: >-
+  Do Fishing Closures Protect Fish or Displace Fishing? Causal Evidence from
+  Brazil's Seasonal Bans and Marine Protected Areas (research compendium)
+type: software
+authors:
+  - family-names: "Gregory"
+    given-names: "Valber"
+    email: valber.gregory@gmail.com
+keywords:
+  - fisheries economics
+  - marine protected areas
+  - seasonal fishing bans
+  - spatial displacement
+  - causal inference
+  - Brazil
+  - information systems
+license: MIT
+version: 0.0.1
+date-released: "2026-09-03"
