@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Fisheries Regulation Knowledge Base — rule record",
+  "description": "Uma regra = uma restrição atômica (espécie(s) × área × período × modalidade). Uma norma pode gerar várias regras. Toda regra extraída automaticamente exige validated_by humano antes de uso científico.",
+  "type": "object",
+  "required": [
+    "rule_id", "norm_id", "norm_type", "issuing_authority", "legal_basis",
+    "species", "area", "period", "fishing_mode", "status",
+    "source", "extraction", "validation"
+  ],
+  "properties": {
+    "rule_id": {"type": "string", "pattern": "^[A-Z0-9_]+_r[0-9]+$"},
+    "norm_id": {"type": "string", "description": "Ex.: PORT_SAP_MAPA_656_2022"},
+    "norm_type": {"type": "string", "enum": ["portaria", "instrucao_normativa", "decreto", "lei", "resolucao", "portaria_interministerial"]},
+    "issuing_authority": {"type": "string"},
+    "legal_basis": {"type": "array", "items": {"type": "string"}},
+    "species": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["common_name", "scientific_name"],
+        "properties": {
+          "common_name": {"type": "string"},
+          "scientific_name": {"type": "string"},
+          "name_as_written": {"type": "string", "description": "Grafia exata na norma, se divergir da nomenclatura aceita"}
+        }
+      }
+    },
+    "area": {
+      "type": "object",
+      "required": ["description", "geometry_status"],
+      "properties": {
+        "description": {"type": "string"},
+        "uf": {"type": "array", "items": {"type": "string"}},
+        "geometry_status": {"type": "string", "enum": ["explicit_coordinates", "named_area_resolvable", "named_area_unresolved", "polygon_attached"]},
+        "geometry_source": {"type": "string", "description": "De onde vem o polígono operacional (ex.: mar territorial + ZEE das UFs, WFS ICMBio)"},
+        "geometry_file": {"type": "string"}
+      }
+    },
+    "period": {
+      "type": "object",
+      "required": ["start", "end", "recurrence"],
+      "properties": {
+        "start": {"type": "string", "description": "MM-DD se recorrente, YYYY-MM-DD se pontual"},
+        "end": {"type": "string"},
+        "recurrence": {"type": "string", "enum": ["annual", "one_off", "permanent"]},
+        "first_effective_year": {"type": "integer"},
+        "transitional_provisions": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "fishing_mode": {"type": "array", "items": {"type": "string"}, "description": "Ex.: arrasto com tração motorizada; todas"},
+    "gear": {"type": "array", "items": {"type": "string"}},
+    "affected_group": {"type": "string"},
+    "exceptions": {"type": "array", "items": {"type": "string"}},
+    "seguro_defeso_linked": {"type": "boolean", "description": "Se o período gera elegibilidade ao Seguro-Defeso (Lei 10.779/2003)"},
+    "enforcement_notes": {"type": "string"},
+    "status": {
+      "type": "object",
+      "required": ["in_force_as_of", "revoked"],
+      "properties": {
+        "in_force_as_of": {"type": "string", "format": "date"},
+        "revoked": {"type": "boolean"},
+        "revoked_by": {"type": "string"},
+        "amended_by": {"type": "array", "items": {"type": "string"}},
+        "amendment_check_pending": {"type": "boolean"}
+      }
+    },
+    "source": {
+      "type": "object",
+      "required": ["publication_date", "official_source_url", "local_files"],
+      "properties": {
+        "publication_date": {"type": "string", "format": "date"},
+        "dou_reference": {"type": "string"},
+        "official_source_url": {"type": "string"},
+        "local_files": {"type": "array", "items": {"type": "string"}},
+        "sha256": {"type": "object"}
+      }
+    },
+    "extraction": {
+      "type": "object",
+      "required": ["method", "extracted_at", "extracted_by"],
+      "properties": {
+        "method": {"type": "string", "enum": ["manual", "pdf_text_assisted", "ocr_assisted", "nlp_assisted"]},
+        "extracted_at": {"type": "string"},
+        "extracted_by": {"type": "string"}
+      }
+    },
+    "validation": {
+      "type": "object",
+      "required": ["human_validated", "validated_by"],
+      "properties": {
+        "human_validated": {"type": "boolean"},
+        "validated_by": {"type": ["string", "null"]},
+        "validated_at": {"type": ["string", "null"]},
+        "open_issues": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "version": {"type": "integer", "minimum": 1},
+    "notes": {"type": "string"}
+  }
+}

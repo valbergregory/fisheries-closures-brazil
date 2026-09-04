@@ -1,0 +1,125 @@
+# Inventário máquina-legível das fontes de dados.
+# status: accessible | accessible_with_token | untested | blocked | unavailable
+# Testes de 2026-09-03: requisições mínimas; nenhum download em massa.
+# Versão narrativa: docs/data_inventory.md
+
+sources:
+  gfw_effort:
+    institution: Global Fishing Watch
+    url: https://gateway.api.globalfishingwatch.org/v3/
+    what: apparent fishing effort (AIS, horas de pesca por célula/flag/gear)
+    license: CC BY-SA 4.0 (agregados); confirmar termos da API
+    auth: token gratuito (conta em globalfishingwatch.org/our-apis)
+    period: 2012-presente (cobertura útil p/ Brasil ~2016+)
+    unit: célula (0.01/0.1°) × dia/mês × gear × flag
+    format: API JSON / CSV; cliente R gfwr (GitHub, não CRAN)
+    status: accessible_with_token          # HTTP 401 sem token (2026-09-03, projeto irmão)
+    tested: "2026-09-03"
+    limitations: >
+      Esforço APARENTE inferido por modelo; frota artesanal (<15m, sem AIS)
+      sub-representada; espécie-alvo não observável diretamente; cobertura
+      satelital varia no tempo — controlar por cobertura.
+
+  ibama_defesos_marinhos:
+    institution: IBAMA
+    url: https://www.gov.br/ibama/pt-br/assuntos/biodiversidade/biodiversidade-aquatica/periodos-de-defeso/defesos-marinhos
+    what: tabela oficial de defesos marinhos + PDFs das normas
+    license: pública (gov.br)
+    auth: nenhuma (página gov.br OK; www.ibama.gov.br clássico bloqueia curl com 403)
+    status: accessible
+    tested: "2026-09-03"
+    note: ~30 defesos marinhos listados; PDFs baixáveis (testado Portaria 656/2022, 864KB)
+
+  dou_inlabs:
+    institution: Imprensa Nacional
+    url: https://www.in.gov.br/
+    what: texto oficial das normas (HTML por ato); INLABS para bulk XML
+    auth: página aberta (testado 200); INLABS exige conta gratuita
+    status: accessible
+    tested: "2026-09-03"
+
+  planalto_legislacao:
+    institution: Presidência da República
+    url: https://www.planalto.gov.br/ccivil_03/
+    what: decretos e leis consolidados (ex.: Decreto 9.312/2018 baixado)
+    status: accessible
+    tested: "2026-09-03"
+
+  cnuc_mma:
+    institution: MMA — Cadastro Nacional de Unidades de Conservação
+    url: https://dados.mma.gov.br/dataset/unidadesdeconservacao
+    what: CSV cadastral + shapefiles de todas as UCs (atualizações semestrais)
+    license: dados abertos
+    auth: nenhuma
+    status: accessible
+    tested: "2026-09-03"
+
+  icmbio_wfs_inde:
+    institution: ICMBio via INDE geoserver
+    url: https://geoservicos.inde.gov.br/geoserver/ICMBio/ows
+    what: WFS 2.0 — limiteucsfederais_a (polígonos UCs federais), autos_infracao_icmbio, embargos_icmbio
+    license: pública
+    auth: nenhuma
+    status: accessible                     # GetFeature JSON testado; 2 UCs Trindade recuperadas
+    tested: "2026-09-03"
+    note: campo-chave nomeuc; CQL_FILTER funciona; autos de infração = FISCALIZAÇÃO
+
+  seguro_defeso:
+    institution: CGU — Portal da Transparência
+    url: https://portaldatransparencia.gov.br/download-de-dados/seguro-defeso
+    what: MICRODADOS mensais de pagamento (UF, município SIAFI, CPF mascarado, NIS, RGP, nome, valor parcela)
+    license: dados abertos
+    auth: nenhuma (download direto; API alternativa exige chave gratuita)
+    period: mensal, ZIP ~8MB/mês (testado 202401)
+    status: accessible
+    tested: "2026-09-03"
+    note: nível individual com RGP — permite painel município×mês E spells individuais
+
+  ibama_autos_infracao:
+    institution: IBAMA dados abertos
+    url: https://dadosabertos.ibama.gov.br/
+    what: autos de infração (inclui pesca), embargos
+    status: untested
+    note: complementa autos_infracao_icmbio (WFS já acessível)
+
+  noaa_oisst:
+    institution: NOAA
+    url: https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation/v2.1/access/avhrr/
+    what: SST 0,25° diária (controle ambiental)
+    status: accessible                     # testado 2026-09-03 (projeto irmão)
+    tested: "2026-09-03"
+
+  ibge_apis:
+    institution: IBGE
+    url: https://servicodados.ibge.gov.br/api/
+    what: municípios, malhas, faixa litorânea (geobr no CRAN)
+    status: accessible
+    tested: "2026-09-03"
+
+  mpa_pesqbrasil:
+    institution: Ministério da Pesca e Aquicultura
+    url: https://www.gov.br/mpa/
+    what: RGP, estatística pesqueira, PesqBrasil
+    status: untested
+
+  rais_caged:
+    institution: MTE
+    what: emprego formal CNAE 03 (pesca) — outcome secundário municipal
+    status: untested
+
+  precos_pescado:
+    institution: (a identificar — CEAGESP, Conab, séries estaduais)
+    what: preços de pescado
+    status: untested
+    note: nenhuma série nacional verificada; não usar até localizar fonte real
+
+  luzes_noturnas:
+    institution: NOAA/EOG VIIRS
+    what: night lights (proxy de atividade; boat detection VBD para pesca com luz)
+    status: untested
+
+  desembarque:
+    institution: (fragmentado — ex.: PMAP-SP/Instituto de Pesca, UNIVALI/SC)
+    what: captura e desembarque
+    status: untested
+    note: estatística nacional descontinuada desde ~2011 — limitação estrutural conhecida

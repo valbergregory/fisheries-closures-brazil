@@ -1,0 +1,82 @@
+{
+  "rule_id": "PORT_SAP_MAPA_656_2022_r1",
+  "norm_id": "PORT_SAP_MAPA_656_2022",
+  "norm_type": "portaria",
+  "issuing_authority": "Secretaria de Aquicultura e Pesca / Ministério da Agricultura, Pecuária e Abastecimento (SAP/MAPA)",
+  "legal_basis": [
+    "Decreto nº 10.827, de 30/09/2021, Anexo I, art. 32",
+    "Lei nº 13.844, de 18/06/2019",
+    "Lei nº 11.959, de 29/06/2009",
+    "Processo nº 21000.051651/2021-71"
+  ],
+  "species": [
+    {"common_name": "camarão-rosa", "scientific_name": "Penaeus paulensis"},
+    {"common_name": "camarão-rosa", "scientific_name": "Penaeus brasiliensis"},
+    {"common_name": "camarão-rosa", "scientific_name": "Penaeus subtilis"},
+    {"common_name": "camarão sete-barbas", "scientific_name": "Xiphopenaeus kroyeri"},
+    {"common_name": "camarão-branco", "scientific_name": "Penaeus schmitti", "name_as_written": "branco (Litopenaeus schmitti) no Art. 1º; branco (Penaeus schmitti) no Art. 2º"},
+    {"common_name": "camarão santana ou vermelho", "scientific_name": "Pleoticus muelleri"},
+    {"common_name": "camarão barba-ruça", "scientific_name": "Artemesia longinaris"}
+  ],
+  "area": {
+    "description": "Mar Territorial e Zona Econômica Exclusiva adjacentes ao Rio de Janeiro, São Paulo, Paraná, Santa Catarina e Rio Grande do Sul (Art. 2º)",
+    "uf": ["RJ", "SP", "PR", "SC", "RS"],
+    "geometry_status": "named_area_resolvable",
+    "geometry_source": "A resolver: limites do Mar Territorial + ZEE por UF (fontes candidatas: IBGE, Marinha/LEPLAC, Marine Regions v12); decisão registrada em docs/decisions_log.md (D3)",
+    "geometry_file": ""
+  },
+  "period": {
+    "start": "01-28",
+    "end": "04-30",
+    "recurrence": "annual",
+    "first_effective_year": 2023,
+    "transitional_provisions": [
+      "Art. 2º §1º: excepcionalmente, em 2022 o defeso foi de 01/03/2022 a 31/05/2022",
+      "Art. 2º §2º: desembarque das espécies permitido até 30 de janeiro de cada ano"
+    ]
+  },
+  "fishing_mode": ["todas as modalidades para as espécies listadas, com exceção do Art. 2º §3º"],
+  "gear": ["ver Arts. 4º-6º para petrechos e tamanhos mínimos fora do defeso"],
+  "affected_group": "Frotas industrial e artesanal que capturam camarões nas regiões Sudeste e Sul; pescadores artesanais potencialmente elegíveis ao Seguro-Defeso",
+  "exceptions": [
+    "Art. 2º §3º: permitida a pesca do 'camarão-branco (Penaeus subtilis)' desde que não realizada por arrasto com tração motorizada [ATENÇÃO: inconsistência interna — Art. 1º e Art. 2º caput chamam P. subtilis de camarão-rosa e P./L. schmitti de camarão-branco]"
+  ],
+  "seguro_defeso_linked": true,
+  "enforcement_notes": "Fiscalização: IBAMA e Marinha; autos de infração disponíveis via WFS ICMBio (UCs) e dados abertos IBAMA (a verificar cobertura para defeso marinho)",
+  "status": {
+    "in_force_as_of": "2026-09-03",
+    "revoked": false,
+    "revoked_by": "",
+    "amended_by": [],
+    "amendment_check_pending": true
+  },
+  "source": {
+    "publication_date": "2022-03-31",
+    "dou_reference": "DOU 31/03/2022, Edição 62, Seção 1, p. 16",
+    "official_source_url": "https://www.in.gov.br/en/web/dou/-/portaria-sap/mapa-n-656-de-30-de-marco-de-2022-389926946",
+    "local_files": [
+      "data/legal/Portaria_SAP_MAPA_656_2022_ibama.pdf",
+      "data/legal/Portaria_SAP_MAPA_656_2022_dou.html",
+      "data/legal/Portaria_SAP_MAPA_656_2022.txt"
+    ],
+    "sha256": {"note": "ver data/metadata/checksums_legal.txt"}
+  },
+  "extraction": {
+    "method": "pdf_text_assisted",
+    "extracted_at": "2026-09-03",
+    "extracted_by": "Claude (assistente) a partir do texto integral extraído do PDF oficial; campos conferidos contra o texto"
+  },
+  "validation": {
+    "human_validated": false,
+    "validated_by": null,
+    "validated_at": null,
+    "open_issues": [
+      "Confirmar com o pesquisador a leitura do Art. 2º §3º (inconsistência de nomenclatura P. subtilis / P. schmitti) — implicação direta para a codificação de espécie permitida durante o defeso",
+      "Verificar portarias posteriores que alterem datas (amendment_check_pending) — ex.: buscar no DOU 'defeso camarão sudeste sul' 2023-2026",
+      "Confirmar operacionalização da elegibilidade ao Seguro-Defeso (Lei 10.779/2003) para este defeso específico junto ao INSS/MPA",
+      "Resolver geometria operacional do Mar Territorial + ZEE por UF (decisão D3)"
+    ]
+  },
+  "version": 1,
+  "notes": "Norma sucessora do regime da IN IBAMA 189/2008 para o defeso do camarão SE/S. A mudança de calendário (1º mar-31 mai até 2022 → 28 jan-30 abr a partir de 2023) é variação temporal REAL de política, potencialmente útil para identificação (evento de 2023)."
+}

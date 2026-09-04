@@ -1,0 +1,38 @@
+# Dados (nunca versionar bases brutas/grandes/restritas)
+data/raw/
+data/interim/
+data/processed/
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+# Documentos legais baixados: manter METADADOS e checksums no Git, não os binários grandes
+data/legal/*.pdf
+
+# Credenciais
+.Renviron
+.env
+*.token
+
+# R
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+_targets/
+renv/library/
+renv/staging/
+renv/local/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# Outputs pesados (regeneráveis)
+outputs/models/*.rds
+outputs/dashboard/*.parquet
+
+# SO
+Thumbs.db
+.DS_Store

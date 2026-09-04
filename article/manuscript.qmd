@@ -1,0 +1,122 @@
+---
+title: "Do Fishing Closures Protect Fish or Displace Fishing? Causal Evidence from Brazil's Seasonal Bans and Marine Protected Areas"
+author:
+  - name: Valber Gregory
+    email: valber.gregory@gmail.com
+date: last-modified
+format:
+  pdf:
+    number-sections: true
+    keep-tex: true
+  html: default
+bibliography: references.bib
+abstract: >
+  [ABSTRACT TO BE WRITTEN AFTER RESULTS] We evaluate whether Brazil's
+  fisheries restrictions — seasonal bans (defesos) and large marine protected
+  areas — reduce total fishing pressure or displace effort across space,
+  time, and species. We build a machine-readable registry of Brazilian
+  fisheries regulations and link it to satellite-observed apparent fishing
+  effort, enforcement records, and compensation payments (Seguro-Defeso).
+  [RESULT TO BE GENERATED].
+keywords: [fisheries economics, marine protected areas, seasonal closures, spatial displacement, leakage, Brazil, regulatory information systems]
+---
+
+<!-- Escopo/claims calibrados: efeitos sobre ESFORÇO APARENTE (frota AIS),
+     não sobre estoque. Nenhum número neste esqueleto é resultado. -->
+
+# Introduction
+
+[Motivation: commons problem in fisheries; Brazil's regulatory mosaic of
+seasonal bans and MPAs; the displacement critique — apparent local success
+may hide spatial/temporal/species leakage. Contribution: (i) causal
+estimates for a sharp offshore MPA creation (Decree 9,312/2018, Trindade
+and Martim Vaz) and a real calendar shift in the Southeast/South shrimp
+closure (Ordinance SAP/MAPA 656/2022); (ii) an explicit leakage
+decomposition; (iii) a machine-readable fisheries regulation knowledge
+base as reusable research infrastructure.]
+
+# Institutional Background
+
+[Brazilian fisheries governance: IBAMA/MMA/MPA competencies; defeso
+instruments; Lei 11.959/2009; Seguro-Defeso (Lei 10.779/2003) unemployment
+compensation; enforcement (IBAMA/ICMBio, infraction records); the 2018
+large-MPA expansion (Decrees 9,312 and 9,313 of March 19, 2018).]
+
+# Economic Theory and Mechanisms
+
+[Common-pool resources; effort reallocation across margins (space, time,
+species, gear); principal–agent enforcement; intertemporal substitution and
+anticipation; compensation as reservation income vs. moral hazard; testable
+implications H1–H8.]
+
+# Information Systems Contribution
+
+[People–process–technology view of the Fisheries Regulation Knowledge Base
+and Spatial Compliance Observatory; atomic rule ontology; human-validated
+extraction; versioned legal registry; exposure engine (cell × rule × date).]
+
+# The Fisheries Regulation Knowledge Base
+
+[Schema; provenance chain (official source, checksum); validation workflow;
+descriptive statistics of the registry. Example: Ordinance 656/2022
+structured as machine-readable rules, including its internal species-naming
+inconsistency (Art. 2 §3) as a case study in legal-text ambiguity.]
+
+# Data
+
+[GFW apparent fishing effort (AIS; coverage caveats — artisanal fleet is
+NOT observed); ICMBio/CNUC polygons via WFS; Seguro-Defeso microdata (CGU);
+enforcement records; OISST environmental controls. Access dates and
+checksums in the compendium.]
+
+# Policy Selection
+
+[Selection matrix (14 criteria, 6 candidates); why Trindade/Martim Vaz and
+the 2023 shrimp-closure calendar shift.]
+
+# Empirical Strategy
+
+[Event study and spatial DiD with distance rings; synthetic DiD for the
+single treated region; geographic RDD (conditional); calendar-shift
+within-cell design; inference with few clusters (wild bootstrap,
+spatial permutation).]
+
+# Main Results
+
+[RESULT TO BE GENERATED]
+
+# Spatial and Temporal Leakage
+
+[RESULT TO BE GENERATED — decomposition: inside reduction + ring increases
++ anticipation + post-closure compensation = net change.]
+
+# Compensation and Enforcement
+
+[RESULT TO BE GENERATED — Seguro-Defeso timing; enforcement heterogeneity.]
+
+# Robustness
+
+[RESULT TO BE GENERATED — placebo polygons/dates, donut RDD, coverage
+corrections, resolution/frequency sensitivity.]
+
+# Distributional Effects
+
+[RESULT TO BE GENERATED — municipal employment, benefit incidence.]
+
+# Policy Implications
+
+[TO BE WRITTEN AFTER RESULTS]
+
+# Limitations
+
+[AIS coverage bias; apparent vs. actual effort; no national landings series
+(effort ≠ stock recovery); compensation microdata limitations.]
+
+# Conclusion
+
+[TO BE WRITTEN]
+
+# References {.unnumbered}
+
+::: {#refs}
+:::

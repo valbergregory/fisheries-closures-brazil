@@ -1,0 +1,23 @@
+---
+title: "Online Appendix — Do Fishing Closures Protect Fish or Displace Fishing?"
+format: pdf
+bibliography: references.bib
+---
+
+# A. Fisheries Regulation Knowledge Base — schema and validation
+
+[Full JSON schema; validation workflow; registry statistics.]
+
+# B. Legal corpus
+
+[Table of all marine closure norms catalogued from the official IBAMA list
+(accessed 2026-09-03), with retrieval status and checksums.]
+
+# C. Data construction
+
+[Grid construction; exposure engine; AIS coverage correction;
+Seguro-Defeso deduplication protocol.]
+
+# D. Additional results and robustness
+
+[RESULT TO BE GENERATED]

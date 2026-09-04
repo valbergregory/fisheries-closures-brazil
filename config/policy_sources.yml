@@ -1,0 +1,68 @@
+# Catálogo jurídico — normas identificadas na tabela oficial de defesos
+# marinhos do IBAMA (acesso 2026-09-03) + atos de criação de UCs marinhas.
+# retrieved: true somente quando o arquivo está em data/legal/ com checksum.
+# TODAS as entradas não recuperadas devem ser tratadas como NÃO VERIFICADAS
+# no texto (metadados vêm da tabela IBAMA, sujeitos a conferência).
+
+catalog_source:
+  url: https://www.gov.br/ibama/pt-br/assuntos/biodiversidade/biodiversidade-aquatica/periodos-de-defeso/defesos-marinhos
+  accessed: "2026-09-03"
+
+norms:
+  - norm_id: PORT_SAP_MAPA_656_2022
+    name: "Portaria SAP/MAPA nº 656, de 30/03/2022"
+    subject: "Defeso camarões SE/S (RJ-RS: 28/01-30/04 desde 2023; ES: 01/12-28/02) + ordenamento arrasto"
+    retrieved: true
+    files: [data/legal/Portaria_SAP_MAPA_656_2022_ibama.pdf,
+            data/legal/Portaria_SAP_MAPA_656_2022_dou.html,
+            data/legal/Portaria_SAP_MAPA_656_2022.txt]
+    structured_rules: [PORT_SAP_MAPA_656_2022_r1]
+
+  - norm_id: DEC_9312_2018
+    name: "Decreto nº 9.312, de 19/03/2018"
+    subject: "Criação APA + MONA do Arquipélago de Trindade e Martim Vaz e Monte Columbia"
+    retrieved: true
+    files: [data/legal/Decreto_9312_2018.html]
+    structured_rules: []   # estruturar na fase 1
+
+  - norm_id: DEC_9313_2018
+    name: "Decreto nº 9.313, de 19/03/2018"
+    subject: "Criação APA + MONA do Arquipélago de São Pedro e São Paulo"
+    retrieved: false
+
+  - norm_id: PORT_SAP_MAPA_221_2021
+    name: "Portaria SAP/MAPA nº 221/2021"
+    subject: "Defeso lagostas (Panulirus spp.), Guiana Francesa a divisa RJ-ES, 01/11-30/04"
+    retrieved: false
+    pdf_url: https://www.gov.br/ibama/pt-br/assuntos/biodiversidade/biodiversidade-aquatica/arquivos/defesos-marinho/2025-01-14_lagosta_portaria_sap_mapa_n-o-221_2021.pdf
+
+  - norm_id: IN_IBAMA_15_2009
+    name: "IN IBAMA nº 15/2009"
+    subject: "Defeso sardinha-verdadeira (Sardinella brasiliensis), Cabo de São Tomé-RJ a Cabo de Santa Marta-SC, 01/10-28/02 (na tabela IBAMA consta out-fev; conferir texto: defeso em duas janelas)"
+    retrieved: false
+    pdf_url: https://www.gov.br/ibama/pt-br/assuntos/biodiversidade/biodiversidade-aquatica/arquivos/defesos-marinho/2025-01-14_sardinha_verdadeira_in_ibama_n-o-15_2009.pdf
+
+  - norm_id: PORT_MDIC_MMA_75_2017
+    name: "Portaria MDIC/MMA nº 75/2017"
+    subject: "Defeso camarões AP/PA/PI (região Norte), 15/12-15/02"
+    retrieved: false
+
+  - norm_id: IN_MAPA_06_2020
+    name: "IN MAPA nº 06/2020"
+    subject: "Defeso piramutaba (Brachyplatystoma vaillantii), foz do Amazonas, 01/09-30/11"
+    retrieved: false
+
+  - norm_id: PORT_SG_MMA_42_2018
+    name: "Portaria SG/MMA nº 42/2018"
+    subject: "Defeso pargo (Lutjanus purpureus), AP a divisa AL-SE, 15/12-30/04"
+    retrieved: false
+
+  - norm_id: IN_IBAMA_189_2008
+    name: "IN IBAMA nº 189, de 23/09/2008"
+    subject: "Regime ANTERIOR do defeso camarão SE/S (01/03-31/05) — histórico, necessário para série longa"
+    retrieved: false
+    note: "PDF gov.br/agricultura fora do ar (404 em 2026-09-03); ibama.gov.br clássico 403; alternativas: legisweb/normasbrasil (não oficiais) ou DOU/INLABS"
+
+  # Demais defesos da tabela IBAMA (anchova, garoupa, robalo, caranguejos,
+  # cherne, gurijuba, mexilhão, sirigado etc.) serão catalogados na fase 1 a
+  # partir da mesma página oficial (~30 normas).
