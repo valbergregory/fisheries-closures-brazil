@@ -1,0 +1,24 @@
+Modelo DIAGNOSTICO - piloto Trindade (2026-09-05)
+ihs(horas) ~ treated_mona + treated_apa | celula + ano-mes; cluster celula
+NAO e resultado cientifico: sem controles ambientais, sem cobertura AIS,
+sem aneis de leakage, sem inferencia adequada a poucos clusters.
+
+OLS estimation, Dep. Var.: ihs_hours
+Observations: 124,080
+Fixed-effects: cell: 2,068,  ym: 60
+Standard-errors: Clustered (cell) 
+              Estimate Std. Error  t value              Pr(>|t|)    
+treated_mona -0.117431   0.016444 -7.14133 0.0000000000012749060 ***
+treated_apa   0.086902   0.011040  7.87141 0.0000000000000056099 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.802551     Adj. R2: 0.126992
+                 Within R2: 6.079e-4
+
+INTERPRETACAO (dummies aninhados por construcao do painel):
+  treated_apa = post x (zona mona OU apa)  -> efeito na APA excl. MONA: +0.087
+  treated_mona = post x zona mona (ADICIONAL) -> efeito total no MONA:
+  +0.087 - 0.117 = -0.030 (ihs ~ aprox. variacao percentual)
+Leitura diagnostica: pequena reducao liquida no MONA, aumento na APA -
+padrao compativel com deslocamento para dentro da area de uso sustentavel,
+mas SEM valor causal nesta especificacao.
