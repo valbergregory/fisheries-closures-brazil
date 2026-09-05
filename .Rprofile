@@ -1,7 +1,7 @@
 # Ativado em toda sessão R aberta na raiz do projeto.
 # renv ainda NÃO inicializado — rodar renv::init() na primeira sessão RStudio
 # (ver docs/reproducibility_guide.md). Quando existir, descomentar:
-# source("renv/activate.R")
+source("renv/activate.R")
 
 options(
   stringsAsFactors = FALSE,
