@@ -11,18 +11,25 @@
 
 ## Ambientes
 
-**R (principal):** R 4.4.3. Na primeira sessão RStudio:
+**R (principal):** R 4.4.3. Ambiente **JÁ INICIALIZADO em 2026-09-04**
+(`renv.lock` no repositório; `renv::status()` limpo). Reconstrução:
+`renv::restore()`. Como foi criado (para o registro):
 ```r
 install.packages("renv")   # já instalado
 renv::init(bare = TRUE)
 renv::install(c("targets","tarchetypes","data.table","yaml","jsonlite",
                 "digest","httr2","curl","fixest","did","modelsummary",
-                "sf","terra","duckdb","arrow","rdrobust","rddensity",
-                "ggplot2","patchwork","testthat"))
-renv::snapshot()           # gera renv.lock (ainda não criado nesta entrega)
+                "sf","terra","arrow","rdrobust","rddensity",
+                "ggplot2","patchwork","testthat","shiny","quarto","tzdb"))
+renv::install("duckdb", type = "binary")   # fonte não compila no Rtools44 em tempo hábil
+renv::install("synth-inference/synthdid")  # não está no CRAN
+renv::snapshot()
 ```
-`renv.lock` e `uv.lock` **não** foram fabricados à mão nesta entrega — serão
-gerados pelas próprias ferramentas para refletirem o ambiente real.
+Ressalvas registradas: numa instalação em lote, uma falha (ex.: duckdb da
+fonte) aborta a transação e NADA é linkado à biblioteca do projeto — os
+pacotes ficam só no cache global; basta reexecutar `renv::install()` que
+tudo linka em segundos. `uv.lock` segue não fabricado — será gerado pelo
+próprio uv se a camada Python crescer.
 
 **Python (auxiliar):** 3.13.2 do sistema (pandas, matplotlib, pymupdf já
 presentes). Se a camada crescer: instalar `uv`, `uv venv`, `uv add ...` a

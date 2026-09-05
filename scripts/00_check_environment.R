@@ -8,5 +8,6 @@ for (p in c("targets","tarchetypes","renv","sf","terra","duckdb","arrow",
                 as.character(utils::packageVersion(p)) else "AUSENTE"))
 }
 cat("GFW_TOKEN definido:", nzchar(Sys.getenv("GFW_TOKEN")), "\n")
-cat("Auditoria 2026-09-03: sf/terra/duckdb/arrow/rdrobust/synthdid AUSENTES —\n",
-    "instalar via renv na fase 1 (docs/reproducibility_guide.md).\n")
+cat("Auditoria 2026-09-04: stack completa via renv (lockfile em renv.lock);\n",
+    "duckdb exige binário (fonte não compila no Rtools44 em tempo hábil) e\n",
+    "synthdid vem do GitHub: renv::install('synth-inference/synthdid').\n")
