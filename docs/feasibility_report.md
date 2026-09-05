@@ -38,12 +38,12 @@ AIS (frota lagosteira majoritariamente artesanal).
 | 3 | Regra estruturada | **SIM** — `outputs/policies/PORT_SAP_MAPA_656_2022_r1.json`, esquema válido; **validação humana pendente** (4 open_issues, ver D8) |
 | 4 | Polígono válido | **SIM** — MONA (4 anéis, 27 vértices) e APA (1 anel, 1.323 vértices) via WFS INDE; anéis fechados, coordenadas em faixa |
 | 5 | Período válido | **SIM** — datas do decreto e do defeso extraídas do texto oficial (com transição 2022 documentada) |
-| 6 | Cruzamento com esforço | **PARCIAL** — mecânica de cruzamento demonstrada (célula×zona×mês); coluna de esforço = NA até GFW_TOKEN (bloqueio administrativo) |
-| 7 | Variação suficiente | **SIM (espacial)** — 91 células MONA, 561 APA, 1.416 controle; variação temporal de esforço aguarda GFW |
+| 6 | Cruzamento com esforço | **SIM (2026-09-05)** — GFW 4wings report mensal 0,1° (2016–2020, 6 requisições anuais/semestrais, checksums em `data/metadata/checksums_gfw.txt`); 14.213 células×mês com esforço >0 integradas ao painel |
+| 7 | Variação suficiente | **SIM** — 91 células MONA, 561 APA, 1.416 controle; esforço dominado por espinhel de deriva (~145 mil h), com variação pré/pós clara |
 | 8 | Buffer interno/externo | **SIM** — distância à fronteira da APA computada por célula (proxy equiretangular; sf na fase 1) |
-| 9 | Estatísticas antes/depois | **ADIADO** — depende do item 6 (sem esforço real, qualquer estatística seria sintética — proibido) |
-| 10 | Mapa preliminar | **SIM** — `outputs/diagnostics/map_trindade_pilot.png` |
-| 11 | Modelo diagnóstico | **ADIADO** — mesmo motivo do item 9; especificação já escrita (E1 em estimand_table.md) |
+| 9 | Estatísticas antes/depois | **SIM (2026-09-05)** — médias h/célula-mês pré→pós: MONA 0,264→0,252 (−4,6%); APA 0,133→0,699 (+425,6%); controle 1,502→1,562 (+4,0%). `outputs/diagnostics/pilot_effort_summary.md` — brutas, sem valor causal |
+| 10 | Mapa preliminar | **SIM** — `map_trindade_pilot.png` + `map_trindade_effort.png` (pré/pós com esforço real) |
+| 11 | Modelo diagnóstico | **SIM (2026-09-05)** — TWFE ihs(horas), FE célula+mês, cluster célula: MONA −0,030 líquido; APA +0,087 (`outputs/diagnostics/pilot_diag_model.txt`) — direção compatível com H1+H2; **sem valor causal** (sem controles/cobertura/inferência adequada) |
 
 Painel piloto: 124.080 linhas (2.068 células × 60 meses, 2016–2020), com
 `post`, `treated_mona`, `treated_apa`, `dist_boundary_km` — pronto para
