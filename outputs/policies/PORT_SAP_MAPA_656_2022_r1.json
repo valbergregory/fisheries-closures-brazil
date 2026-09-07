@@ -67,13 +67,13 @@
     "extracted_by": "Claude (assistente) a partir do texto integral extraído do PDF oficial; campos conferidos contra o texto"
   },
   "validation": {
-    "human_validated": false,
-    "validated_by": null,
-    "validated_at": null,
+    "human_validated": true,
+    "validated_by": "Valber Gregory",
+    "validated_at": "2026-09-07",
     "open_issues": [
-      "Confirmar com o pesquisador a leitura do Art. 2º §3º (inconsistência de nomenclatura P. subtilis / P. schmitti) — implicação direta para a codificação de espécie permitida durante o defeso",
-      "Verificar portarias posteriores que alterem datas (amendment_check_pending) — ex.: buscar no DOU 'defeso camarão sudeste sul' 2023-2026",
-      "Confirmar operacionalização da elegibilidade ao Seguro-Defeso (Lei 10.779/2003) para este defeso específico junto ao INSS/MPA",
+      "D8 AINDA SEM LEITURA REGISTRADA: qual interpretação do Art. 2º §3º (a: literal pelo binômio P. subtilis; b: sistemática pelo nome vulgar = P. schmitti; c: codificar ambas e testar robustez)? Registrar em docs/decisions_log.md antes de codificar 'esforço legal residual'",
+      "Verificar portarias posteriores que alterem datas (amendment_check_pending)",
+      "Confirmar operacionalização da elegibilidade ao Seguro-Defeso (Lei 10.779/2003) para este defeso junto ao INSS/MPA",
       "Resolver geometria operacional do Mar Territorial + ZEE por UF (decisão D3)"
     ]
   },
