@@ -1,0 +1,36 @@
+ibama_defesos    https://www.gov.br/ibama/pt-br/assuntos/biodiversidade/biodiversidade-aquatica/periodos-de-defeso/defesos-marinhos -> 200
+dou              https://www.in.gov.br/servicos -> 200
+planalto         https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/decreto/D9312.htm -> 200
+                  norm_id                                    name
+                   <char>                                  <char>
+1: PORT_SAP_MAPA_656_2022 Portaria SAP/MAPA nº 656, de 30/03/2022
+2:          DEC_9312_2018         Decreto nº 9.312, de 19/03/2018
+3:          DEC_9313_2018         Decreto nº 9.313, de 19/03/2018
+4: PORT_SAP_MAPA_221_2021           Portaria SAP/MAPA nº 221/2021
+5:       IN_IBAMA_15_2009                     IN IBAMA nº 15/2009
+6:  PORT_MDIC_MMA_75_2017            Portaria MDIC/MMA nº 75/2017
+7:        IN_MAPA_06_2020                      IN MAPA nº 06/2020
+8:    PORT_SG_MMA_42_2018              Portaria SG/MMA nº 42/2018
+9:      IN_IBAMA_189_2008          IN IBAMA nº 189, de 23/09/2008
+                                                                                                                                                                                    subject
+                                                                                                                                                                                     <char>
+1:                                                                                              Defeso camarões SE/S (RJ-RS: 28/01-30/04 desde 2023; ES: 01/12-28/02) + ordenamento arrasto
+2:                                                                                                              Criação APA + MONA do Arquipélago de Trindade e Martim Vaz e Monte Columbia
+3:                                                                                                                               Criação APA + MONA do Arquipélago de São Pedro e São Paulo
+4:                                                                                                            Defeso lagostas (Panulirus spp.), Guiana Francesa a divisa RJ-ES, 01/11-30/04
+5: Defeso sardinha-verdadeira (Sardinella brasiliensis), Cabo de São Tomé-RJ a Cabo de Santa Marta-SC, 01/10-28/02 (na tabela IBAMA consta out-fev; conferir texto: defeso em duas janelas)
+6:                                                                                                                                     Defeso camarões AP/PA/PI (região Norte), 15/12-15/02
+7:                                                                                                            Defeso piramutaba (Brachyplatystoma vaillantii), foz do Amazonas, 01/09-30/11
+8:                                                                                                                        Defeso pargo (Lutjanus purpureus), AP a divisa AL-SE, 15/12-30/04
+9:                                                                                            Regime ANTERIOR do defeso camarão SE/S (01/03-31/05) — histórico, necessário para série longa
+   retrieved
+      <lgcl>
+1:      TRUE
+2:      TRUE
+3:     FALSE
+4:     FALSE
+5:     FALSE
+6:     FALSE
+7:     FALSE
+8:     FALSE
+9:     FALSE
