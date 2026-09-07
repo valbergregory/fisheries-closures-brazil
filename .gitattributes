@@ -1,0 +1,7 @@
+# Normalização de fim de linha (evita os avisos LF/CRLF no Windows)
+* text=auto eol=lf
+*.png binary
+*.pdf binary
+*.zip binary
+*.geojson text eol=lf
+*.Rproj text eol=crlf
