@@ -11,8 +11,13 @@ marcados (†) foram herdados da auditoria do projeto irmão
 ### 1. Normas de defeso — IBAMA / DOU / Planalto — **ACESSÍVEL, TESTADO**
 - Tabela oficial de defesos marinhos (gov.br/ibama): **~30 defesos** com
   espécie, área, período e norma; PDFs das normas baixáveis.
-  **Recuperados hoje:** Portaria SAP/MAPA 656/2022 (PDF 864 KB, íntegra, 8 p.
-  + versão DOU HTML) e Decreto 9.312/2018 (Planalto, HTML).
+  **Recuperados em 03/09:** Portaria SAP/MAPA 656/2022 (PDF 864 KB, íntegra,
+  8 p. + versão DOU HTML) e Decreto 9.312/2018 (Planalto, HTML).
+- **CORPUS COMPLETO em 08/09:** os 26 PDFs de normas linkados na tabela
+  baixados para `data/legal/corpus_defesos_marinhos/` (7,5 MB), texto
+  extraído (`.txt`) sem necessidade de OCR, SHA-256 registrados; + Decreto
+  9.313/2018 (São Pedro e São Paulo, Planalto). Todo o corpus é versionado
+  no Git (domínio público).
 - Atenção: o site clássico `www.ibama.gov.br` bloqueia clientes não-browser
   (HTTP 403); usar sempre os caminhos `gov.br/ibama`.
 - IN IBAMA 189/2008 (regime histórico do camarão SE/S): link do
@@ -34,7 +39,11 @@ marcados (†) foram herdados da auditoria do projeto irmão
   nome, valor da parcela (R$ 1.412,00 em 2024 = salário mínimo).
 - Permite: painel município×mês de pagamentos E spells individuais por RGP
   (elegibilidade/tempestividade). Dado pessoal público — agregar para
-  publicação. Falta testar: profundidade histórica da série.
+  publicação.
+- **Profundidade sondada (2026-09-08):** série disponível de **2014-01 a
+  2026-07** (HEAD 200 em todos os janeiros 2014–2025 + 2026-07; único 403:
+  2026-01 — retestar, provável transitório). Cobre com folga os dois casos
+  (Trindade 2016–2020; calendário camarão 2019–2024).
 
 ### 4. Esforço pesqueiro — Global Fishing Watch API v3 — **TOKEN PENDENTE** (†)
 - Serviço ativo (401 sem autenticação). Token gratuito = ação do pesquisador

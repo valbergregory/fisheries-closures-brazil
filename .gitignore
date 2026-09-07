@@ -5,8 +5,9 @@ data/processed/
 !data/raw/.gitkeep
 !data/interim/.gitkeep
 !data/processed/.gitkeep
-# Documentos legais baixados: manter METADADOS e checksums no Git, não os binários grandes
-data/legal/*.pdf
+# Documentos legais (data/legal/): VERSIONADOS por inteiro — atos oficiais
+# brasileiros em domínio público, com SHA-256 em data/metadata/; o corpus
+# auditável é parte da contribuição de SI do artigo
 
 # Credenciais
 .Renviron
