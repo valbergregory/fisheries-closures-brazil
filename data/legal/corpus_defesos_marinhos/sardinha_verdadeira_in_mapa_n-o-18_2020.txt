@@ -1,0 +1,545 @@
+Documento assinado digitalmente conforme MP nº 2.200-2 de 24/08/2001,
+que institui a Infraestrutura de Chaves Públicas Brasileira - ICP-Brasil.
+Este documento pode ser verificado no endereço eletrônico
+http://www.in.gov.br/autenticidade.html, pelo código 05152020061200017
+17
+Nº 111, sexta-feira, 12 de junho de 2020
+ISSN 1677-7042
+Seção 1
+12. Implementação:
+A Implementação engloba
+a divulgação da entrada em
+vigor e o
+monitoramento do desempenho do ato normativo, considerando o atingimento dos
+objetivos originalmente pretendidos, bem como os impactos observados sobre o
+mercado e a sociedade. A Avaliação de Resultado Regulatório (ARR), conhecida como ex
+post, é a ferramenta utilizada pela Secretaria para acompanhar a implementação dos
+atos normativos de sua competência.
+O monitoramento é de fundamental importância para o ciclo regulatório, pois
+uma regulamentação inicialmente eficaz pode se tornar ultrapassada ou inócua. Fatores
+imprevisíveis,
+mudanças 
+de
+contexto,
+inovações
+tecnológicas 
+ou
+alterações
+incontornáveis no comportamento dos agentes podem minar o seu desempenho ao
+longo do tempo. Além disso, seus efeitos podem ser modificados por outros atos
+normativos editados após a sua entrada em vigor.
+O acompanhamento regular da implementação do ato normativo permite,
+assim, a constatação da necessidade de revisão e promoção de melhorias, evitando a
+continuidade de regulamentações ineficazes, que oneram desnecessariamente o setor
+regulado
+e o
+governo.
+Para tanto,
+revela-se
+mister
+estabelecer método
+de
+acompanhamento que possibilite avaliar:
+i) a resolução ou permanência do problema regulatório;
+ii) o cumprimento dos objetivos originalmente pretendidos;
+iii) os impactos esperados e inesperados;
+iv) a ocorrência de problemas ou efeitos indiretos não identificados; e
+v) a necessidade de manutenção da ação regulatória.
+O referencial de análise deve ser a não ação, isto é, a hipotética manutenção
+da situação anterior à implantação da alternativa recomendada na AIR, até mesmo para
+orientar sobre como remediar o não atingimento das metas previamente fixadas.
+Contudo, para uma efetiva comparação destas com os resultados observados, é
+necessário elaborar indicadores objetivamente compreensíveis e mensuráveis, sejam
+quantitativos ou qualitativos, conforme a ação estatal a ser monitorada e seus objetivos.
+Neste contexto, deve ser considerada a disponibilidade ou facilidade de obtenção dos
+dados ou informações necessários para o cálculo do indicador.
+São recomendadas medidas adicionais, como prazo de adaptação e
+capacitação dos responsáveis pela aplicação e/ou fiscalização da regulamentação. Por
+sinal, a atividade fiscalizatória é essencial para a implementação da regulamentação
+técnica, prevenindo e coibindo a disseminação de produtos, serviços, bens e processos
+que não atendam aos requisitos estabelecidos.
+A condução da ARR compete ao Departamento responsável pelo tema
+regulado, em articulação com as demais unidades da Secretaria envolvidas, segundo suas
+atribuições e especificidades.
+SECRETARIA EXECUTIVA
+SUPERINTENDÊNCIA FEDERAL DE AGRICULTURA,
+PECUÁRIA E ABASTECIMENTO DO ESPÍRITO SANTO
+PORTARIA Nº 72, DE 10 DE JUNHO DE 2020
+O 
+SUPERINTENDENTE 
+FEDERAL 
+DA
+SUPERINTENDÊNCIA 
+FEDERAL 
+DE
+AGRICULTURA, PECUÁRIA E ABASTECIMENTO DO ESTADO DO ESPÍRITO SANTO, no uso da
+competência que lhe foi atribuída pela Portaria nº 2.023, publicada no DOU de
+13/06/2019; e das atribuições constantes no Regimento Interno da Secretaria Executiva
+(SE/MAPA), aprovado através da Portaria Ministerial nº 561, de 11 de abril de 2018,
+publicada no DOU de 12 de abril de 2018 e considerando as informações constantes do
+processo SFA - ES nº 21018.002728/2020-17, resolve:
+Art. 1º - Credenciar sob o número 22/2020/ES o(a) Médico(a) Veterinário(a)
+Renato Favarato, inscrito(a) no CRMV-ES nº 2727, para emissão de Certificados de Inspeção
+Sanitária - CIS-E para esterco e cama de aviário, nos municípios de Domingos Martins e
+Alfredo Chaves, no Estado do Espírito Santo para as propriedades relacionadas no processo
+em referência.
+Art. 2º. Esta Portaria entra em vigor na data de sua publicação.
+AURELIANO NOGUEIRA DA COSTA
+PORTARIA Nº 73, DE 10 DE JUNHO DE 2020
+O 
+SUPERINTENDENTE 
+FEDERAL 
+DA
+SUPERINTENDÊNCIA 
+FEDERAL 
+DE
+AGRICULTURA, PECUÁRIA E ABASTECIMENTO DO ESTADO DO ESPÍRITO SANTO, no uso
+da competência que lhe foi atribuída pela Portaria nº 2.023, publicada no DOU de
+13/06/2019; e das atribuições constantes no Regimento Interno da Secretaria Executiva
+(SE/MAPA), aprovado através da Portaria Ministerial nº 561, de 11 de abril de 2018,
+publicada no DOU de 12 de abril de 2018 e considerando as informações constantes
+do processo SFA - ES nº 21018.002732/2020-77, resolve:
+Art. 1º - Credenciar sob o número 23/2020/ES o(a) Médico(a) Veterinário(a)
+João Gabriel Pereira Magnago, inscrito(a) no CRMV-ES nº 1571, para emissão de
+Certificados de Inspeção Sanitária - CIS-E para esterco e cama de aviário, nos
+municípios de Alfredo Chaves, Domingos Martins, Marechal Floriano e Guarapari, no
+Estado do Espírito Santo para as propriedades relacionadas no processo em
+referência.
+Art. 2º. Esta Portaria entra em vigor na data de sua publicação.
+AURELIANO NOGUEIRA DA COSTA
+SUPERINTENDÊNCIA FEDERAL DE AGRICULTURA,
+PECUÁRIA E ABASTECIMENTO DO PARANÁ
+PORTARIA Nº 15, DE 8 DE JUNHO DE 2020
+O
+SUPERINTENDENTE 
+FEDERAL
+DE
+AGRICULTURA, 
+PECUÁRIA
+E
+ABASTECIMENTO NO ESTADO DO PARANÁ, no uso das atribuições previstas no
+Regimento Interno da Secretaria Executiva (SE/MAPA), aprovado através da PORTARIA
+Nº 561, DE 11 DE ABRIL DE 2018, publicada no DOU no dia 13 de abril de 2018,
+Portaria SE/MAPA nº 326 de 09 de março de 2018, publicada no DOU no dia 19 de
+março de 2018, tendo em vista o disposto no art. 2º, do Anexo I, da Instrução
+Normativa nº 66, de 27 de novembro de 2006, Art. 3º, da Lei nº 7.802, de 11 de julho
+de 1989, e do Decreto nº 4.074, de 04 de janeiro de 2002, e o que consta no Processo
+nº 21034.004849/2019-53, resolve:
+Art. 1° Converter em definitivo o credenciamento da LEIDIMARA FEREGUETI
+COSTA ALVES 07139188700, CNPJ 31.162.169/0001-71, BR PR 726, localizada na Linha
+Rural Catafesta, s/n, sala 02, Zona Rural de Ceú Azul - PR (CONTINENTAL PALLETS),
+para, na qualidade de empresa prestadora de serviços de tratamentos fitossanitários
+com fins quarentenários no trânsito internacional de vegetais e suas partes, executar
+tratamentos na modalidade de:
+Tratamento Térmico (HT);
+Art. 2° O Credenciamento de que trata esta Portaria terá validade por 04
+(quatro) anos,
+podendo ser
+renovado, mediante
+requerimento encaminhado
+à
+Superintendência Federal de Agricultura no Paraná, em até 120 (cento e vinte) dias
+antes do vencimento, conforme estipulado pela Instrução Normativa n° 66/2006.
+Art. 3° Esta Portaria entra em vigor na data da sua publicação.
+CLEVERSON FREITAS
+SECRETARIA DE AQUICULTURA E PESCA
+INSTRUÇÃO NORMATIVA Nº 18, DE 10 DE JUNHO DE 2020
+Altera os arts. 4º e 5º da Instrução Normativa IBAMA
+nº 15, de 21 de maio de 2009, e estabelece regras
+de monitoramento para avaliação do novo período
+de defeso
+O SECRETÁRIO DE AQUICULTURA E PESCA SUBSTITUTO DO MINISTÉRIO
+AGRICULTURA, PECUÁRIA E ABASTECIMENTO, no uso da competência delegada no Art. 29
+do Anexo I ao Decreto nº 10.253, de 20 de fevereiro de 2020, e tendo em vista o disposto
+no inciso III do Art. 21 da Lei nº 13.844, de 18 de junho de 2019, na Instrução Normativa
+IBAMA nº 15, de 21 de maio de 2009, e o que consta do Processo nº 21000.075873/2019-
+64, resolve:
+Art. 1º Os Arts. 4º e 5º da Instrução Normativa IBAMA nº 15, de 21 de maio de
+2009, passam a vigorar com a seguinte redação:
+"...............................................................................
+Art. 4º Proibir, anualmente, a captura da sardinha-verdadeira (Sardinella
+brasiliensis), na área compreendida entre os paralelos 22°00' Sul (Cabo de São Tomé,
+Estado do Rio de Janeiro) e 28°36' Sul (Cabo de Santa Marta, Estado de Santa Catarina), de
+1º de outubro a 28 de fevereiro.
+Parágrafo único. O desembarque da sardinha-verdadeira (Sardinella brasiliensis)
+somente será permitido, anualmente, até o dia 3 de outubro, de acordo com o início do
+período de defeso estabelecido no caput.
+Art. 5º As pessoas físicas ou
+jurídicas que atuam no transporte, no
+armazenamento, na comercialização, no beneficiamento e na industrialização de sardinha-
+verdadeira (Sardinella brasiliensis) deverão fornecer a declaração dos estoques in natura
+existentes, congelados ou não, no dia 3 de outubro de cada ano.
+§ 1º A declaração de estoque de que trata o caput deverá ser entregue até o
+dia 9 de outubro de cada ano, na forma do Anexo I desta Instrução Normativa, nas
+Superintendências Federais de Agricultura, Pecuária e Abastecimento do estado ou em
+sistema eletrônico informatizado específico quando disponibilizado pela Secretaria de
+Aquicultura e Pesca do Ministério da Agricultura, Pecuária e Abastecimento - SAP/MAPA.
+§ 2º A declaração do estoque de que trata o caput deverá acompanhar o
+produto até seu destino final.
+.............................................................................." (NR)
+Art 2º O período de defeso estabelecido nesta Instrução Normativa deverá ser
+avaliado em junho de 2021, por meio de um Comitê Científico, que será coordenado pela
+Secretaria de Aquicultura e Pesca do Ministério da Agricultura, Pecuária e Abastecimento
+- SAP/MAPA.
+Art 3º As empresas pesqueiras sob Serviço de Inspeção Federal - SIF que
+adquirirem sardinha-verdadeira
+(Sardinella brasiliensis),
+diretamente de
+produtores
+nacionais deverão encaminhar à Secretaria de Aquicultura e Pesca do Ministério da
+Agricultura, Pecuária e Abastecimento - SAP/MAPA os Formulários constantes dos Anexos
+II e III desta Instrução Normativa.
+§ 1º As empresas pesqueiras de que trata o caput deverão cadastrar-se por
+meio de Formulário Eletrônico a ser disponibilizado na Página Oficial da Secretaria de
+Aquicultura e Pesca do Ministério da Agricultura, Pecuária e Abastecimento - SAP/MAPA.
+§ 2º O Formulário que consta no Anexo II desta Instrução Normativa deverá ser
+aplicado no ato do desembarque nas empresas pesqueiras para todas as embarcações de
+cerco/traineira, que
+tenham como espécie-alvo a
+sardinha-verdadeira (Sardinella
+brasiliensis), nos termos da Instrução Normativa Interministerial MPA/MMA nº 10, de 10
+de junho de 2011.
+§ 3º Para preenchimento do Formulário constante do Anexo III desta Instrução
+Normativa uma amostra de 250 (duzentos e cinquenta) a 300 (trezentos) indivíduos de
+sardinha-verdadeira (Sardinella brasiliensis) deverá ser medida e pesada semanalmente.
+Dessa amostra, 60 (sessenta) indivíduos deverão ser congelados para posterior
+recolhimento por instituição autorizada pela Secretaria de Aquicultura e Pesca do
+Ministério da Agricultura, Pecuária e Abastecimento - SAP/MAPA.
+§ 4º Os formulários constantes dos Anexos II e III desta Instrução Normativa
+deverão 
+ser 
+encaminhados 
+mensalmente 
+para 
+o 
+endereço 
+eletrônico: 
+e.mail
+pescasudestesul.sap@agricultura.gov.br, em formato PDF, ou por meio de sistema
+eletrônico informatizado específico e disponibilizado pela Secretaria de Aquicultura e Pesca
+do Ministério da Agricultura, Pecuária e Abastecimento - SAP/MAPA.
+§ 5º No caso de as amostras de sardinha-verdadeira (Sardinella brasiliensis) não
+serem coletadas por instituição indicada pela Secretaria de Aquicultura e Pesca do
+Ministério da Agricultura, Pecuária e Abastecimento - SAP/MAPA no prazo de 2 (dois anos),
+a contar da data da coleta, as amostras deverão ser descartadas.
+Art. 4º As empresas pesqueiras terão o prazo de 15 (quinze) dias, a contar da
+data de entrada em vigor desta Instrução Normativa, para adequar-se às novas regras.
+Art 5º Esta Instrução Normativa entra em vigor na data de sua publicação.
+MARCELO MOREIRA NEVES
+ANEXO I
+DECLARAÇÃO DE ESTOQUE PARA SARDINHA-VERDADEIRA
+. Nome da Pessoa Física ou Jurídica:_______________________________________________________________________________
+Endereço:______________________________________________________________________
+Cidade/Estado:______________________/____ Telefone:__________________________
+CPF ou CNPJ:________________________
+Endereço de Armazenamento:__________________________________________________________________________________
+. DESCRIÇÃO DO PRODUTO
+QUANTIDADE (kg)
+. Sardinha in natura Congelada
+. Sardinha in natura Salgada
+Local:___________________________________ Data:___/___/___
+_____________________________________________________________
+Assinatura
+ANEXO II
+FICHA DE ENTREVISTA DE CAIS - PESCA INDUSTRIAL DE CERCO
+DADOS GERAIS
+. Responsável pela Entrevista:_____________________________________________________________________Data___/___/___
+Empresa:__________________________________Cidade/Estado:_________________________/___
+Embarcação:__________________________________________________RGP da Embarcação:_____________________________
+Porto de Saída:___________________________________________ Data de Saída___/___/___ Hora de saída:______________
+Porto de Chegada:_________________________________________Data de Chegada___/___/___ Hora de chegada:___________
+Dias de Pesca:_________________ Dias de mar:___________________
+DADOS ESPECÍFICOS
+. Espécie-alvo [ ] Sardinha-verdadeira [ ] Outra(s) (especificar): ___________________________________________________
+Foi informado a localização do cardume no início da viagem? [ ] sim [ ] não
+
+Documento assinado digitalmente conforme MP nº 2.200-2 de 24/08/2001,
+que institui a Infraestrutura de Chaves Públicas Brasileira - ICP-Brasil.
+Este documento pode ser verificado no endereço eletrônico
+http://www.in.gov.br/autenticidade.html, pelo código 05152020061200018
+18
+Nº 111, sexta-feira, 12 de junho de 2020
+ISSN 1677-7042
+Seção 1
+OPERAÇÃO DE PESCA
+. Nº do Lance
+Data
+Área de Pesca (Latitude e Longitude)
+Prof. (m)
+Hora de Início
+Hora do fim
+Captura (kg)
+.
+1
+___/___/___
+.
+2
+___/___/___
+.
+3
+___/___/___
+.
+4
+___/___/___
+.
+5
+___/___/___
+.
+6
+___/___/___
+.
+7
+___/___/___
+.
+8
+___/___/___
+.
+9
+___/___/___
+.
+10
+___/___/___
+DESCRIÇÃO DA PESCARIA
+Captura Total:_________________________________________
+.
+Espécies
+Captura
+Valor R$/kg
+Espécies
+Captura
+Valor R$/kg
+.
+kg
+%
+kg
+%
+. Bagre
+Palombeta
+. Bonito-cachorro
+Pampo
+. Bonito-listrado
+Paru
+. Cações
+Peixe-porco
+. Carapau
+Pescada-bicuda
+. Cavalinha
+Pescada-branca
+. Corcoroca
+Sardinha-cascuda
+. Dourado
+Sardinha-lage
+. Enchova
+Sardinha-verdadeira
+. Espada
+Tainha
+. Galo
+Tainhota
+. Gordinho
+Xixarro
+. Guaivira
+Peixe-porco
+. Lanceta
+Sardinha-boca-torta
+. Manjuba
+Mistura
+. Maria-mole
+Resíduo
+.
+.
+.
+.
+.
+.
+.
+ANEXO III
+FICHA DE BIOMETRIA
+(Sardinha-verdadeira)
+(comprimento, cm)
+. Nome 
+Espécie:_______________________________________________Código 
+da
+Amostra:________________Data:___/___/___
+Embarcação:______________________________________ RGP da
+Embarcação:_________________________ Lance:__________
+Responsáveis:____________________________________________________
+.
+. 10,0
+32,0
+. 10,5
+32,5
+. 11,0
+33,0
+. 11,5
+33,5
+. 12,0
+34,0
+. 12,5
+34,5
+. 13,0
+35,0
+. 13,5
+35,5
+. 14,0
+36,0
+. 14,5
+36,5
+. 15,0
+37,0
+. 15,5
+37,5
+. 16,0
+38,0
+. 16,5
+38,5
+. 17,0
+39,0
+. 17,5
+39,5
+. 18,0
+40,0
+. 18,5
+40,5
+. 19,0
+41,0
+. 19,5
+41,5
+. 20,0
+42,0
+. 20,5
+42,5
+. 21,0
+43,0
+. 21,5
+43,5
+. 22,0
+44,0
+. 22,5
+. 23,0
+. 23,5
+. 24,0
+. 24,5
+. 25,0
+. 25,5
+. 26,0
+. 26,5
+. 27,0
+. 27,5
+. 28,0
+. 28,5
+. 29,0
+. 29,5
+. 30,0
+. 30,5
+. 31,0
+. 31,5
+SECRETARIA DE DEFESA AGROPECUÁRIA
+INSTRUÇÃO NORMATIVA Nº 29, DE 2 DE JUNHO DE 2020
+O SECRETÁRIO DE DEFESA AGROPECUÁRIA DO MINISTÉRIO DA AGRICULTURA,
+PECUÁRIA E ABASTECIMENTO, no uso das atribuições que lhe conferem os arts. 21 e 63 do
+Anexo I do Decreto n.º 10.253, de 20 de fevereiro de 2020, tendo em vista o disposto no
+Decreto nº 24.114, de 12 de abril de 1934, no Decreto nº 1.355, de 30 de dezembro de
+1994, no Decreto nº 5.759, de 17 de abril de 2006, na Instrução Normativa nº 23, de 2 de
+agosto de 2004, na Instrução Normativa nº 6, de 16 de maio de 2005, e o que consta do
+Processo nº. 21000.025014/2016-81, resolve:
+Art. 1º Ficam estabelecidos os requisitos fitossanitários para a importação de
+grãos (Categoria 3, Classe 9) de trigo (Triticum aestivum) produzidos na Lituânia.
+Art. 2º Os grãos de trigo devem estar livres de material de solo e resíduos
+vegetais.
+Art. 3º O envio do produto especificado no art. 2º desta Instrução Normativa
+deverá estar acompanhado de Certificado Fitossanitário, emitido pela Organização Nacional
+de Proteção Fitossanitária - ONPF da Lituânia com as seguintes Declarações Adicionais:
+I - "O envio foi tratado no porão do navio com 2 g/m3 de fosfina por 21 dias,
+incluindo o trânsito".
+II - "O envio encontra-se livre dos insetos Ptinus fur, Sitodiplosis mosellana,
+Sitophilus granarius e Stegobium paniceum; isenta de nematóide Anguina tritici; isenta de
+fungos Fusarium langsethiae e Urocystis agropyri; e das plantas Alopecurus myosuroides,
+Amaranthus Antennaria dioica, Apera spica-venti, Cerastium arvense, Cirsium arvense,
+Crepis tectorum, Elymus repens, Erysimum cheiranthoides, Euphorbia esula, Euphorbia
+helioscopia, Galeopsis speciosa, Galeopsis tetrahit, Heliotropium europaeum, Hibiscus Silene
+latifolia subsp. Alba, Sonchus arvensis, Tripleurospermum perforatum e Viola arvensis, de
+acordo com os resultados da análise oficial do laboratório no ( )".
+III - "O envio encontra-se livre de Acarus siro".
+Art. 4º As partidas importadas especificadas no artigo 2º desta Instrução
+Normativa serão inspecionadas no ponto de ingresso (Inspeção Fitossanitária - IF), podendo
+ser coletadas amostras para análise fitossanitária em laboratórios oficiais ou credenciados
+pelo Ministério da Agricultura, Pecuária e Abastecimento.
+Parágrafo único. Ocorrendo a coleta de amostras, os custos do envio e das
+análises serão com ônus para o interessado, que poderá, a critério da fiscalização
+agropecuária, ficar depositário da partida até a conclusão dos exames e emissão dos
+respectivos laudos de liberação.
+Art. 5º No caso de interceptação de pragas quarentenárias, a partida será
+destruída ou rechaçada e a ONPF da Lituânia será notificada, podendo a ONPF do Brasil
+suspender as importações até a revisão da Análise de Risco de Pragas.
+Art. 6º A ONPF da Lituânia deverá comunicar à ONPF do Brasil qualquer
+alteração na condição fitossanitária das regiões de produção de grãos de trigo a serem
+exportados ao Brasil.
+Art. 7º O produto não será internalizado quando descumprir as exigências
+estabelecidas nesta Instrução Normativa.
+Art. 8º Esta Instrução Normativa entrará em vigor em 1º de Julho de 2020.
+JOSÉ GUILHERME TOLLSTADIUS LEAL
+INSTRUÇÃO NORMATIVA Nº 32, DE 10 DE JUNHO DE 2020
+O SECRETÁRIO DE DEFESA AGROPECUÁRIA, DO MINISTÉRIO DA AGRICULTURA,
+PECUÁRIA E ABASTECIMENTO, no uso das atribuições que lhe
+conferem os arts. 21 e 63 do Anexo I do Decreto n.º 10.253, de 20 de fevereiro
+de 2020, tendo em vista o disposto no Decreto nº 24.114, de 12 de abril de 1934, no
+Decreto nº 1.355, de 30 de dezembro de 1994, no Decreto nº 5.759, de 17 de abril de
+2006, e o que consta do Processo nº 21000.036466/2020-75, resolve:
+Art. 1º O inciso IV do art. 3º da Instrução Normativa SDA/MAPA nº 35, de 10
+de outubro de 2011, passa a ter a seguinte redação:
+"Art. 3º .........................
+IV - DA 15: "As sementes de dendê encontram-se livres do fungo Fu s a r i u m
+redolens, dos nematoides Aphelenchoides blastophthorus e Ditylenchus fotedari, de acordo
+com o resultado da análise oficial de laboratório n° (indicar nº da análise)." (NR)
+Art. 2º Esta Instrução Normativa entra em vigor em 1º de julho de 2020.
+JOSÉ GUILHERME TOLLSTADIUS LEAL
+PORTARIA Nº 108, DE 4 DE JUNHO DE 2020
+Reconhece a equivalência do Serviço de Inspeção
+Estadual do Rio de Janeiro para adesão ao Sistema
+Brasileiro de Inspeção de Produtos de Origem Animal
+- SISBI-POA
+O SECRETÁRIO DE DEFESA AGROPECUÁRIA, DO MINISTÉRIO DA AGRICULTURA,
+PECUÁRIA E ABASTECIMENTO, no uso da atribuição que lhe confere o art. 21 do Anexo I
+do Decreto 10.253 de 20 de fevereiro de 2020, tendo em vista o disposto no Decreto nº
+5.741, de 30 de março de 2006, na Instrução Normativa nº 17, de 06 de março de 2020,
+e o que consta no processo nº 21044.000420/2020-10, resolve:
+Art. 1º Reconhecer a equivalência do Serviço de Inspeção Estadual do Rio de
+Janeiro, para adesão ao Sistema Brasileiro de Inspeção de Produtos de Origem Animal -
+SISBI-POA do Sistema Unificado de Atenção à Sanidade Agropecuária - SUASA.
+Art. 2º O Serviço de Inspeção Estadual do Rio de Janeiro, terá seu escopo de
+adesão habilitado pelo Departamento de Suporte e Normas-DSN/SDA no sistema eletrônico
+de cadastro de serviços de inspeção, o e-SISBI/SGSI, disponível no portal do Ministério da
+Agricultura, Pecuária e Abastecimento, para incluir os estabelecimentos e produtos que
+integrarão o SISBI-POA.
+Art. 3º Esta Portaria entra em vigor na data de sua publicação.
+JOSE GUILHERME TOLLSTADIUS LEAL
+PORTARIA Nº 110, DE 10 DE JUNHO DE 2020
+Submeter à Consulta Pública, pelo prazo de 45
+(quarenta e cinco) dias, a contar da data da
+publicação desta Portaria, a proposta de Instrução
+Normativa, que classifica a atividade de produção de
+produtos fitossanitários com uso aprovado para
+agricultura orgânica, estabelece parâmetros mínimos
+de produção e dá outras providências
+O SECRETÁRIO DE DEFESA AGROPECUÁRIA, DO MINISTÉRIO DA AGRICULTURA,
+PECUÁRIA E ABASTECIMENTO, no uso das atribuições que lhe foram conferidas pelo arts.
+21 e 63, do Anexo I, do Decreto n° 10.253, de 20 de fevereiro de 2020 e, tendo em vista
+o disposto no Decreto nº 5.741, de 30 de março de 2006, e o que consta do Processo nº
+21000.018663/2020-11, resolve:
+Art. 1º Submeter a consulta pública pelo prazo de 45 (quarenta e cinco) dias,
+a contar da data da publicação desta Portaria, a proposta de Instrução Normativa, que
+classifica a atividade de produção de produtos fitossanitários com uso aprovado para
+agricultura orgânica, estabelece parâmetros mínimos de produção e dá outras
+providências.
+Parágrafo único. O Projeto de Instrução Normativa encontra-se disponível na
+página
+eletrônica
+do
+Ministério 
+da
+Agricultura,
+Pecuária
+e
+Abastecimento:
+https://www.gov.br/agricultura/, link acesso a informação, submenu Participação social =>
+consultas Publicas.

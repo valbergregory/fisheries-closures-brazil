@@ -28,34 +28,40 @@ norms:
   - norm_id: DEC_9313_2018
     name: "Decreto nº 9.313, de 19/03/2018"
     subject: "Criação APA + MONA do Arquipélago de São Pedro e São Paulo"
-    retrieved: false
+    retrieved: true
+    files: [data/legal/Decreto_9313_2018.html]
 
   - norm_id: PORT_SAP_MAPA_221_2021
     name: "Portaria SAP/MAPA nº 221/2021"
     subject: "Defeso lagostas (Panulirus spp.), Guiana Francesa a divisa RJ-ES, 01/11-30/04"
-    retrieved: false
+    retrieved: true
+    files: [data/legal/corpus_defesos_marinhos/lagosta_portaria_sap_mapa_n-o-221_2021.pdf]
     pdf_url: https://www.gov.br/ibama/pt-br/assuntos/biodiversidade/biodiversidade-aquatica/arquivos/defesos-marinho/2025-01-14_lagosta_portaria_sap_mapa_n-o-221_2021.pdf
 
   - norm_id: IN_IBAMA_15_2009
     name: "IN IBAMA nº 15/2009"
     subject: "Defeso sardinha-verdadeira (Sardinella brasiliensis), Cabo de São Tomé-RJ a Cabo de Santa Marta-SC, 01/10-28/02 (na tabela IBAMA consta out-fev; conferir texto: defeso em duas janelas)"
-    retrieved: false
+    retrieved: true
+    files: [data/legal/corpus_defesos_marinhos/sardinha_verdadeira_in_ibama_n-o-15_2009.pdf]
     pdf_url: https://www.gov.br/ibama/pt-br/assuntos/biodiversidade/biodiversidade-aquatica/arquivos/defesos-marinho/2025-01-14_sardinha_verdadeira_in_ibama_n-o-15_2009.pdf
 
   - norm_id: PORT_MDIC_MMA_75_2017
     name: "Portaria MDIC/MMA nº 75/2017"
     subject: "Defeso camarões AP/PA/PI (região Norte), 15/12-15/02"
-    retrieved: false
+    retrieved: true
+    files: [data/legal/corpus_defesos_marinhos/camaroes_portaria_mdic_mma_n-o-_75_2017.pdf]
 
   - norm_id: IN_MAPA_06_2020
     name: "IN MAPA nº 06/2020"
     subject: "Defeso piramutaba (Brachyplatystoma vaillantii), foz do Amazonas, 01/09-30/11"
-    retrieved: false
+    retrieved: true
+    files: [data/legal/corpus_defesos_marinhos/piramutaba_in_mapa_n-o-06_2020.pdf]
 
   - norm_id: PORT_SG_MMA_42_2018
     name: "Portaria SG/MMA nº 42/2018"
     subject: "Defeso pargo (Lutjanus purpureus), AP a divisa AL-SE, 15/12-30/04"
-    retrieved: false
+    retrieved: true
+    files: [data/legal/corpus_defesos_marinhos/pargo_portaria_sg_mma_n-o-42_2018.pdf]
 
   - norm_id: IN_IBAMA_189_2008
     name: "IN IBAMA nº 189, de 23/09/2008"
@@ -63,6 +69,14 @@ norms:
     retrieved: false
     note: "PDF gov.br/agricultura fora do ar (404 em 2026-09-03); ibama.gov.br clássico 403; alternativas: legisweb/normasbrasil (não oficiais) ou DOU/INLABS"
 
-  # Demais defesos da tabela IBAMA (anchova, garoupa, robalo, caranguejos,
-  # cherne, gurijuba, mexilhão, sirigado etc.) serão catalogados na fase 1 a
-  # partir da mesma página oficial (~30 normas).
+  # CORPUS COMPLETO baixado em 2026-09-08: os 26 PDFs de normas linkados na
+  # tabela oficial de defesos marinhos do IBAMA estão em
+  # data/legal/corpus_defesos_marinhos/ (7,5 MB, texto extraído em .txt,
+  # SHA-256 em data/metadata/checksums_legal.txt). Cobrem: anchova, bagre,
+  # camarões (5 normas), caranguejo-real/vermelho/uçá, cherne+peixe-batata,
+  # corvina, garoupa, gurijuba, lagosta, manjuba (2), mexilhão, ostras,
+  # pargo, piramutaba, robalo (2), sardinha (2: IN 15/2009 + IN MAPA
+  # 18/2020), sirigado et al. Estruturação em regras atômicas: fase 1,
+  # com validação humana individual. Nota: INC MMA/SEAP 03/2004 aparece 3x
+  # na tabela (bagre, camarões e corvina da Lagoa dos Patos) — mesma norma.
+  # PDF da Portaria 45/2026 (uçá PI-BA) não linkado na página — buscar no DOU.
