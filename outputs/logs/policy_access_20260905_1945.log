@@ -1,0 +1,5 @@
+ibama_defesos    https://www.gov.br/ibama/pt-br/assuntos/biodiversidade/biodiversidade-aquatica/periodos-de-defeso/defesos-marinhos -> HTTP 403 Forbidden.
+dou              https://www.in.gov.br/ -> Failed to perform HTTP request.
+Caused by error in `curl::curl_fetch_memory()` at httr2/R/req-perform.R:222:5:
+! Stream error in the HTTP/2 framing layer [www.in.gov.br]:
+HTTP/2 stream 1 was not closed cleanly: PROTOCOL_ERROR (err 1)
