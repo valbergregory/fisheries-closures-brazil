@@ -80,3 +80,7 @@ Criar conta em <https://globalfishingwatch.org/our-apis/>.
 4. Redução de esforço observado ≠ recuperação de estoque.
 5. Resultados científicos não dependem de objetos manuais no Global
    Environment.
+
+## License
+
+Code: MIT ([LICENSE](LICENSE)). Text, documentation and data: see [LICENSING.md](LICENSING.md).
