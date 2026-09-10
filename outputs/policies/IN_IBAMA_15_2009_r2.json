@@ -1,0 +1,71 @@
+{
+  "rule_id": "IN_IBAMA_15_2009_r2",
+  "norm_id": "IN_IBAMA_15_2009",
+  "norm_type": "instrucao_normativa",
+  "issuing_authority": "Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis (IBAMA)",
+  "legal_basis": [
+    "Decreto nº 6.099, de 26/04/2007, Anexo I, art. 2º, XVIII",
+    "Decreto-Lei nº 221, de 28/02/1967",
+    "Lei nº 8.617, de 04/01/1993",
+    "Decreto nº 5.583, de 16/11/2005",
+    "Processo IBAMA/Sede nº 02001.004889/2003-71"
+  ],
+  "species": [
+    {"common_name": "sardinha-verdadeira", "scientific_name": "Sardinella brasiliensis"}
+  ],
+  "area": {
+    "description": "Área compreendida entre os paralelos 22°00' Sul (Cabo de São Tomé, RJ) e 28°36' Sul (Cabo de Santa Marta, SC) — Art. 4º caput",
+    "uf": ["RJ", "SP", "PR", "SC"],
+    "geometry_status": "explicit_coordinates",
+    "geometry_source": "Faixa latitudinal explícita na norma (22°00'S a 28°36'S); mesma área da regra r1 — ver D11",
+    "geometry_file": ""
+  },
+  "period": {
+    "start": "06-15",
+    "end": "07-31",
+    "recurrence": "annual",
+    "first_effective_year": 2009,
+    "transitional_provisions": [
+      "Art. 4º, parágrafo único: desembarque tolerado até 17 de junho de cada ano"
+    ]
+  },
+  "fishing_mode": ["captura da espécie (a norma limita o esforço da modalidade de cerco, Art. 1º)"],
+  "gear": ["cerco/traineira (Art. 1º: esforço limitado às embarcações permissionadas no RGP)"],
+  "affected_group": "Frota industrial de cerco (traineiras) permissionada no RGP entre RJ e SC",
+  "exceptions": [],
+  "seguro_defeso_linked": false,
+  "enforcement_notes": "Art. 5º: declaração obrigatória de estoques ao IBAMA no dia 17 de junho. Art. 7º: penalidades da Lei 9.605/1998 e Decreto 6.514/2008",
+  "status": {
+    "in_force_as_of": "2020-06-11",
+    "revoked": true,
+    "revoked_by": "IN MAPA nº 18, de 10/06/2020 — a nova redação do Art. 4º SUPRIMIU esta janela (o defeso de recrutamento deixou de existir)",
+    "amended_by": ["IN_MAPA_18_2020"],
+    "amendment_check_pending": false
+  },
+  "source": {
+    "publication_date": "2009-05-22",
+    "dou_reference": "DOU 22/05/2009, Edição 96, Seção 1, p. 81 (assinada em 21/05/2009)",
+    "official_source_url": "https://www.gov.br/ibama/pt-br/assuntos/biodiversidade/biodiversidade-aquatica/arquivos/defesos-marinho/2025-01-14_sardinha_verdadeira_in_ibama_n-o-15_2009.pdf",
+    "local_files": [
+      "data/legal/corpus_defesos_marinhos/sardinha_verdadeira_in_ibama_n-o-15_2009.pdf",
+      "data/legal/corpus_defesos_marinhos/sardinha_verdadeira_in_ibama_n-o-15_2009.txt"
+    ],
+    "sha256": {"note": "ver data/metadata/checksums_legal.txt"}
+  },
+  "extraction": {
+    "method": "pdf_text_assisted",
+    "extracted_at": "2026-09-10",
+    "extracted_by": "Claude (assistente); campos lidos do Art. 4º, II e parágrafo único"
+  },
+  "validation": {
+    "human_validated": false,
+    "validated_by": null,
+    "validated_at": null,
+    "open_issues": [
+      "Mesmo ponto da r1 sobre o limite leste da área (D11)",
+      "Confirmar juridicamente que a nova redação do Art. 4º pela IN 18/2020 EXTINGUE esta janela (leitura: o caput passou a prever período único 01/10-28/02, sem incisos) — é o núcleo do desenho causal proposto em D10"
+    ]
+  },
+  "version": 1,
+  "notes": "DEFESO DE RECRUTAMENTO (2ª janela anual do regime 2009-2020), SUPRIMIDO em 2020. É a variação de política mais forte encontrada no corpus: um período antes proibido tornou-se livre, na mesma área, mesma espécie e mesma frota — o sinal esperado (aumento de esforço em jun-jul após 2020) é OPOSTO ao da janela de outubro (ver IN_MAPA_18_2020_r1), o que fornece placebo interno de direção."
+}

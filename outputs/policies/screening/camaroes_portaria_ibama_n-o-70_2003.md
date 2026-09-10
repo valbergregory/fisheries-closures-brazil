@@ -1,0 +1,23 @@
+# camaroes_portaria_ibama_n-o-70_2003.txt
+
+- Ato esperado (pelo nome do arquivo): **PORTARIA nº 70**
+- Atos detectados na página do DOU: PORTARIA 70, PORTARIA 71
+- Tamanho do bloco recortado: 8593 chars
+
+## Dispositivos operativos (proibição / período / área)
+
+1. PORTARIA Nº 70, DE 30 DE OUTUBRO DE 2003 O PRESIDENTE DO INSTITUTO BRASILEIRO DO MEIO AMBIENTE E DOS RECURSOS NATURAIS RENOVÁVEIS - IBAMA, no uso das atribuições previstas no art. 24, Anexo I, da Estrutura Regimental aprovado pelo Decreto nº4.756, de 20 de junho de 2003, e art. 95, item VI do Regimento Interno aprovado pela Portaria GM/MMA n.º 230, de 14 de maio de 2002;
+2. Considerando o que consta do PROCESSO IBAMA/CEPSUL nº 02032.00139/02-38, resolve: Art.1o Proibir, anualmente, no período de 1° de novembro a 31 de janeiro, a pesca de camarão branco (Litopenaeus schimitti) e camarão rosa (Farfantepenaeus paulensis) no interior da Baía da Babitonga, no Estado de Santa Catarina.
+3. Parágrafo único Será tolerado o desembarque das espécies acima especificadas até o terceiro dia útil após o início do defeso.
+4. Art.2º As pessoas físicas ou jurídicas que se dedicam à captura, conservação, beneficiamento ou comercialização das espécies de camarão especificadas devem fornecer ao Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis - IBAMA, até o sexto dia útil, a partir do início do defeso estabelecido no art. 1º, a relação detalhada dos produtos estocados, indicando os locais de arma- zenamento, conforme consta no Anexo 01.
+5. Art.3º É vedado o transporte interestadual, a estocagem, o beneficiamento e a comercialização das espécies de camarão especificadas no "caput" do art. 1º, oriundo de áreas não abrangidas por este defeso, sem a comprovação da origem do produto.
+6. Art.4º Aos infratores da presente Portaria serão aplicadas às penalidades previstas na Lei nº 9.605, de 12 de fevereiro de 1998 e no Decreto nº 3.179, de 21 de setembro de 1999.
+7. Art.6º Fica revogada a Portaria IBAMA nº134/02-N, de 11 de outubro de 2002.
+8. MARCUS LUIZ BARROSO BARROS Nº 213, segunda-feira, 3 de novembro de 2003 64 1 ISSN 1677-7042 ANEXO I PROTOCOLO DO IBAMA DECLARAÇÃO DE ESTOQUE PARA CAMARÕES NO PERÍODO DE DEFESO NOME DA PESSOA FÍSICA OU JURÍDICA: ENDEREÇO: TELEFONE: MUNICÍPIO: E S TA D O : CNPJ/CPF: DESCRIÇÂO DO PRODUTO (Por Espécie) (*) QUANTIDADE (KG/UNIDADE) * Indicar a forma de apresentação do produto estocado.
+9. ENDEREÇO DE ARMAZENAMENTO: PREENCHER UMA DECLARAÇÃO PARA CADA LOCAL DE ARMAZENAMENTO L O C A L _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ D ATA _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ ____ __________________________ A S S I N AT U R A ANEXO II GUIA DE AUTORIZAÇÃO PARA TRANSPORTE E COMÉRCIO DE CAMARÕES NO PERÍODO DE DEFESO PORTARIA Nº ______ /2003 Nº_________2003.
+10. Art.4º Proibir a pesca, de qualquer categoria, modalidade e petrecho, até a distância de 1.500 (um mil e quinhentos metros) a montante e a jusante das barragens de reservatórios de usinas hi- drelétricas, cachoeiras e corredeiras situadas nos estados de Minas Gerais, Bahia, Espírito Santo, Rio de Janeiro e São Paulo, no período definido no art. 2º desta portaria.
+11. Art.7º São considerados de uso proibido os aparelhos, petrechos e métodos não mencionados nesta portaria.
+12. Art.8º Proibir, no período de defeso da piracema definido nesta portaria, a realização de competições de pesca (torneios, campeonatos, gincanas) em águas continentais das bacias hidrográ- ficas.
+13. Art.9º Estabelecer nos rios e reservatórios situados nas bacias do Leste, um limite de captura e transporte de até 5 Kg (cinco quilogramas) de peixes mais um exemplar, aos pescadores licenciados e àqueles dispensados de licença na forma do artigo 29, do Decreto-lei 221, de 28 de fevereiro de 1967, com redação dada pelas Leis Nº 6.585, de 24 de outubro de 1978 e Nº 9.059, de 13 de junho de 1995.
+14. Art.12 Fixar o segundo dia útil após o início do defeso da piracema, como prazo máximo, para declaração ao IBAMA ou ao órgão estadual competente, dos estoques de peixes in natura, salgados, resfriados ou congelados, provenientes de águas continentais, existentes nos frigoríficos, peixarias, entrepostos, postos de venda, hotéis, restaurantes, bares e similares.
+15. Art.15 Aos infratores da presente portaria, serão aplicadas as penalidades previstas na Lei nº 9.605, de 12 de fevereiro de 1998 e no Decreto nº 3.179, de 21 de setembro de 1999.

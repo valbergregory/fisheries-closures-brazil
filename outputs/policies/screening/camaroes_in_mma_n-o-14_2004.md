@@ -1,0 +1,17 @@
+# camaroes_in_mma_n-o-14_2004.txt
+
+- Ato esperado (pelo nome do arquivo): **? nº 14**
+- Atos detectados na página do DOU: INSTRUÇÃO NORMATIVA 14, INSTRUÇÃO NORMATIVA 15, INSTRUÇÃO NORMATIVA 16
+- Tamanho do bloco recortado: 4490 chars
+
+## Dispositivos operativos (proibição / período / área)
+
+1. INSTRUÇÃO NORMATIVA Nº 14, DE 14 DE OUTUBRO DE 2004 A MINISTRA DE ESTADO DO MEIO AMBIENTE, no uso das suas atribuições legais e tendo em vista o disposto no art. 27, § 6o, inciso I da Lei no 10.683, de 28 de maio de 2003, no Decreto-Lei no 221, de 28 de fevereiro de 1967 e na Lei no 8.617, de 4 de janeiro de 1993;
+2. Considerando as recomendações contidas no relatório da reu- nião técnica para definição de medidas de ordenamento da pesca de camarões marinhos no Estado da Bahia, ocorrida no CEPENE em agosto de 2004, no Município de Tamandaré/PE; e Considerando o que consta do Processo IBAMA no 02001.002154/2004-93, resolve: Art. 1o Proibir, anualmente, o exercício da pesca de camarão rosa (Farfantepenaeus subtilis e Farfantepenaeus brasiliensis), cama- rão sete-barbas (Xiphopenaeus kroyeri) e camarão branco (Litope- naeus schmitti), com quaisquer artes de pesca, nas áreas e períodos abaixo discriminados: I - na área compreendida entre a divisa dos Estados de Pernambuco e Alagoas e a divisa dos Municípios de Mata de São João e Camaçari no Estado da Bahia, nos períodos de 1o de abril a 15 de maio e 1o de dezembro a 15 de janeiro;
+3. Será tolerado o desembarque das espécies acima especificadas até o segundo dia útil após o início do defeso de cada ano.
+4. Art. 2o As pessoas físicas ou jurídicas que se dedicam à captura, conservação, beneficiamento, comercialização ou industria- lização de camarão deverão fornecer às Gerências-Executivas do Ins- tituto Brasileiro do Meio Ambiente e dos Recursos Naturais Re- nováveis-IBAMA nos estados, até o quinto dia útil a partir do início do defeso estabelecido no art. 1o desta Instrução Normativa, a relação detalhada do estoque existente, de cada espécie, até o segundo dia útil após o início do defeso.
+5. Art. 3o Durante os períodos de defeso fica permitida à frota camaroneira, devidamente permissionada para a pesca das espécies de que trata o art. 1o desta Instrução Normativa, a captura de espécies cujo esforço de pesca não esteja sob controle, desde que não seja utilizada a modalidade de pesca de arrasto de qualquer tipo.
+6. Art.4o Proibir, no litoral dos Estados da Região Nordeste, a utilização de redes de arrasto para captura de camarões marinhos, com malha inferior a vinte e oito milímetros, no saco da rede, sendo a medida tomada entre ângulos opostos da malha esticada.
+7. Art. 5o Proibir, nos estuários dos Estados de Alagoas, Ser- gipe e Bahia, a utilização de redes de arrasto e armadilhas para a captura de camarões marinhos, com malha inferior a vinte milímetros, em qualquer seção da rede ou da armadilha, sendo a medida tomada entre ângulos opostos da malha esticada.
+8. Art. 6o Proibir, no litoral dos Estados da Região Nordeste, a utilização de sobre-saco nas redes de arrasto para captura de camarões marinhos, independentemente do tamanho das malhas.
+9. Art. 7o Proibir o exercício da pesca de arrasto motorizado no litoral dos Estados de Alagoas, Sergipe e Bahia, conforme discri- minado a seguir: I - Alagoas: a menos de uma milha náutica da costa;
