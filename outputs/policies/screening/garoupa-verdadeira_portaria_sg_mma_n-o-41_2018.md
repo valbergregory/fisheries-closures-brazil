@@ -1,0 +1,13 @@
+# garoupa-verdadeira_portaria_sg_mma_n-o-41_2018.txt
+
+- Ato esperado (pelo nome do arquivo): **PORTARIA nº 41**
+- Atos detectados na página do DOU: PORTARIA INTERMINISTERIAL 41, PORTARIA INTERMINISTERIAL 42
+- Tamanho do bloco recortado: 8353 chars
+
+## Dispositivos operativos (proibição / período / área)
+
+1. O MINISTRO DE ESTADO CHEFE DA SECRETARIA- GERAL DA PRESIDÊNCIA DA REPÚBLICA E O MINISTRO DE ESTADO DO MEIO AMBIENTE, no uso de suas atribuições de que trata o art. 87, parágrafo único, II, da Constituição Federal e o inciso I do § 2º do art. 12 da Lei nº 13.502, de 1º de novembro de 2017, e tendo em vista o disposto no art. 3º da Lei nº 11.959, de 29 de junho de 2009; no Decreto nº 6.981, de 13 de outubro de 2009; na Portaria Interministerial MPA-MMA nº 5, de 1º de setembro de 2015; na Portaria MMA nº 129, de 27 de abril de 2018, e considerando o que consta nos Processos MMA nº 02000.002782/2014-51, 02000.008614/2018-01 e o constante dos autos do Processo SEAP-PR nº 00350.001679/2018-11, resolvem: Art. 1º Estabelecer medidas, critérios e padrões para o ordenamento da pesca da garoupa-verdadeira (Epinephelus marginatus) nas águas jurisdicionais brasileiras, observando-se as medidas previstas no seu Plano de Recuperação Nacional e definidas nesta norma.
+2. Art. 2º Proibir a pesca direcionada, o transporte, o desembarque e a comercialização da espécie garoupa-verdadeira (Epinephelus marginatus) e seus subprodutos anualmente, durante o período de 1º de novembro a 28 de fevereiro, para todos os métodos de captura e para todas as embarcações.
+3. Art. 4º A partir de 1º de março de 2019, a captura direcionada, transporte, armazenamento a bordo e desembarque da garoupa- verdadeira pela pesca comercial fica permitida apenas quando realizada por embarcações de pequeno porte, com arqueação bruta (AB) menor ou igual a vinte, permissionadas às pescarias de espinhel de fundo horizontal e linha de mão de fundo, conforme disposto na Instrução Normativa Interministerial MPA/MMA n° 10, de 10 de junho de 2011 ou em normas que venham a substituí-la.
+4. Art. 5º Todas as embarcações com comprimento maior ou igual a oito metros, inscritas na modalidade 1.7 (espinhel horizontal de fundo) do Anexo I da Instrução Normativa Interministerial MPA/MMA nº 10, de 10 de junho de 2011, ficam obrigadas a usar e manter em funcionamento equipamento de rastreamento por satélite instalado a bordo da embarcação, nos moldes do Programa Nacional de Rastreamento de Embarcações Pesqueiras-PREPS durante as operações de pesca, e entregar os mapas de bordo.
+5. Art. 8º Aos infratores desta Portaria Interministerial, serão aplicadas as penalidades e as sanções, respectivamente, previstas na Lei nº 9.605, de 12 de fevereiro de 1998 e no Decreto nº 6.514, de 2008.

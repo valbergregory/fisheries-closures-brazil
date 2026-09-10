@@ -1,0 +1,67 @@
+{
+  "rule_id": "IN_MAPA_06_2020_r2",
+  "norm_id": "IN_MAPA_06_2020",
+  "norm_type": "instrucao_normativa",
+  "issuing_authority": "Secretaria de Aquicultura e Pesca / Ministério da Agricultura, Pecuária e Abastecimento (SAP/MAPA)",
+  "legal_basis": [
+    "Decreto nº 10.253, de 20/02/2020, Anexo I, art. 29",
+    "Lei nº 13.844, de 18/06/2019",
+    "Processo nº 00350.000953/2018-35"
+  ],
+  "species": [],
+  "area": {
+    "description": "Faixa de até 10 milhas náuticas da costa, em águas sob jurisdição nacional, entre a fronteira Brasil–Guiana Francesa (Baía do Oiapoque, 04°30'30,1\"N, 051°38'13,9\"W) e a divisa PA–MA (Cabo Gurupi, 00°53'26,9\"S, 046°12'11,7\"W) — Art. 1º",
+    "uf": ["AP", "PA"],
+    "geometry_status": "explicit_coordinates",
+    "geometry_source": "Buffer de 10 mn a partir da linha de costa entre os dois pontos citados na norma; construível com sf::st_buffer sobre a linha de costa do IBGE",
+    "geometry_file": ""
+  },
+  "period": {
+    "start": "2020-05-01",
+    "end": "",
+    "recurrence": "permanent",
+    "first_effective_year": 2020,
+    "transitional_provisions": [
+      "Art. 13: vigência a partir de 1º de maio de 2020"
+    ]
+  },
+  "fishing_mode": ["pesca com qualquer tipo de arrasto por embarcações motorizadas"],
+  "gear": ["todo tipo de arrasto motorizado"],
+  "affected_group": "Toda a frota de arrasto motorizado do litoral AP-PA (industrial e artesanal motorizada)",
+  "exceptions": [],
+  "seguro_defeso_linked": false,
+  "enforcement_notes": "Art. 10-11: penalidades das legislações vigentes; produto apreendido conforme Portaria IBAMA 44-N/1994",
+  "status": {
+    "in_force_as_of": "2026-09-10",
+    "revoked": false,
+    "revoked_by": "",
+    "amended_by": [],
+    "amendment_check_pending": true
+  },
+  "source": {
+    "publication_date": "2020-04-14",
+    "dou_reference": "DOU 14/04/2020, Edição 71, Seção 1, p. 6-7",
+    "official_source_url": "https://www.gov.br/ibama/pt-br/assuntos/biodiversidade/biodiversidade-aquatica/arquivos/defesos-marinho/2025-01-14_piramutaba_in_mapa_n-o-06_2020.pdf",
+    "local_files": [
+      "data/legal/corpus_defesos_marinhos/piramutaba_in_mapa_n-o-06_2020.pdf",
+      "data/legal/corpus_defesos_marinhos/piramutaba_in_mapa_n-o-06_2020.txt"
+    ],
+    "sha256": {"note": "ver data/metadata/checksums_legal.txt"}
+  },
+  "extraction": {
+    "method": "pdf_text_assisted",
+    "extracted_at": "2026-09-10",
+    "extracted_by": "Claude (assistente); Art. 1º caput (proibição espacial permanente, independente do defeso do Art. 2º)"
+  },
+  "validation": {
+    "human_validated": false,
+    "validated_by": null,
+    "validated_at": null,
+    "open_issues": [
+      "species = [] é intencional: a proibição é de MODALIDADE (arrasto motorizado), não de espécie. Confirmar se o registro deve representar isso assim ou com marcador explícito de 'todas as espécies'",
+      "Verificar se esta faixa de 10 mn já era proibida por norma anterior revogada pelo Art. 12 (Portaria SUDEPE N-11/1987 etc.) — se for NOVA em 2020, é um evento espacial datado com desenho de fronteira (RDD na isolinha de 10 mn)"
+    ]
+  },
+  "version": 1,
+  "notes": "RESTRIÇÃO ESPACIAL PERMANENTE, não sazonal — o tipo de regra que uma tabela-resumo de 'períodos de defeso' não captura, mas que muda a alocação espacial do esforço. Se a faixa for nova em 2020, oferece desenho de descontinuidade geográfica (dentro/fora de 10 mn) com data nítida, na mesma pescaria da regra r1."
+}

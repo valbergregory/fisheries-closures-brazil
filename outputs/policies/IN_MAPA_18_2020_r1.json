@@ -1,0 +1,72 @@
+{
+  "rule_id": "IN_MAPA_18_2020_r1",
+  "norm_id": "IN_MAPA_18_2020",
+  "norm_type": "instrucao_normativa",
+  "issuing_authority": "Secretaria de Aquicultura e Pesca / Ministério da Agricultura, Pecuária e Abastecimento (SAP/MAPA)",
+  "legal_basis": [
+    "Decreto nº 10.253, de 20/02/2020, Anexo I, art. 29 (competência delegada)",
+    "Lei nº 13.844, de 18/06/2019, art. 21, III",
+    "Instrução Normativa IBAMA nº 15, de 21/05/2009 (norma alterada)",
+    "Processo nº 21000.075873/2019-64"
+  ],
+  "species": [
+    {"common_name": "sardinha-verdadeira", "scientific_name": "Sardinella brasiliensis"}
+  ],
+  "area": {
+    "description": "Área compreendida entre os paralelos 22°00' Sul (Cabo de São Tomé, RJ) e 28°36' Sul (Cabo de Santa Marta, SC) — área inalterada em relação à IN IBAMA 15/2009",
+    "uf": ["RJ", "SP", "PR", "SC"],
+    "geometry_status": "explicit_coordinates",
+    "geometry_source": "Faixa latitudinal explícita (22°00'S a 28°36'S); limite leste a definir — ver D11",
+    "geometry_file": ""
+  },
+  "period": {
+    "start": "10-01",
+    "end": "02-28",
+    "recurrence": "annual",
+    "first_effective_year": 2020,
+    "transitional_provisions": [
+      "Art. 4º, §: desembarque permitido até 3 de outubro de cada ano (antes: 3 de novembro)",
+      "Art. 2º da IN 18/2020: o novo período deveria ser avaliado em junho de 2021 por Comitê Científico coordenado pela SAP/MAPA — verificar se a avaliação gerou norma posterior"
+    ]
+  },
+  "fishing_mode": ["captura da espécie"],
+  "gear": ["cerco/traineira (Anexo II aplicável a todas as embarcações de cerco/traineira com a sardinha como espécie-alvo)"],
+  "affected_group": "Frota industrial de cerco (traineiras) entre RJ e SC",
+  "exceptions": [],
+  "seguro_defeso_linked": false,
+  "enforcement_notes": "Art. 5º (nova redação): declaração de estoques em 3 de outubro. Anexo II: formulário aplicado no desembarque nas empresas pesqueiras (IN Interministerial MPA/MMA nº 10/2011) — fonte potencial de dado de desembarque por embarcação",
+  "status": {
+    "in_force_as_of": "2026-09-10",
+    "revoked": false,
+    "revoked_by": "",
+    "amended_by": [],
+    "amendment_check_pending": true
+  },
+  "source": {
+    "publication_date": "2020-06-12",
+    "dou_reference": "DOU 12/06/2020, Edição 111, Seção 1, p. 17 (assinada em 10/06/2020)",
+    "official_source_url": "https://www.gov.br/ibama/pt-br/assuntos/biodiversidade/biodiversidade-aquatica/arquivos/defesos-marinho/2025-01-14_sardinha_verdadeira_in_mapa_n-o-18_2020.pdf",
+    "local_files": [
+      "data/legal/corpus_defesos_marinhos/sardinha_verdadeira_in_mapa_n-o-18_2020.pdf",
+      "data/legal/corpus_defesos_marinhos/sardinha_verdadeira_in_mapa_n-o-18_2020.txt"
+    ],
+    "sha256": {"note": "ver data/metadata/checksums_legal.txt"}
+  },
+  "extraction": {
+    "method": "pdf_text_assisted",
+    "extracted_at": "2026-09-10",
+    "extracted_by": "Claude (assistente); nova redação do Art. 4º da IN IBAMA 15/2009 dada pelo Art. 1º desta IN"
+  },
+  "validation": {
+    "human_validated": false,
+    "validated_by": null,
+    "validated_at": null,
+    "open_issues": [
+      "Limite leste da área (D11)",
+      "Buscar no DOU se a avaliação do Comitê Científico (junho/2021, Art. 2º) produziu norma alterando de novo o período — vigência atual só confirmada por fontes secundárias (notícias de início de defeso em 1º de outubro em anos recentes)",
+      "Confirmar a leitura de que a supressão dos incisos extinguiu o defeso de recrutamento (jun-jul)"
+    ]
+  },
+  "version": 1,
+  "notes": "REGIME VIGENTE da sardinha. Altera a IN IBAMA 15/2009 em duas direções OPOSTAS na mesma data: (i) ANTECIPA o início do defeso de reprodução de 1º/nov para 1º/out e o estende até 28/fev (outubro e a 2ª quinzena de fevereiro passam de LIVRES a PROIBIDOS); (ii) SUPRIME o defeso de recrutamento de 15/jun-31/jul (esse período passa de PROIBIDO a LIVRE). Base da proposta de desenho D10."
+}

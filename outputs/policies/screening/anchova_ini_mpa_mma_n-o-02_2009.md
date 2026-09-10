@@ -1,0 +1,15 @@
+# anchova_ini_mpa_mma_n-o-02_2009.txt
+
+- Ato esperado (pelo nome do arquivo): **? nº 02**
+- Atos detectados na página do DOU: (nenhum cabeçalho)
+- Tamanho do bloco recortado: 9925 chars
+- ⚠ CABEÇALHO DO ATO-ALVO NÃO ENCONTRADO — bloco = arquivo inteiro; conferir manualmente
+
+## Dispositivos operativos (proibição / período / área)
+
+1. GABINETE DO MINISTRO INSTRUÇÃO NORMATIVA INTERMINISTERIAL N o- 2, DE 27 DE NOVEMBRO DE 2009 OS MINISTROS DE ESTADO DA PESCA E AQUICUL- TURA E DO MEIO AMBIENTE, no uso das suas atribuições e tendo em vista o disposto no art. 27, § 6o, inciso I, da Lei no 10.683, de 28 de maio de 2003, nas Leis nos. 8.617, de 4 de janeiro de 1993, 11. 958, de 29 de junho de 2009 e 11.959, de 29 de junho de 2009; e, Considerando as recomendações emanadas na Reunião Téc- nica para o Ordenamento da Pesca de Anchova (Pomatomus saltatrix) nas regiões sudeste e sul do Brasil, realizada em Itajaí/SC nos dias 27 a 29 de maio de 2009, e o que consta no Processo IBAMA/Sede no 02001.010029/2009-61, resolvem: Art. 1o Estabelecer os critérios para operação de embar- cações de pesca na captura da anchova (Pomatomus saltatrix), no litoral Sul do país.
+2. Art. 4o Proibir, anualmente, no período de 1o de dezembro a 31 de março, a captura da anchova no litoral sul do país.
+3. Art. 5o A pessoa física ou jurídica que atue na captura, conservação, beneficiamento, industrialização ou comercialização de anchova deverá fornecer às Superintendências Estaduais do Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis - IBAMA, até o dia 7 de dezembro de cada ano, a relação detalhada dos estoques in natura, congelados ou não, existentes no dia 3 de dezembro de cada ano.
+4. Durante o período estabelecido no art. 4º fica vedado o transporte, a estocagem, a comercialização, o bene- ficiamento e a industrialização de qualquer volume de anchova que não seja oriundo do estoque declarado na forma estabelecida no caput deste artigo ou quando capturada como fauna acompanhante de outras pescarias autorizadas, a ser comprovada pelo interessado, no ato da fiscalização.
+5. Art. 9o Aos infratores desta Instrução Normativa serão apli- cadas as penalidades e as sanções, respectivamente, previstas na Lei no 9.605, de 12 de fevereiro de 1998 e no Decreto no 6.514, de 22 de julho de 2008, independente de outras sanções previstas em legislação específica.
+6. SECRETARIA DE PREVIDÊNCIA C O M P L E M E N TA R DEPARTAMENTO DE ANÁLISE TÉCNICA PORTARIA N o- 3.198, DE 27 DE NOVEMBRO DE 2009 A DIRETORA DE ANÁLISE TÉCNICA, no uso das atri- buições que lhe confere o inciso I do art. 33, combinado com o art.74, ambos da Lei Complementar nº 109, de 29 de maio de 2001 e inciso I, do art. 12 do Anexo I ao Decreto nº 6.417, de 31 de março de 2008, considerando as manifestações técnicas exaradas no Processo MPAS nº 44000.004202/94-78, às fls. sob o comando nº 334961340 e jun- tada nº 337208957, resolve: Art. 1º Aprovar as alterações propostas para o Regulamento do Plano Aurora Prev, CNPB nº 1997.0010-47, administrado pelo BB Previdência - Fundo de Pensão Banco do Brasil.

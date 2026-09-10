@@ -1,0 +1,73 @@
+{
+  "rule_id": "IN_MAPA_06_2020_r1",
+  "norm_id": "IN_MAPA_06_2020",
+  "norm_type": "instrucao_normativa",
+  "issuing_authority": "Secretaria de Aquicultura e Pesca / Ministério da Agricultura, Pecuária e Abastecimento (SAP/MAPA)",
+  "legal_basis": [
+    "Decreto nº 10.253, de 20/02/2020, Anexo I, art. 29",
+    "Lei nº 13.844, de 18/06/2019",
+    "Portaria MAPA nº 812, de 25/01/2019; Portaria MAPA nº 77, de 26/04/2019",
+    "Processo nº 00350.000953/2018-35"
+  ],
+  "species": [
+    {"common_name": "piramutaba", "scientific_name": "Brachyplatystoma vaillantii"}
+  ],
+  "area": {
+    "description": "Área de ocorrência da espécie, entre a fronteira do Brasil com a Guiana Francesa e a divisa do Pará com o Maranhão (Art. 2º)",
+    "uf": ["AP", "PA"],
+    "geometry_status": "explicit_coordinates",
+    "geometry_source": "Pontos citados no Art. 1º da mesma norma: início Baía do Oiapoque 04°30'30,1\"N / 051°38'13,9\"W; fim Cabo Gurupi 00°53'26,9\"S / 046°12'11,7\"W",
+    "geometry_file": ""
+  },
+  "period": {
+    "start": "09-01",
+    "end": "11-30",
+    "recurrence": "annual",
+    "first_effective_year": 2020,
+    "transitional_provisions": [
+      "Art. 2º §1º: desembarque até o terceiro dia útil após o início do defeso",
+      "Art. 13: a IN entrou em vigor em 1º de maio de 2020"
+    ]
+  },
+  "fishing_mode": ["pesca de arrasto"],
+  "gear": ["rede de arrasto (Art. 8º: malha mínima de 100 mm entre nós opostos no saco/túnel)"],
+  "affected_group": "Frota industrial de arrasto de piramutaba da foz do Amazonas",
+  "exceptions": [
+    "Art. 4º: transporte, estocagem, beneficiamento, industrialização e comercialização permitidos durante o defeso se originários de estoque declarado ou de outras modalidades de pesca com origem comprovada"
+  ],
+  "seguro_defeso_linked": false,
+  "enforcement_notes": "Art. 3º: declaração detalhada de estoque às SFAs/MAPA até o sexto dia útil do defeso. Art. 12: revoga atos anteriores, incl. Portaria SUDEPE N-11/1987",
+  "status": {
+    "in_force_as_of": "2026-09-10",
+    "revoked": false,
+    "revoked_by": "",
+    "amended_by": [],
+    "amendment_check_pending": true
+  },
+  "source": {
+    "publication_date": "2020-04-14",
+    "dou_reference": "DOU 14/04/2020, Edição 71, Seção 1, p. 6-7",
+    "official_source_url": "https://www.gov.br/ibama/pt-br/assuntos/biodiversidade/biodiversidade-aquatica/arquivos/defesos-marinho/2025-01-14_piramutaba_in_mapa_n-o-06_2020.pdf",
+    "local_files": [
+      "data/legal/corpus_defesos_marinhos/piramutaba_in_mapa_n-o-06_2020.pdf",
+      "data/legal/corpus_defesos_marinhos/piramutaba_in_mapa_n-o-06_2020.txt"
+    ],
+    "sha256": {"note": "ver data/metadata/checksums_legal.txt"}
+  },
+  "extraction": {
+    "method": "pdf_text_assisted",
+    "extracted_at": "2026-09-10",
+    "extracted_by": "Claude (assistente); Art. 2º caput e §1º, Art. 13"
+  },
+  "validation": {
+    "human_validated": false,
+    "validated_by": null,
+    "validated_at": null,
+    "open_issues": [
+      "Confirmar o regime ANTERIOR a esta IN (revogou a Portaria SUDEPE N-11/1987 e outros): houve mudança de datas em 2020? Se sim, é outra variação de política aproveitável",
+      "Definir o limite ao largo da área (a norma delimita por pontos costeiros; a pescaria ocorre na plataforma)"
+    ]
+  },
+  "version": 1,
+  "notes": "Pescaria industrial de arrasto na foz do Amazonas — boa cobertura AIS esperada. A mesma norma traz uma restrição ESPACIAL PERMANENTE (arrasto motorizado a menos de 10 milhas da costa), registrada separadamente em IN_MAPA_06_2020_r2."
+}

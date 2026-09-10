@@ -44,6 +44,15 @@ norms:
     retrieved: true
     files: [data/legal/corpus_defesos_marinhos/sardinha_verdadeira_in_ibama_n-o-15_2009.pdf]
     pdf_url: https://www.gov.br/ibama/pt-br/assuntos/biodiversidade/biodiversidade-aquatica/arquivos/defesos-marinho/2025-01-14_sardinha_verdadeira_in_ibama_n-o-15_2009.pdf
+    structured_rules: [IN_IBAMA_15_2009_r1, IN_IBAMA_15_2009_r2]
+    note: "REGIME ORIGINAL, com DUAS janelas anuais (01/11-15/02 reprodução e 15/06-31/07 recrutamento). O período '01/10-28/02' que consta da tabela-resumo do IBAMA é a redação dada pela IN MAPA 18/2020, não o texto de 2009."
+
+  - norm_id: IN_MAPA_18_2020
+    name: "IN MAPA nº 18, de 10/06/2020"
+    subject: "Altera os arts. 4º e 5º da IN IBAMA 15/2009: defeso da sardinha passa a 01/10-28/02 (janela única) e SUPRIME o defeso de recrutamento de junho-julho"
+    retrieved: true
+    files: [data/legal/corpus_defesos_marinhos/sardinha_verdadeira_in_mapa_n-o-18_2020.pdf]
+    structured_rules: [IN_MAPA_18_2020_r1]
 
   - norm_id: PORT_MDIC_MMA_75_2017
     name: "Portaria MDIC/MMA nº 75/2017"
@@ -56,6 +65,8 @@ norms:
     subject: "Defeso piramutaba (Brachyplatystoma vaillantii), foz do Amazonas, 01/09-30/11"
     retrieved: true
     files: [data/legal/corpus_defesos_marinhos/piramutaba_in_mapa_n-o-06_2020.pdf]
+    structured_rules: [IN_MAPA_06_2020_r1, IN_MAPA_06_2020_r2]
+    note: "Além do defeso (art. 2º), traz proibição ESPACIAL PERMANENTE de arrasto motorizado a menos de 10 mn da costa (art. 1º) — tipo de regra ausente da tabela-resumo de defesos"
 
   - norm_id: PORT_SG_MMA_42_2018
     name: "Portaria SG/MMA nº 42/2018"
