@@ -5,8 +5,8 @@ Fonte: GFW 4wings report v4.0, acesso 2026-09-04. NÃO é resultado causal: sem 
 
 | Zona | Pré (média h/célula-mês) | Pós | Δ% |
 |---|---|---|---|
-| mona | 0.264 | 0.252 | -4.6% |
-| apa | 0.133 | 0.699 | +425.6% |
-| outside | 1.502 | 1.562 | +4.0% |
+| mona | 0.137 | 0.252 | +83.5% |
+| apa | 0.071 | 0.699 | +889.8% |
+| outside | 0.981 | 1.562 | +59.3% |
 
-Horas totais por geartype na região (2016–2020): drifting_longlines=145303, fishing=1417, trawlers=1007
+Horas totais por geartype na região (2016–2020): drifting_longlines=159531, fishing=1417, trawlers=1007

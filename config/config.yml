@@ -12,7 +12,7 @@ spatial:
   buffer_outer_km: [10, 25, 50, 100]
 
 temporal:
-  pilot_window: ["2016-01-01", "2020-12-31"]  # 2 anos pré / ~2,8 pós Decreto 9.312/2018
+  pilot_window: ["2014-01-01", "2020-12-31"]  # 4 anos pré (2014-15 com cobertura AIS menor) / ~2,8 pós Decreto 9.312/2018
   frequency_candidates: ["monthly", "weekly"]
 
 pilot_case:

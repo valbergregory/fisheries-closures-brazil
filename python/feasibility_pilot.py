@@ -149,7 +149,10 @@ def main():
           f"dentro APA (fora MONA): {cnt['apa']} | fora: {cnt['outside']}")
 
     print("== 4. Painel célula × mês (esforço = NA até token GFW) ==")
-    months = [(y, m) for y in range(2016, 2021) for m in range(1, 13)]
+    import re as _re
+    cfg = (ROOT / "config" / "config.yml").read_text(encoding="utf-8")
+    y0, y1 = [int(y) for y in _re.findall(r'pilot_window:\s*\["(\d{4})-\d{2}-\d{2}",\s*"(\d{4})', cfg)[0]]
+    months = [(y, m) for y in range(y0, y1 + 1) for m in range(1, 13)]
     with OUT_PANEL.open("w", newline="", encoding="utf-8") as fh:
         w = csv.writer(fh)
         w.writerow(["cell_lon", "cell_lat", "zone", "dist_boundary_km",
