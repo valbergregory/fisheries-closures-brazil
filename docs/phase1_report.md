@@ -85,3 +85,71 @@ A decomposição (protocolo, seção 7) foi implementada
 `outputs/tables/leakage_decomposition_trindade.csv`), mas só será reportada
 quando a identificação for restaurada; sem tendências paralelas, a soma das
 parcelas não tem interpretação causal.
+
+## 6. Synthetic DiD (trimestral, doadores >100 km) — `scripts/09_phase1_synthdid.R`
+
+| Zona | SDID | SE placebo | SC | DiD | N1 / N0 |
+|---|---:|---:|---:|---:|---|
+| MONA | −0,185 | 0,021 | −0,252 | −0,110 | 91 / 1.031 |
+| APA | −0,097 | 0,011 | −0,096 | −0,013 | 561 / 1.031 |
+| anel 0–10 | −0,090 | 0,025 | −0,186 | −0,084 | 40 / 1.031 |
+
+Com doadores ponderados para reproduzir a trajetória pré, as três zonas
+mostram redução e o "aumento na APA" do TWFE desaparece. **Mas o ajuste pré
+do MONA é pobre** (série tratada quase nula; o "efeito" é o controle subir
+após 2018 enquanto o MONA fica parado — `outputs/figures/synthdid_mona_trindade.png`),
+padrão que a seção 7 explica.
+
+## 7. Diagnóstico de cobertura (D13) — `scripts/10_phase1_coverage.R`
+
+Presença AIS (todas as embarcações, `public-global-presence`, 7 extrações
+anuais), média de horas por célula-mês:
+
+| Zona | 2014 | 2016 | 2018 | 2020 | 2020/2014 |
+|---|---:|---:|---:|---:|---:|
+| controle >100 km | 3,99 | 7,01 | 9,38 | 9,46 | **2,4x** |
+| anéis 25–100 km | 3,2–3,4 | 6,0–6,2 | 9,8–10,8 | 9,7–10,5 | 3,1x |
+| APA | 2,70 | 3,96 | 5,22 | 4,51 | 1,7x |
+| MONA | 1,95 | 2,50 | 3,68 | 1,96 | **1,0x** |
+
+**Placebo:** o event study da PRESENÇA reproduz — ampliada — a pré-tendência
+da pesca (MONA: leads +0,47/+0,36/+0,19; APA: +0,29/+0,27/+0,08; Wald p≈0;
+anel 0–10 km: p = 0,21). Conclusão: **a pré-tendência da seção 3 é
+artefato da expansão diferencial da detecção AIS (e/ou do tráfego geral)
+no oceano aberto, não comportamento da frota.** A identificação ingênua
+"zona vs. oceano aberto" está descartada.
+
+**Correções tentadas e seus limites**
+(`outputs/tables/coverage_diagnostics_trindade.csv`):
+
+- *Fração pescando* (pesca/presença): elimina a tendência monotônica; leads
+  do MONA ficam em ±0,01 e o efeito pós é ≈ 0 (−0,017/−0,002/0,000); APA
+  +0,5/+2,4/+3,0 pp. Wald ainda rejeita por precisão (2.068 células), não
+  por magnitude.
+- *ihs(pesca) controlando ihs(presença)*: leads planos, mas **o controle é
+  endógeno perto das ilhas** — ali a presença É a frota pesqueira (a
+  presença do MONA cai −0,42 em 2020, o que é o próprio efeito da UC sobre
+  quem vai lá). Controlar por presença total "controla fora" o tratamento.
+
+## 8. Estado ao fim da rodada de 10/09 e o que é necessário
+
+**Identificação NÃO alcançada.** O que os dados exigem antes de qualquer
+estimativa reportável:
+
+1. **Medida de cobertura EXÓGENA à pesca** — presença de embarcações
+   NÃO-pesqueiras (carga, tanque) por célula-mês. A API 4wings não agrupa
+   presença por tipo, mas devolve registros por embarcação (MMSI, ~10 MB/
+   ano); cruzando com a Vessel API (shiptype), constrói-se o denominador
+   exógeno. Alternativa: rasters de qualidade de recepção AIS publicados
+   pelo GFW (fora da API).
+2. Com esse denominador: repetir seções 3, 5 e 6.
+3. Controles oceanográficos (OISST) — hipótese secundária, ainda não testada.
+4. Se (1) não restaurar tendências paralelas: o caso Trindade vira **caso
+   de limitação** no artigo ("a criação da UC não é avaliável com AIS no
+   período por expansão diferencial de cobertura"), e o peso empírico
+   migra para o caso do camarão (B) — cuja região costeira tem o mesmo
+   problema em grau maior (D13: 2,28x), o que precisa ser enfrentado com
+   a mesma ferramenta.
+
+Ou seja: **a correção de cobertura exógena é o item crítico do projeto
+inteiro**, não um refinamento.
