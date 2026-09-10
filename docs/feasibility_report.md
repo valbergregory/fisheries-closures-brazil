@@ -76,9 +76,9 @@ receber o raster GFW.
 6. Poucos clusters no caso Trindade — inferência por permutação espacial
    pré-registrada.
 
-## 5. Decisão recomendada
+## 5. Decisão
 
-**CONTINUAR**, com escopo focado nos casos (A) + (B), condicionado a:
+**APROVADA pelo pesquisador em 2026-09-10: CONTINUAR** com escopo focado nos casos (A) + (B). Condições originais (todas cumpridas em 10/09): 
 1. pesquisador gerar GFW_TOKEN;
 2. pesquisador validar a regra 656/2022 (D8) e a leitura do Decreto 9.312;
 3. `renv::init()` + instalação do stack espacial;

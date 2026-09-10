@@ -10,17 +10,45 @@
     "Processo nº 21000.051651/2021-71"
   ],
   "species": [
-    {"common_name": "camarão-rosa", "scientific_name": "Penaeus paulensis"},
-    {"common_name": "camarão-rosa", "scientific_name": "Penaeus brasiliensis"},
-    {"common_name": "camarão-rosa", "scientific_name": "Penaeus subtilis"},
-    {"common_name": "camarão sete-barbas", "scientific_name": "Xiphopenaeus kroyeri"},
-    {"common_name": "camarão-branco", "scientific_name": "Penaeus schmitti", "name_as_written": "branco (Litopenaeus schmitti) no Art. 1º; branco (Penaeus schmitti) no Art. 2º"},
-    {"common_name": "camarão santana ou vermelho", "scientific_name": "Pleoticus muelleri"},
-    {"common_name": "camarão barba-ruça", "scientific_name": "Artemesia longinaris"}
+    {
+      "common_name": "camarão-rosa",
+      "scientific_name": "Penaeus paulensis"
+    },
+    {
+      "common_name": "camarão-rosa",
+      "scientific_name": "Penaeus brasiliensis"
+    },
+    {
+      "common_name": "camarão-rosa",
+      "scientific_name": "Penaeus subtilis"
+    },
+    {
+      "common_name": "camarão sete-barbas",
+      "scientific_name": "Xiphopenaeus kroyeri"
+    },
+    {
+      "common_name": "camarão-branco",
+      "scientific_name": "Penaeus schmitti",
+      "name_as_written": "branco (Litopenaeus schmitti) no Art. 1º; branco (Penaeus schmitti) no Art. 2º"
+    },
+    {
+      "common_name": "camarão santana ou vermelho",
+      "scientific_name": "Pleoticus muelleri"
+    },
+    {
+      "common_name": "camarão barba-ruça",
+      "scientific_name": "Artemesia longinaris"
+    }
   ],
   "area": {
     "description": "Mar Territorial e Zona Econômica Exclusiva adjacentes ao Rio de Janeiro, São Paulo, Paraná, Santa Catarina e Rio Grande do Sul (Art. 2º)",
-    "uf": ["RJ", "SP", "PR", "SC", "RS"],
+    "uf": [
+      "RJ",
+      "SP",
+      "PR",
+      "SC",
+      "RS"
+    ],
     "geometry_status": "named_area_resolvable",
     "geometry_source": "A resolver: limites do Mar Territorial + ZEE por UF (fontes candidatas: IBGE, Marinha/LEPLAC, Marine Regions v12); decisão registrada em docs/decisions_log.md (D3)",
     "geometry_file": ""
@@ -35,11 +63,16 @@
       "Art. 2º §2º: desembarque das espécies permitido até 30 de janeiro de cada ano"
     ]
   },
-  "fishing_mode": ["todas as modalidades para as espécies listadas, com exceção do Art. 2º §3º"],
-  "gear": ["ver Arts. 4º-6º para petrechos e tamanhos mínimos fora do defeso"],
+  "fishing_mode": [
+    "todas as modalidades para as espécies listadas, com exceção do Art. 2º §3º"
+  ],
+  "gear": [
+    "ver Arts. 4º-6º para petrechos e tamanhos mínimos fora do defeso"
+  ],
   "affected_group": "Frotas industrial e artesanal que capturam camarões nas regiões Sudeste e Sul; pescadores artesanais potencialmente elegíveis ao Seguro-Defeso",
   "exceptions": [
-    "Art. 2º §3º: permitida a pesca do 'camarão-branco (Penaeus subtilis)' desde que não realizada por arrasto com tração motorizada [ATENÇÃO: inconsistência interna — Art. 1º e Art. 2º caput chamam P. subtilis de camarão-rosa e P./L. schmitti de camarão-branco]"
+    "Art. 2º §3º: permitida a pesca do 'camarão-branco (Penaeus subtilis)' desde que não realizada por arrasto com tração motorizada. INCONSISTÊNCIA INTERNA: Art. 1º e Art. 2º caput chamam P. subtilis de camarão-rosa e P./L. schmitti de camarão-branco.",
+    "DECISÃO D8 (Valber Gregory, 2026-09-10): leitura (c) — codificar ambas as variantes e testar robustez. variante_a (literal, prevalece o binômio): exceção = Penaeus subtilis. variante_b (sistemática, prevalece o nome vulgar): exceção = Penaeus schmitti."
   ],
   "seguro_defeso_linked": true,
   "enforcement_notes": "Fiscalização: IBAMA e Marinha; autos de infração disponíveis via WFS ICMBio (UCs) e dados abertos IBAMA (a verificar cobertura para defeso marinho)",
@@ -59,7 +92,9 @@
       "data/legal/Portaria_SAP_MAPA_656_2022_dou.html",
       "data/legal/Portaria_SAP_MAPA_656_2022.txt"
     ],
-    "sha256": {"note": "ver data/metadata/checksums_legal.txt"}
+    "sha256": {
+      "note": "ver data/metadata/checksums_legal.txt"
+    }
   },
   "extraction": {
     "method": "pdf_text_assisted",
@@ -71,12 +106,11 @@
     "validated_by": "Valber Gregory",
     "validated_at": "2026-09-07",
     "open_issues": [
-      "D8 AINDA SEM LEITURA REGISTRADA: qual interpretação do Art. 2º §3º (a: literal pelo binômio P. subtilis; b: sistemática pelo nome vulgar = P. schmitti; c: codificar ambas e testar robustez)? Registrar em docs/decisions_log.md antes de codificar 'esforço legal residual'",
       "Verificar portarias posteriores que alterem datas (amendment_check_pending)",
       "Confirmar operacionalização da elegibilidade ao Seguro-Defeso (Lei 10.779/2003) para este defeso junto ao INSS/MPA",
       "Resolver geometria operacional do Mar Territorial + ZEE por UF (decisão D3)"
     ]
   },
-  "version": 1,
-  "notes": "Norma sucessora do regime da IN IBAMA 189/2008 para o defeso do camarão SE/S. A mudança de calendário (1º mar-31 mai até 2022 → 28 jan-30 abr a partir de 2023) é variação temporal REAL de política, potencialmente útil para identificação (evento de 2023)."
+  "version": 2,
+  "notes": "Norma sucessora do regime da IN IBAMA 189/2008 para o defeso do camarão SE/S. A mudança de calendário (1º mar-31 mai até 2022 → 28 jan-30 abr a partir de 2023) é variação temporal REAL de política, potencialmente útil para identificação (evento de 2023). Versão 2 (2026-09-10): exceção do §3º codificada nas duas leituras conforme D8."
 }
