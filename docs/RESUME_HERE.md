@@ -1,4 +1,4 @@
-# Ponto de retomada — atualizado em 2026-09-11
+# Ponto de retomada — atualizado em 2026-09-11 (noite)
 
 ## Estado em uma frase
 Fase 1 do caso Trindade concluída até o limite do que o AIS permite: o
@@ -6,7 +6,16 @@ artefato de cobertura foi confirmado com medida exógena, o MONA não é
 avaliável (quase zero pesca observada antes do decreto), e o achado que
 sobrevive é **a APA de uso sustentável atraiu esforço após a designação**.
 
-## 11/09: D14 APROVADA e passo 1 executado (commit 425adbc)
+## 11/09 (noite): Blocos A, B e C executados — ver docs/phase1_report.md §13 e docs/case2_camarao_report.md
+**Trindade encerrado como não identificável (D15).** **Camarão identificado:**
+maio (proibido→livre) +0,24/+0,29 com pré-tendências e placebo nulos;
+fevereiro (livre→proibido) ≈ −5 a −9 % (cumprimento parcial); janeiro
+"antecipação" = tendência prévia. Registro: 19 regras. Seguro-Defeso 2019-01..
+2021-02 (CGU 405 depois). Título/estrutura: docs/title_and_structure_proposal.md.
+Estimandos v0.2: docs/estimand_table.md. **Rodar scripts R diretamente
+(`Rscript scripts/XX.R`), nunca via source() de wrapper — segfault.**
+
+## 11/09 (manhã): D14 APROVADA e passo 1 executado (commit 425adbc)
 A decomposição por embarcação (`scripts/14`, `scripts/15`, report §§11–12)
 mostrou que ~70% da "atração" da APA é adoção de AIS pela frota de espinhel
 após 2018. Na frota continuamente observável o efeito APA é frágil; o

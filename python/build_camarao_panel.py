@@ -54,7 +54,7 @@ for c in ocean:
     d = min(dist_km(c, l) for l in land) if land else float("nan")
     if d <= COAST_KM:
         cells[c] = d
-print(f"células oceânicas na faixa RJ–RS a ≤{COAST_KM:.0f} km da terra: {len(cells)} (terra na bbox: {len(land)})")
+print(f"células oceânicas na faixa RJ–RS a ate {COAST_KM:.0f} km da terra: {len(cells)} (terra na bbox: {len(land)})")
 
 trawl_all = defaultdict(float); trawl_pre = defaultdict(float); other_all = defaultdict(float)
 vessels = {}
