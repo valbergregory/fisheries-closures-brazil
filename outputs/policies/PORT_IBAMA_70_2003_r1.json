@@ -1,0 +1,76 @@
+{
+  "rule_id": "PORT_IBAMA_70_2003_r1",
+  "norm_id": "PORT_IBAMA_70_2003",
+  "norm_type": "portaria",
+  "issuing_authority": "IBAMA",
+  "legal_basis": [
+    "ver preâmbulo no texto (não transcrito)"
+  ],
+  "species": [
+    {
+      "common_name": "camarão branco",
+      "scientific_name": "Litopenaeus schmitti"
+    },
+    {
+      "common_name": "camarão rosa",
+      "scientific_name": "Farfantepenaeus paulensis"
+    }
+  ],
+  "area": {
+    "description": "interior da Baía da Babitonga, SC (Art. 1º)",
+    "uf": [
+      "SC"
+    ],
+    "geometry_status": "named_area_resolvable",
+    "geometry_source": "",
+    "geometry_file": ""
+  },
+  "period": {
+    "start": "11-01",
+    "end": "01-31",
+    "recurrence": "annual",
+    "first_effective_year": 2003,
+    "transitional_provisions": []
+  },
+  "fishing_mode": [
+    "pesca"
+  ],
+  "gear": [],
+  "affected_group": "",
+  "exceptions": [],
+  "seguro_defeso_linked": false,
+  "enforcement_notes": "",
+  "status": {
+    "in_force_as_of": "2026-09-11",
+    "revoked": false,
+    "revoked_by": "",
+    "amended_by": [],
+    "amendment_check_pending": true
+  },
+  "source": {
+    "publication_date": "2003-11-03",
+    "dou_reference": "DOU 03/11/2003, nº 213, Seção 1, p. 64",
+    "official_source_url": "https://www.gov.br/ibama/pt-br/assuntos/biodiversidade/biodiversidade-aquatica/periodos-de-defeso/defesos-marinhos",
+    "local_files": [
+      "data/legal/corpus_defesos_marinhos/camaroes_portaria_ibama_n-o-70_2003.pdf"
+    ],
+    "sha256": {
+      "note": "ver data/metadata/checksums_legal.txt"
+    }
+  },
+  "extraction": {
+    "method": "pdf_text_assisted",
+    "extracted_at": "2026-09-11",
+    "extracted_by": "Claude (assistente), a partir dos dispositivos isolados por python/screen_legal_corpus.py"
+  },
+  "validation": {
+    "human_validated": false,
+    "validated_by": null,
+    "validated_at": null,
+    "open_issues": [
+      "confirmar data de assinatura"
+    ]
+  },
+  "version": 1,
+  "notes": "Art. 1º; grafia 'schimitti' no original."
+}

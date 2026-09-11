@@ -1,0 +1,73 @@
+{
+  "rule_id": "IN_IBAMA_33_2004_r1",
+  "norm_id": "IN_IBAMA_33_2004",
+  "norm_type": "instrucao_normativa",
+  "issuing_authority": "IBAMA",
+  "legal_basis": [
+    "ver preâmbulo no texto (não transcrito)"
+  ],
+  "species": [
+    {
+      "common_name": "manjuba",
+      "scientific_name": "Anchoviella spp."
+    }
+  ],
+  "area": {
+    "description": "conferir Art. 1º (tabela IBAMA: litoral sul de SP)",
+    "uf": [
+      "SP"
+    ],
+    "geometry_status": "named_area_unresolved",
+    "geometry_source": "",
+    "geometry_file": ""
+  },
+  "period": {
+    "start": "12-26",
+    "end": "01-25",
+    "recurrence": "annual",
+    "first_effective_year": 2004,
+    "transitional_provisions": []
+  },
+  "fishing_mode": [
+    "pesca (Art. 7º, a partir da safra 2004/2005)"
+  ],
+  "gear": [],
+  "affected_group": "",
+  "exceptions": [],
+  "seguro_defeso_linked": false,
+  "enforcement_notes": "",
+  "status": {
+    "in_force_as_of": "2026-09-11",
+    "revoked": false,
+    "revoked_by": "",
+    "amended_by": [],
+    "amendment_check_pending": true
+  },
+  "source": {
+    "publication_date": "",
+    "dou_reference": "",
+    "official_source_url": "https://www.gov.br/ibama/pt-br/assuntos/biodiversidade/biodiversidade-aquatica/periodos-de-defeso/defesos-marinhos",
+    "local_files": [
+      "data/legal/corpus_defesos_marinhos/manjuba_in_ibama_n-o-33_2004.pdf"
+    ],
+    "sha256": {
+      "note": "ver data/metadata/checksums_legal.txt"
+    }
+  },
+  "extraction": {
+    "method": "pdf_text_assisted",
+    "extracted_at": "2026-09-11",
+    "extracted_by": "Claude (assistente), a partir dos dispositivos isolados por python/screen_legal_corpus.py"
+  },
+  "validation": {
+    "human_validated": false,
+    "validated_by": null,
+    "validated_at": null,
+    "open_issues": [
+      "área e espécie — conferir Art. 1º",
+      "data DOU"
+    ]
+  },
+  "version": 1,
+  "notes": "Art. 7º."
+}

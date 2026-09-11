@@ -1,0 +1,78 @@
+{
+  "rule_id": "IN_IBAMA_105_2006_r1",
+  "norm_id": "IN_IBAMA_105_2006",
+  "norm_type": "instrucao_normativa",
+  "issuing_authority": "IBAMA",
+  "legal_basis": [
+    "ver preâmbulo no texto (não transcrito)"
+  ],
+  "species": [
+    {
+      "common_name": "mexilhão",
+      "scientific_name": "Perna perna"
+    }
+  ],
+  "area": {
+    "description": "estoques naturais nos estados ES, RJ, SP, PR, SC e RS (Art. 3º)",
+    "uf": [
+      "ES",
+      "RJ",
+      "SP",
+      "PR",
+      "SC",
+      "RS"
+    ],
+    "geometry_status": "named_area_resolvable",
+    "geometry_source": "",
+    "geometry_file": ""
+  },
+  "period": {
+    "start": "09-01",
+    "end": "12-31",
+    "recurrence": "annual",
+    "first_effective_year": 2006,
+    "transitional_provisions": []
+  },
+  "fishing_mode": [
+    "extração, abastecimento de cultivos, transporte, beneficiamento, industrialização, armazenamento e comercialização"
+  ],
+  "gear": [],
+  "affected_group": "",
+  "exceptions": [],
+  "seguro_defeso_linked": false,
+  "enforcement_notes": "",
+  "status": {
+    "in_force_as_of": "2026-09-11",
+    "revoked": false,
+    "revoked_by": "",
+    "amended_by": [],
+    "amendment_check_pending": true
+  },
+  "source": {
+    "publication_date": "",
+    "dou_reference": "",
+    "official_source_url": "https://www.gov.br/ibama/pt-br/assuntos/biodiversidade/biodiversidade-aquatica/periodos-de-defeso/defesos-marinhos",
+    "local_files": [
+      "data/legal/corpus_defesos_marinhos/mexilhao_in_ibama_n-o-105_2006.pdf"
+    ],
+    "sha256": {
+      "note": "ver data/metadata/checksums_legal.txt"
+    }
+  },
+  "extraction": {
+    "method": "pdf_text_assisted",
+    "extracted_at": "2026-09-11",
+    "extracted_by": "Claude (assistente), a partir dos dispositivos isolados por python/screen_legal_corpus.py"
+  },
+  "validation": {
+    "human_validated": false,
+    "validated_by": null,
+    "validated_at": null,
+    "open_issues": [
+      "data DOU",
+      "Art. 1º cita outro período (truncado) — conferir se há segunda regra"
+    ]
+  },
+  "version": 1,
+  "notes": "Art. 3º."
+}

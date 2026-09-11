@@ -1,0 +1,92 @@
+{
+  "rule_id": "PORT_SAP_MAPA_221_2021_r2",
+  "norm_id": "PORT_SAP_MAPA_221_2021",
+  "norm_type": "portaria",
+  "issuing_authority": "SAP/MAPA",
+  "legal_basis": [
+    "ver preâmbulo no texto (não transcrito)"
+  ],
+  "species": [
+    {
+      "common_name": "lagosta vermelha",
+      "scientific_name": "Panulirus argus"
+    },
+    {
+      "common_name": "lagosta verde",
+      "scientific_name": "Panulirus laevicauda"
+    },
+    {
+      "common_name": "lagosta pintada",
+      "scientific_name": "Panulirus echinatus"
+    }
+  ],
+  "area": {
+    "description": "faixa de até 4 milhas náuticas da costa a partir das Linhas de Base Retas (Decreto 8.400/2015), entre a Guiana Francesa e 21°18'S",
+    "uf": [
+      "AP",
+      "PA",
+      "MA",
+      "PI",
+      "CE",
+      "RN",
+      "PB",
+      "PE",
+      "AL",
+      "SE",
+      "BA",
+      "ES"
+    ],
+    "geometry_status": "explicit_coordinates",
+    "geometry_source": "",
+    "geometry_file": ""
+  },
+  "period": {
+    "start": "2021-06-08",
+    "end": "",
+    "recurrence": "permanent",
+    "first_effective_year": 2021,
+    "transitional_provisions": []
+  },
+  "fishing_mode": [
+    "pesca de lagosta a menos de 4 mn da costa"
+  ],
+  "gear": [],
+  "affected_group": "",
+  "exceptions": [],
+  "seguro_defeso_linked": false,
+  "enforcement_notes": "",
+  "status": {
+    "in_force_as_of": "2026-09-11",
+    "revoked": false,
+    "revoked_by": "",
+    "amended_by": [],
+    "amendment_check_pending": true
+  },
+  "source": {
+    "publication_date": "",
+    "dou_reference": "",
+    "official_source_url": "https://www.gov.br/ibama/pt-br/assuntos/biodiversidade/biodiversidade-aquatica/periodos-de-defeso/defesos-marinhos",
+    "local_files": [
+      "data/legal/corpus_defesos_marinhos/lagosta_portaria_sap_mapa_n-o-221_2021.pdf"
+    ],
+    "sha256": {
+      "note": "ver data/metadata/checksums_legal.txt"
+    }
+  },
+  "extraction": {
+    "method": "pdf_text_assisted",
+    "extracted_at": "2026-09-11",
+    "extracted_by": "Claude (assistente), a partir dos dispositivos isolados por python/screen_legal_corpus.py"
+  },
+  "validation": {
+    "human_validated": false,
+    "validated_by": null,
+    "validated_at": null,
+    "open_issues": [
+      "confirmar vigência e data",
+      "buffer de 4 mn a partir das linhas de base retas — geometria construível"
+    ]
+  },
+  "version": 1,
+  "notes": "Restrição ESPACIAL PERMANENTE (D12). Data de início = data da portaria, a confirmar."
+}

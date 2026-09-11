@@ -1,0 +1,75 @@
+{
+  "rule_id": "PORT_SUDEPE_40_1986_r1",
+  "norm_id": "PORT_SUDEPE_40_1986",
+  "norm_type": "portaria",
+  "issuing_authority": "SUDEPE",
+  "legal_basis": [
+    "ver preâmbulo no texto (não transcrito)"
+  ],
+  "species": [
+    {
+      "common_name": "ostras",
+      "scientific_name": "Crassostrea spp."
+    }
+  ],
+  "area": {
+    "description": "todo o litoral de SP e região estuarino-lagunar de Paranaguá, PR",
+    "uf": [
+      "SP",
+      "PR"
+    ],
+    "geometry_status": "named_area_resolvable",
+    "geometry_source": "",
+    "geometry_file": ""
+  },
+  "period": {
+    "start": "12-18",
+    "end": "02-18",
+    "recurrence": "annual",
+    "first_effective_year": 1986,
+    "transitional_provisions": []
+  },
+  "fishing_mode": [
+    "extração"
+  ],
+  "gear": [],
+  "affected_group": "",
+  "exceptions": [],
+  "seguro_defeso_linked": false,
+  "enforcement_notes": "",
+  "status": {
+    "in_force_as_of": "2026-09-11",
+    "revoked": false,
+    "revoked_by": "",
+    "amended_by": [],
+    "amendment_check_pending": true
+  },
+  "source": {
+    "publication_date": "",
+    "dou_reference": "",
+    "official_source_url": "https://www.gov.br/ibama/pt-br/assuntos/biodiversidade/biodiversidade-aquatica/periodos-de-defeso/defesos-marinhos",
+    "local_files": [
+      "data/legal/corpus_defesos_marinhos/ostras_portaria_sudepe_n-o-40_1986.pdf"
+    ],
+    "sha256": {
+      "note": "ver data/metadata/checksums_legal.txt"
+    }
+  },
+  "extraction": {
+    "method": "pdf_text_assisted",
+    "extracted_at": "2026-09-11",
+    "extracted_by": "Claude (assistente), a partir dos dispositivos isolados por python/screen_legal_corpus.py"
+  },
+  "validation": {
+    "human_validated": false,
+    "validated_by": null,
+    "validated_at": null,
+    "open_issues": [
+      "data DOU",
+      "espécie pela tabela IBAMA",
+      "vigência após 40 anos — conferir revogação"
+    ]
+  },
+  "version": 1,
+  "notes": "Item I. Texto OCR de 1986."
+}
