@@ -1,0 +1,137 @@
+- The project is out-of-sync -- use `renv::status()` for details.
+painel: 126672 | células: 1508 | anos: 2018-2024 
+    year trawl_all trawl_prefleet presence
+   <int>     <num>          <num>    <num>
+1:  2018    186875         186875  3898604
+2:  2019    224877         224877  3992532
+3:  2020    268925         268925  4329165
+4:  2021    435814         435814  4894741
+5:  2022    482366         482366  5965246
+6:  2023    562655         421748  6880736
+7:  2024    530558         269762  6923576
+NOTE: 14,231/0 fixed-effects (99,617 observations) removed because of only 0 outcomes or singletons.
+                                           mA                mB
+                                 A toda frota      B +cobertura
+Dependent Var.:                       ihs_all           ihs_all
+                                                               
+post x status = new_closed  -0.160*** (0.026) -0.181*** (0.026)
+post x status = new_open     0.194*** (0.022)  0.193*** (0.021)
+post x status = closed_both  -0.056** (0.018)  -0.057** (0.018)
+post x status = mixed_jan      -0.013 (0.019)    -0.024 (0.019)
+ihs_pres                                       0.406*** (0.027)
+sst                                                            
+Fixed-Effects:              ----------------- -----------------
+cell-month                                Yes               Yes
+year                                      Yes               Yes
+___________________________ _________________ _________________
+Family                                    OLS               OLS
+S.E.: Clustered                      by: cell          by: cell
+Observations                          126,672           126,672
+Squared Cor.                          0.77448           0.78980
+Pseudo R2                             0.39619           0.41490
+BIC                                 500,258.1         491,358.8
+
+                                           mC                mD
+                                  C pré-2023            D +SST
+Dependent Var.:                       ihs_pre           ihs_pre
+                                                               
+post x status = new_closed  -0.094*** (0.024) -0.089*** (0.024)
+post x status = new_open     0.237*** (0.022)  0.238*** (0.022)
+post x status = closed_both    -0.004 (0.018)     0.002 (0.018)
+post x status = mixed_jan     0.052** (0.019)  0.066*** (0.019)
+ihs_pres                     0.362*** (0.025)  0.362*** (0.025)
+sst                                            0.018*** (0.004)
+Fixed-Effects:              ----------------- -----------------
+cell-month                                Yes               Yes
+year                                      Yes               Yes
+___________________________ _________________ _________________
+Family                                    OLS               OLS
+S.E.: Clustered                      by: cell          by: cell
+Observations                          126,672           126,672
+Squared Cor.                          0.78037           0.78042
+Pseudo R2                             0.41167           0.41173
+BIC                                 487,151.1         487,137.2
+
+                                              mE                mF
+                                E PPML pré-2023    F outras artes
+Dependent Var.:             trawl_hours_prefleet         ihs_other
+                                                                  
+post x status = new_closed     -0.353*** (0.104)  0.151*** (0.022)
+post x status = new_open        0.892*** (0.075)  0.161*** (0.021)
+post x status = closed_both      0.184** (0.069)  0.111*** (0.017)
+post x status = mixed_jan       0.481*** (0.067)   -0.043* (0.021)
+ihs_pres                         1.45*** (0.030)  0.905*** (0.040)
+sst                             0.080*** (0.016) -0.021*** (0.006)
+Fixed-Effects:              -------------------- -----------------
+cell-month                                   Yes               Yes
+year                                         Yes               Yes
+___________________________ ____________________ _________________
+Family                                   Poisson               OLS
+S.E.: Clustered                         by: cell          by: cell
+Observations                              27,055           126,672
+Squared Cor.                             0.91194           0.73478
+Pseudo R2                                0.87149           0.33295
+BIC                                  1,108,336.0         549,577.8
+
+                                          mG
+                             G cluster duplo
+Dependent Var.:                      ihs_pre
+                                            
+post x status = new_closed  -0.089** (0.032)
+post x status = new_open    0.238*** (0.030)
+post x status = closed_both    0.002 (0.041)
+post x status = mixed_jan      0.066 (0.041)
+ihs_pres                    0.362*** (0.028)
+sst                           0.018* (0.008)
+Fixed-Effects:              ----------------
+cell-month                               Yes
+year                                     Yes
+___________________________ ________________
+Family                                   OLS
+S.E.: Clustered                by: cell & ym
+Observations                         126,672
+Squared Cor.                         0.78042
+Pseudo R2                            0.41173
+BIC                                487,137.2
+---
+Signif. codes: 0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+== Event study anual (ref 2022): mês-alvo vs jul–dez, frota pré-2023, cobertura + SST ==
+
+mês 1:
+           Estimate Std. Error Pr(>|t|)
+rel::-5:tm   -0.089      0.033    0.008
+rel::-4:tm   -0.053      0.026    0.047
+rel::-3:tm   -0.016      0.028    0.551
+rel::-2:tm    0.072      0.025    0.005
+rel::0:tm     0.098      0.026    0.000
+rel::1:tm     0.044      0.029    0.131
+
+mês 2:
+           Estimate Std. Error Pr(>|t|)
+rel::-5:tm   -0.022      0.030    0.459
+rel::-4:tm    0.064      0.027    0.019
+rel::-3:tm    0.006      0.029    0.833
+rel::-2:tm   -0.055      0.027    0.037
+rel::0:tm    -0.070      0.030    0.020
+rel::1:tm    -0.057      0.032    0.078
+
+mês 5:
+           Estimate Std. Error Pr(>|t|)
+rel::-5:tm   -0.014      0.030    0.646
+rel::-4:tm    0.012      0.030    0.691
+rel::-3:tm   -0.037      0.032    0.246
+rel::-2:tm    0.025      0.028    0.371
+rel::0:tm     0.231      0.031    0.000
+rel::1:tm     0.294      0.032    0.000
+
+mês 3:
+           Estimate Std. Error Pr(>|t|)
+rel::-5:tm    0.050      0.031    0.104
+rel::-4:tm    0.157      0.028    0.000
+rel::-3:tm    0.139      0.029    0.000
+rel::-2:tm    0.168      0.028    0.000
+rel::0:tm     0.036      0.030    0.232
+rel::1:tm     0.131      0.031    0.000
+null device 
+          1 
