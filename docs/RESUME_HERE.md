@@ -1,4 +1,4 @@
-# Ponto de retomada — atualizado em 2026-09-10 (noite)
+# Ponto de retomada — atualizado em 2026-09-11
 
 ## Estado em uma frase
 Fase 1 do caso Trindade concluída até o limite do que o AIS permite: o
@@ -6,7 +6,17 @@ artefato de cobertura foi confirmado com medida exógena, o MONA não é
 avaliável (quase zero pesca observada antes do decreto), e o achado que
 sobrevive é **a APA de uso sustentável atraiu esforço após a designação**.
 
-## Decisão pendente (só o pesquisador)
+## 11/09: D14 APROVADA e passo 1 executado (commit 425adbc)
+A decomposição por embarcação (`scripts/14`, `scripts/15`, report §§11–12)
+mostrou que ~70% da "atração" da APA é adoção de AIS pela frota de espinhel
+após 2018. Na frota continuamente observável o efeito APA é frágil; o
+resultado robusto a tudo é a **queda no anel 0–10 km fora da APA**
+(−12%, p<0,05 Conley, pré-tendência ok). Próximo item: catalogar mandatos
+de AIS (NORMAM/Marinha, PREPS) no Knowledge Base como "políticas de
+observabilidade" e verificar se explicam a adoção em 2018; depois SDID na
+frota pré-AIS, OISST, placebos, 2021–24.
+
+## Decisão pendente anterior (resolvida em 11/09 — mantida para histórico)
 Aceitar a reformulação do caso principal proposta em
 `docs/phase1_report.md`, seção 10: de "closures reduce effort?" para
 "sustainable-use designation attracts effort" (MONA vira achado de
