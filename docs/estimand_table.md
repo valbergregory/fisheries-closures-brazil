@@ -1,18 +1,43 @@
-# Tabela de estimandos (pré-registro interno — v0.1, revisar antes da fase 2)
+# Tabela de estimandos — v0.2 (2026-09-11, após o Bloco A)
 
-| # | Pergunta | Unidade | Tratamento | Outcome | Comparação | Horizonte | Estimando | Interpretação | Ameaças principais | Teste correspondente |
-|---|---|---|---|---|---|---|---|---|---|---|
-| E1 | Esforço cai dentro da AMP? | célula×mês | dentro MONA × pós 19/03/2018 | horas de pesca (asinh); presença | células >100 km, mesma faixa lat. | −24 a +33 meses | ATT dinâmico (ES) | efeito no esforço APARENTE, não estoque | antecipação; cobertura AIS | leads; controle de cobertura |
-| E2 | Esforço cai na APA (uso sustentável)? | célula×mês | dentro APA\MONA × pós | idem | idem | idem | ATT | dose menor de restrição | idem | idem |
-| E3 | Esforço sobe nos anéis vizinhos? | célula×mês | anel 0–10/10–25/25–50/50–100 km × pós | horas; presença | controle >100 km | idem | ATT por anel | leakage espacial (H2) | anel contaminado no controle | exclusão de anéis do controle |
-| E4 | Há antecipação pré-criação? | célula×semana | janela anúncio (consulta 2017→decreto) | horas | mesmas células, anos anteriores | −12 a 0 meses | coef. de leads | corrida ao recurso (H3) | choque ambiental coincidente | placebo em áreas remotas |
-| E5 | Mudança líquida é menor que a local? | região×mês | agregação E1−E4 | Σ horas | — | pós | decomposição (seção 7 protocolo) | H8 | dupla contagem de anéis | partição exaustiva e disjunta |
-| E6 | Novo calendário (2023) desloca esforço no tempo? | célula×semana | janela 28/01–28/02 (nova proibição); 05 (liberação) | horas de arrasto | mesma célula, anos 2019–2022 | 2019–2024 | DiD dentro-célula entre janelas | H3 temporal | sazonalidade biológica; preço/combustível | harmônicos sazonais; SST; falso defeso em espécie livre |
-| E7 | Fiscalização modera o efeito? | célula×mês | E1 × intensidade de autos (ICMBio/IBAMA) | horas dentro | terciles de fiscalização | pós | heterogeneidade do ATT | H4; correlação ≠ causa da fiscalização | fiscalização endógena ao descumprimento | usar fiscalização PRÉ-tratamento |
-| E8 | Pagamento tempestivo do Seguro-Defeso reduz esforço no defeso? | município×mês | atraso do pagamento (dias) | esforço AIS costeiro; proxy atividade | municípios pagos em dia | por defeso | dose-resposta | H5/H6; artesanal mal observado por AIS — interpretar como frota AIS local | atraso correlacionado a características locais | balanceamento; FE município; eventos de atraso administrativo em massa |
-| E9 | Quem suporta os custos? | município×trim. | exposição da frota local à área fechada | emprego CNAE 03; massa Seguro-Defeso | municípios pouco expostos | ±3 anos | ES distributivo | incidência de curto prazo | migração de trabalhadores | RAIS por vínculo |
+Substitui a v0.1 (escrita para a pergunta original). Reflete o que a fase 1
+mostrou: o caso Trindade não é identificável por AIS (D15) e passa a
+alimentar estimandos de **observabilidade**; o peso causal migra para o
+defeso do camarão (desenho temporal). Toda linha marca a ameaça que a fase 1
+já materializou.
 
-Notas: (i) todo estimando sobre esforço refere-se a **esforço aparente da
-frota com AIS**; (ii) E8/E9 só avançam se os testes de pré-condição passarem;
-(iii) inferência: wild cluster bootstrap + permutação espacial (ver
-identification_strategy.md).
+## A. Estimandos de observabilidade (contribuição de SI — dados já produzidos)
+
+| # | Pergunta | Unidade | Quantidade estimada | Fonte | Resultado da fase 1 | Uso no artigo |
+|---|---|---|---|---|---|---|
+| O1 | A detecção AIS perto de ilhas oceânicas diverge da detecção em oceano aberto ao longo do tempo? | célula×ano | leads do event study de ihs(presença de cargueiros) por zona vs controle >100 km | presença por VESSEL_ID com `vesselType` | MONA +0,27/+0,29/+0,16 → −0,35 (2020); APA +0,14/+0,17/+0,05 → −0,20; p≈0 | mecanismo 1: gradiente de detecção |
+| O2 | A adoção de AIS pela frota é espacialmente concentrada na área designada? | embarcação | participação das embarcações com 1ª transmissão ≥ data do decreto nas horas pós, por zona | `firstTransmissionDate` | APA 68,9 % / MONA 76,9 % vs controle 25,8 % | mecanismo 2: composição da frota observável |
+| O3 | A adoção de AIS responde a mandato regulatório? | embarcação×mês | distribuição da 1ª transmissão vs datas de normas | `config/observability_mandates.yml` | gradual (10–19/ano, 2015–2020); PREPS é VMS, não AIS | KB: categoria "políticas de observabilidade" |
+| O4 | Quanto do "efeito" ingênuo de uma UC é artefato? | zona | diferença entre o coeficiente ingênuo e o coeficiente na frota pré-AIS com controles | painéis da fase 1 | APA: +1,8 (PPML, toda a frota) → +0,9 ns (pré-AIS) → indistinguível de placebos (p=0,33) | quantifica o viés |
+
+## B. Estimandos causais — defeso do camarão SE/S (Portaria SAP/MAPA 656/2022)
+
+Tratamento = mudança de calendário: a partir de 2023, 28/jan–28/fev passa de
+LIVRE a PROIBIDO e maio passa de PROIBIDO a LIVRE, para as mesmas células e a
+mesma frota de arrasto. Desenho dentro-célula, entre anos — imune ao gradiente
+espacial de detecção (O1), exposto à tendência temporal de cobertura (D13).
+
+| # | Pergunta | Unidade | Tratamento | Outcome | Comparação | Estimando | Ameaça | Teste |
+|---|---|---|---|---|---|---|---|---|
+| C1 | O esforço de arrasto cai na janela que passou a ser proibida (28/jan–28/fev)? | célula×mês | ano ≥ 2023 × mês∈{jan(2ª quinzena),fev} | horas de arrasto (ihs; PPML) | mesma célula, mesmos meses, 2019–2022 | DiD dentro-célula com FE célula×mês-do-ano + ano | crescimento de cobertura AIS entre anos; adoção pela frota de arrasto | controle por ihs(presença total) por célula-mês; frota pré-2023 apenas; placebo em meses não afetados (mar–abr, jun–dez) |
+| C2 | O esforço sobe na janela que passou a ser livre (maio)? | idem | ano ≥ 2023 × mês = maio | idem | idem | idem, sinal esperado OPOSTO a C1 | idem | placebo interno de direção: C1 < 0 e C2 > 0 simultaneamente |
+| C3 | Há antecipação em janeiro (antes de 28/jan) e compensação em junho? | célula×semana (se viável) | idem | idem | idem | coeficientes de leads/lags | sazonalidade biológica | harmônicos; SST |
+| C4 | Há deslocamento espacial para fora da área da portaria (ES, onde o calendário é dez–fev)? | célula×mês | idem | horas de arrasto em ES | ES vs RJ–RS | DDD | frota do ES é registrada no ES (Art. 8º: não pode operar fora) | verificar bandeiras/RGP |
+| C5 | Substituição de modalidade dentro do defeso (espécie permitida sem arrasto motorizado, D8 variantes a/b)? | célula×mês | idem | horas de artes não-arrasto | idem | DiD por arte | classificação de arte do GFW | robustez às duas leituras do §3º |
+| C6 | O Seguro-Defeso acompanha o novo calendário? | município×competência | 2023+ | nº beneficiários, valor, tempestividade | 2019–2022 | mudança de timing dos pagamentos | série CGU incompleta (405 a partir de 2021-03) | completar série |
+
+## C. Estimandos suspensos (Trindade — D15)
+
+E1–E5 da v0.1 (MONA/APA/anéis) ficam **suspensos**: nenhum passa em
+placebos geográfico e temporal. Reportados apenas como ilustração de O4.
+
+## D. Inferência
+
+Poucos clusters espaciais no camarão também (a área é uma faixa contínua):
+Conley 200 km + permutação temporal (anos placebo) + wild cluster bootstrap
+por UF.

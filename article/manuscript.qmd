@@ -26,91 +26,70 @@ keywords: [fisheries economics, marine protected areas, seasonal closures, spati
 
 # Introduction
 
-[Motivation: commons problem in fisheries; Brazil's regulatory mosaic of
-seasonal bans and MPAs; the displacement critique — apparent local success
-may hide spatial/temporal/species leakage. Contribution: (i) causal
-estimates for a sharp offshore MPA creation (Decree 9,312/2018, Trindade
-and Martim Vaz) and a real calendar shift in the Southeast/South shrimp
-closure (Ordinance SAP/MAPA 656/2022); (ii) an explicit leakage
-decomposition; (iii) a machine-readable fisheries regulation knowledge
-base as reusable research infrastructure.]
+[Motivation: AIS-based evaluation of marine closures is now routine; Brazil
+combines seasonal bans, large MPAs and satellite tracking mandates. Question:
+what can AIS identify, and what confounds it? Contributions: (i) a
+machine-readable regulatory knowledge base including "observability
+policies"; (ii) two independently measured confounders of AIS-based
+evaluation (differential satellite detection; fleet AIS adoption); (iii) a
+full evaluation of the 2018 Trindade/Martim Vaz MPA that fails honestly;
+(iv) the 2023 shrimp-trawl calendar reform as a design robust to spatial
+detection gradients. TITLE UNDER DECISION — see docs/title_and_structure_proposal.md.]
 
 # Institutional Background
 
-[Brazilian fisheries governance: IBAMA/MMA/MPA competencies; defeso
-instruments; Lei 11.959/2009; Seguro-Defeso (Lei 10.779/2003) unemployment
-compensation; enforcement (IBAMA/ICMBio, infraction records); the 2018
-large-MPA expansion (Decrees 9,312 and 9,313 of March 19, 2018).]
+[Defesos; MPAs (Decrees 9,312 and 9,313 of 2018); PREPS satellite tracking
+(VMS, not AIS) and its mandates by fishing modality; AIS carriage rules.]
 
-# Economic Theory and Mechanisms
+# A Regulatory Knowledge Base for Fisheries
 
-[Common-pool resources; effort reallocation across margins (space, time,
-species, gear); principal–agent enforcement; intertemporal substitution and
-anticipation; compensation as reservation income vs. moral hazard; testable
-implications H1–H8.]
-
-# Information Systems Contribution
-
-[People–process–technology view of the Fisheries Regulation Knowledge Base
-and Spatial Compliance Observatory; atomic rule ontology; human-validated
-extraction; versioned legal registry; exposure engine (cell × rule × date).]
-
-# The Fisheries Regulation Knowledge Base
-
-[Schema; provenance chain (official source, checksum); validation workflow;
-descriptive statistics of the registry. Example: Ordinance 656/2022
-structured as machine-readable rules, including its internal species-naming
-inconsistency (Art. 2 §3) as a case study in legal-text ambiguity.]
+[Atomic-rule schema; provenance chain; human validation gate; the finding
+that official "closure period" PDFs are full DOU pages and that the IBAMA
+summary table records only the amended sardine regime; the new category of
+observability mandates (`config/observability_mandates.yml`). Registry:
+19 rules from 15 norms as of 2026-09-11.]
 
 # Data
 
-[GFW apparent fishing effort (AIS; coverage caveats — artisanal fleet is
-NOT observed); ICMBio/CNUC polygons via WFS; Seguro-Defeso microdata (CGU);
-enforcement records; OISST environmental controls. Access dates and
-checksums in the compendium.]
+[GFW apparent fishing effort by gear and by vessel (with vessel type and
+first-transmission date); AIS presence of all vessels; OISST SST; CGU
+Seguro-Defeso microdata (aggregated); ICMBio polygons via WFS. Access dates
+and checksums in the compendium.]
 
-# Policy Selection
+# Two Mechanisms That Confound AIS-Based Evaluation
 
-[Selection matrix (14 criteria, 6 candidates); why Trindade/Martim Vaz and
-the 2023 shrimp-closure calendar shift.]
+## Differential satellite detection
+[Estimand O1: cargo-vessel detection near oceanic islands declines relative
+to open ocean, 2014–2024. RESULT: leads +0.27/+0.29/+0.16 (MONA), p≈0.]
 
-# Empirical Strategy
+## Fleet AIS adoption concentrated in designated areas
+[Estimands O2–O3: vessels first transmitting after March 2018 supply 69% of
+post-designation APA hours vs 26% in control; adoption is gradual and not
+mandate-driven.]
 
-[Event study and spatial DiD with distance rings; synthetic DiD for the
-single treated region; geographic RDD (conditional); calendar-shift
-within-cell design; inference with few clusters (wild bootstrap,
-spatial permutation).]
+# Case I: Trindade and Martim Vaz (2018) — an evaluation that fails honestly
 
-# Main Results
+[Rings, TWFE, event studies, SDID, exogenous-coverage corrections, SST,
+pre-AIS fleet, geographic (p=0.33) and temporal placebos. RESULT: no zone
+survives; estimand O4 quantifies the naive bias.]
 
-[RESULT TO BE GENERATED]
+# Case II: The 2023 Shrimp-Trawl Calendar Reform
 
-# Spatial and Temporal Leakage
+[Within-cell calendar design (C1–C6). RESULT TO BE GENERATED.]
 
-[RESULT TO BE GENERATED — decomposition: inside reduction + ring increases
-+ anticipation + post-closure compensation = net change.]
+# Compensation: Seguro-Defeso
 
-# Compensation and Enforcement
+[C6. RESULT TO BE GENERATED — series 2019-01–2021-02 available; 2021-03+
+pending (CGU 405).]
 
-[RESULT TO BE GENERATED — Seguro-Defeso timing; enforcement heterogeneity.]
+# Implications for Monitoring and for the Knowledge Base
 
-# Robustness
-
-[RESULT TO BE GENERATED — placebo polygons/dates, donut RDD, coverage
-corrections, resolution/frequency sensitivity.]
-
-# Distributional Effects
-
-[RESULT TO BE GENERATED — municipal employment, benefit incidence.]
-
-# Policy Implications
-
-[TO BE WRITTEN AFTER RESULTS]
+[TO BE WRITTEN]
 
 # Limitations
 
-[AIS coverage bias; apparent vs. actual effort; no national landings series
-(effort ≠ stock recovery); compensation microdata limitations.]
+[AIS sees the industrial fleet only; apparent effort; no landings; PREPS/VMS
+not public; detection gradients not correctable at cell level.]
 
 # Conclusion
 

@@ -1,4 +1,6 @@
-# Pipeline targets — esqueleto da primeira entrega.
+# Pipeline targets — esqueleto. A sequência EXECUTÁVEL da fase 1 está em
+# docs/RESUME_HERE.md (scripts 08–20 + 4 scripts Python); a migração para
+# alvos targets é o passo C4 pendente (funções já existem em R/).
 # Ordem lógica (ver docs/research_protocol.md, seção 18):
 # config -> catálogo jurídico -> download normas -> checksums -> extração ->
 # revisão humana (gate manual) -> registro de regras -> polígonos -> esforço ->
