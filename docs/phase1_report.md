@@ -280,3 +280,30 @@ explica parte do aumento pós, **não** a tendência de detecção.
 Próximos (ordem do RESUME_HERE): verificar se há norma de AIS obrigatório
 para a frota de espinhel com vigência ~2018 (explicaria a adoção); SDID
 sobre a frota pré-AIS; OISST; placebos geográficos; 2021–24.
+
+## 13. Bloco A concluído (2026-09-11): Trindade não é identificável em nenhuma zona
+
+Sequência executada sem intervenção do pesquisador (scripts 16–18;
+`config/observability_mandates.yml`):
+
+| Passo | Resultado |
+|---|---|
+| A1 mandatos de observabilidade | PREPS (VMS) catalogado por modalidade a partir da página oficial do MPA + Portaria GM/MPA 484/2025 (DOU recuperado). **PREPS não é AIS.** Nenhum mandato de AIS com prazo em 2018 localizado; a adoção de AIS pela frota do bbox é **gradual** (10–19 embarcações/ano, 2015–2020; `outputs/figures/ais_first_transmission_vs_norms.png`). Dados PREPS/VMS **não são públicos na API do GFW** (404 em 4 ids) |
+| A2 SDID, frota pré-AIS | MONA −0,18, APA −0,15, anel 0–10 −0,10, anel 10–25 +0,09 (SE placebo). O SDID absorve a tendência de detecção como tratamento — contradiz PPML/ihs na APA |
+| A3 SST (OISST, reaproveitado do projeto irmão; `R/08_download_environment.R`) | Todas as 2.068 células, 2014–2024. **Controles de SST não alteram nenhum coeficiente** (hipótese oceanográfica descartada como explicação) |
+| A5 horizonte 2014–2024 (20 extrações) | Frota pré-AIS, Conley 200 km: anel 0–10 km −0,093\* (ihs) / −1,16\*\* (PPML), estável ano a ano 2018–2024; APA ≈ 0; MONA −0,03 (ns) |
+| A4 placebos | **Geográfico: p = 0,325** (80 deslocamentos da APA no oceano não tratado; média −0,045, dp 0,076) — o anel não se distingue do entorno. **Temporal** (tratamento fictício 2016-03): APA −0,13\*\*\*, MONA −0,12\* reagem a um decreto que não existiu; anel +0,06 (ns) |
+
+**Leitura final do caso Trindade.** Tudo o que está perto das ilhas —
+pesca, presença total, cargueiros — declina gradualmente em relação ao
+oceano distante de 2014 a 2024. É um **gradiente de detecção AIS**
+(geometria de recepção satelital), e o decreto de 2018 não acrescenta nada
+distinguível dele em nenhuma zona, em nenhuma especificação, com ou sem
+SST, com ou sem a frota adotante de AIS. A reformulação D14 ("a APA atrai
+esforço") **não sobrevive** ao passo 1 (era adoção de AIS) nem à bateria
+completa. Resultado reportável: **a criação da maior UC marinha do Brasil
+não é avaliável por AIS**, e o artigo documenta, com medidas
+independentes, os dois mecanismos que impedem a avaliação. O peso empírico
+migra para o caso do camarão (Bloco B), cujo desenho — a mesma célula
+comparada consigo mesma em janelas de calendário que mudaram de status — é
+imune ao gradiente espacial de detecção.
