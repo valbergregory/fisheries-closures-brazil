@@ -1,0 +1,71 @@
+{
+  "rule_id": "PORT_SG_MMA_41_2018_r1",
+  "norm_id": "PORT_SG_MMA_41_2018",
+  "norm_type": "portaria_interministerial",
+  "issuing_authority": "Secretaria-Geral / Ministério do Meio Ambiente (SG/MMA) — Portaria Interministerial",
+  "legal_basis": [
+    "ver preâmbulo no texto (não transcrito)"
+  ],
+  "species": [
+    {
+      "common_name": "garoupa-verdadeira",
+      "scientific_name": "Epinephelus marginatus"
+    }
+  ],
+  "area": {
+    "description": "conferir Art. 1º (tabela IBAMA: todas as águas brasileiras)",
+    "uf": [],
+    "geometry_status": "named_area_unresolved",
+    "geometry_source": "",
+    "geometry_file": ""
+  },
+  "period": {
+    "start": "11-01",
+    "end": "02-28",
+    "recurrence": "annual",
+    "first_effective_year": 2018,
+    "transitional_provisions": []
+  },
+  "fishing_mode": [
+    "pesca direcionada, transporte, desembarque e comercialização — todos os métodos e embarcações (Art. 2º)"
+  ],
+  "gear": [],
+  "affected_group": "",
+  "exceptions": [],
+  "seguro_defeso_linked": false,
+  "enforcement_notes": "",
+  "status": {
+    "in_force_as_of": "2026-09-11",
+    "revoked": false,
+    "revoked_by": "",
+    "amended_by": [],
+    "amendment_check_pending": true
+  },
+  "source": {
+    "publication_date": "2018-07-30",
+    "dou_reference": "DOU 30/07/2018 (Portarias 40–43 de 27/07/2018)",
+    "official_source_url": "https://www.gov.br/ibama/pt-br/assuntos/biodiversidade/biodiversidade-aquatica/periodos-de-defeso/defesos-marinhos",
+    "local_files": [
+      "data/legal/corpus_defesos_marinhos/garoupa-verdadeira_portaria_sg_mma_n-o-41_2018.pdf"
+    ],
+    "sha256": {
+      "note": "ver data/metadata/checksums_legal.txt"
+    }
+  },
+  "extraction": {
+    "method": "pdf_text_assisted",
+    "extracted_at": "2026-09-11",
+    "extracted_by": "Claude (assistente), a partir dos dispositivos isolados por python/screen_legal_corpus.py"
+  },
+  "validation": {
+    "human_validated": false,
+    "validated_by": null,
+    "validated_at": null,
+    "open_issues": [
+      "área não lida no dispositivo — conferir Art. 1º",
+      "confirmar data/página do DOU"
+    ]
+  },
+  "version": 1,
+  "notes": "Art. 2º."
+}

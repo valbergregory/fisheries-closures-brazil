@@ -1,0 +1,74 @@
+{
+  "rule_id": "PORT_IBAMA_SUPES_ES_01_1998_r1",
+  "norm_id": "PORT_IBAMA_SUPES_ES_01_1998",
+  "norm_type": "portaria",
+  "issuing_authority": "IBAMA / Superintendência no Espírito Santo",
+  "legal_basis": [
+    "ver preâmbulo no texto (não transcrito)"
+  ],
+  "species": [
+    {
+      "common_name": "manjuba",
+      "scientific_name": "Anchoviella spp."
+    }
+  ],
+  "area": {
+    "description": "Espírito Santo (Art. 2º/4º)",
+    "uf": [
+      "ES"
+    ],
+    "geometry_status": "named_area_unresolved",
+    "geometry_source": "",
+    "geometry_file": ""
+  },
+  "period": {
+    "start": "04-15",
+    "end": "05-15",
+    "recurrence": "annual",
+    "first_effective_year": 1998,
+    "transitional_provisions": []
+  },
+  "fishing_mode": [
+    "pesca mencionada no Art. 1º"
+  ],
+  "gear": [],
+  "affected_group": "",
+  "exceptions": [],
+  "seguro_defeso_linked": false,
+  "enforcement_notes": "",
+  "status": {
+    "in_force_as_of": "2026-09-11",
+    "revoked": false,
+    "revoked_by": "",
+    "amended_by": [],
+    "amendment_check_pending": true
+  },
+  "source": {
+    "publication_date": "",
+    "dou_reference": "",
+    "official_source_url": "https://www.gov.br/ibama/pt-br/assuntos/biodiversidade/biodiversidade-aquatica/periodos-de-defeso/defesos-marinhos",
+    "local_files": [
+      "data/legal/corpus_defesos_marinhos/manjuba_portaria_ibama_supes_es_n-o-01_1998.pdf"
+    ],
+    "sha256": {
+      "note": "ver data/metadata/checksums_legal.txt"
+    }
+  },
+  "extraction": {
+    "method": "pdf_text_assisted",
+    "extracted_at": "2026-09-11",
+    "extracted_by": "Claude (assistente), a partir dos dispositivos isolados por python/screen_legal_corpus.py"
+  },
+  "validation": {
+    "human_validated": false,
+    "validated_by": null,
+    "validated_at": null,
+    "open_issues": [
+      "texto com erros de OCR — conferir no original",
+      "r2 (1º/jul–31/dez) a estruturar",
+      "espécie pela tabela IBAMA"
+    ]
+  },
+  "version": 1,
+  "notes": "Art. 2º: duas janelas — 15/abr–15/mai (r1) e 1º/jul–31/dez (r2). Texto de OCR ruim."
+}

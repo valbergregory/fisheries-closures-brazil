@@ -1,0 +1,81 @@
+{
+  "rule_id": "IN_IBAMA_10_2009_r1",
+  "norm_id": "IN_IBAMA_10_2009",
+  "norm_type": "instrucao_normativa",
+  "issuing_authority": "IBAMA",
+  "legal_basis": [
+    "ver preâmbulo no texto (não transcrito)"
+  ],
+  "species": [
+    {
+      "common_name": "robalo",
+      "scientific_name": "Centropomus parallelus"
+    },
+    {
+      "common_name": "robalo-branco",
+      "scientific_name": "Centropomus undecimalis"
+    },
+    {
+      "common_name": "camurim/barriga-mole",
+      "scientific_name": "Centropomus spp."
+    }
+  ],
+  "area": {
+    "description": "Espírito Santo (Art. 2º refere a Superintendência do IBAMA no ES)",
+    "uf": [
+      "ES"
+    ],
+    "geometry_status": "named_area_unresolved",
+    "geometry_source": "",
+    "geometry_file": ""
+  },
+  "period": {
+    "start": "05-01",
+    "end": "06-30",
+    "recurrence": "annual",
+    "first_effective_year": 2009,
+    "transitional_provisions": []
+  },
+  "fishing_mode": [
+    "pesca (Art. 1º); competições de pesca proibidas 1º/mai–31/ago (Art. 5º)"
+  ],
+  "gear": [],
+  "affected_group": "",
+  "exceptions": [],
+  "seguro_defeso_linked": false,
+  "enforcement_notes": "",
+  "status": {
+    "in_force_as_of": "2026-09-11",
+    "revoked": false,
+    "revoked_by": "",
+    "amended_by": [],
+    "amendment_check_pending": true
+  },
+  "source": {
+    "publication_date": "2009-04-27",
+    "dou_reference": "assinada em 27/04/2009 — DOU a confirmar",
+    "official_source_url": "https://www.gov.br/ibama/pt-br/assuntos/biodiversidade/biodiversidade-aquatica/periodos-de-defeso/defesos-marinhos",
+    "local_files": [
+      "data/legal/corpus_defesos_marinhos/robalo_robalo-branco_e_camurim_in_ibama_n-o-10_2009.pdf"
+    ],
+    "sha256": {
+      "note": "ver data/metadata/checksums_legal.txt"
+    }
+  },
+  "extraction": {
+    "method": "pdf_text_assisted",
+    "extracted_at": "2026-09-11",
+    "extracted_by": "Claude (assistente), a partir dos dispositivos isolados por python/screen_legal_corpus.py"
+  },
+  "validation": {
+    "human_validated": false,
+    "validated_by": null,
+    "validated_at": null,
+    "open_issues": [
+      "nomes científicos pela tabela IBAMA (dispositivo truncado)",
+      "DOU"
+    ]
+  },
+  "version": 1,
+  "notes": "Art. 1º; declaração de estoque até 8/mai (Art. 2º)."
+}

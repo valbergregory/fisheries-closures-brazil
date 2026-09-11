@@ -1,0 +1,83 @@
+{
+  "rule_id": "PORT_SG_MMA_59C_2018_r1",
+  "norm_id": "PORT_SG_MMA_59C_2018",
+  "norm_type": "portaria_interministerial",
+  "issuing_authority": "Secretaria-Geral / Ministério do Meio Ambiente (SG/MMA) — Portaria Interministerial",
+  "legal_basis": [
+    "ver preâmbulo no texto (não transcrito)"
+  ],
+  "species": [
+    {
+      "common_name": "caranha",
+      "scientific_name": "Lutjanus cyanopterus"
+    },
+    {
+      "common_name": "sirigado",
+      "scientific_name": "Mycteroperca bonaci"
+    },
+    {
+      "common_name": "garoupa-de-são-tomé",
+      "scientific_name": "Epinephelus morio"
+    },
+    {
+      "common_name": "badejo-amarelo",
+      "scientific_name": "Mycteroperca interstitialis"
+    }
+  ],
+  "area": {
+    "description": "conferir Art. 1º (tabela IBAMA: todas as águas brasileiras)",
+    "uf": [],
+    "geometry_status": "named_area_unresolved",
+    "geometry_source": "",
+    "geometry_file": ""
+  },
+  "period": {
+    "start": "08-01",
+    "end": "09-30",
+    "recurrence": "annual",
+    "first_effective_year": 2019,
+    "transitional_provisions": []
+  },
+  "fishing_mode": [
+    "pesca (Art. 5º)"
+  ],
+  "gear": [],
+  "affected_group": "",
+  "exceptions": [],
+  "seguro_defeso_linked": false,
+  "enforcement_notes": "",
+  "status": {
+    "in_force_as_of": "2026-09-11",
+    "revoked": false,
+    "revoked_by": "",
+    "amended_by": [],
+    "amendment_check_pending": true
+  },
+  "source": {
+    "publication_date": "",
+    "dou_reference": "",
+    "official_source_url": "https://www.gov.br/ibama/pt-br/assuntos/biodiversidade/biodiversidade-aquatica/periodos-de-defeso/defesos-marinhos",
+    "local_files": [
+      "data/legal/corpus_defesos_marinhos/sirigado_badejo-amarelo_garoupa-de-sao-tome_e_caranha_portaria_sg_mma_n-o-59-c_2018.pdf"
+    ],
+    "sha256": {
+      "note": "ver data/metadata/checksums_legal.txt"
+    }
+  },
+  "extraction": {
+    "method": "pdf_text_assisted",
+    "extracted_at": "2026-09-11",
+    "extracted_by": "Claude (assistente), a partir dos dispositivos isolados por python/screen_legal_corpus.py"
+  },
+  "validation": {
+    "human_validated": false,
+    "validated_by": null,
+    "validated_at": null,
+    "open_issues": [
+      "área — Art. 1º",
+      "DOU"
+    ]
+  },
+  "version": 1,
+  "notes": "Art. 5º: a partir de 2019."
+}
