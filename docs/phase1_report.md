@@ -219,3 +219,64 @@ resultado defensável: quase não havia esforço AIS lá antes do decreto.
    para **"sustainable-use designation attracts effort: evidence from
    Brazil's largest MPA"**, mantendo o defeso do camarão como caso de
    restrição temporal. A decisão é do pesquisador.
+
+## 11. Decomposição por embarcação (D14, passo 1) — 2026-09-11
+
+Esforço GFW por `VESSEL_ID` (14 extrações semestrais, 122 embarcações no
+bbox 2014–2020; `python/build_vessel_panel.py`, `scripts/14_*.R`).
+
+**(a) Quem pesca na APA depois da designação** (`outputs/tables/apa_decomposition_by_origin.csv`):
+
+| Origem | embarcações | horas na APA (pós) | % |
+|---|---:|---:|---:|
+| nova na região (sem esforço no bbox antes) | 33 | 10.303 | 77,5 |
+| incumbente (já pescava na APA) | 7 | 2.972 | 22,4 |
+| realocada de dentro da região | 2 | 15 | 0,1 |
+
+Não há deslocamento de dentro da região para a APA. As embarcações do anel
+0–10 km que perderam horas (28.775 → 16.756) foram para o controle, não
+para a APA. **Mas "nova na região" é quase sempre "nova no AIS"**: 27 das 33
+(88,9% das horas) têm primeira transmissão AIS ≥ 19/03/2018. Só 6
+embarcações (1.146 h, 11%) existiam no AIS e vieram de fora.
+
+**(b) Adotantes de AIS por zona** (`ais_adopters_share_by_zone.csv`): são
+**68,9% das horas pós na APA e 76,9% no MONA, contra 25,8% no controle**;
+pescam 28% das suas horas na APA (frota antiga: 7%). O "efeito APA" dos
+modelos por célula é, em grande parte, a pegada espacial da frota
+brasileira de espinhel que passou a transmitir AIS após 2018 — um segundo
+confundidor de cobertura, no nível da embarcação, além da detecção (§7–9).
+
+**(c) Teste limpo — só frota com AIS anterior à designação** (80
+embarcações; `python/build_preais_cell_panel.py`, `scripts/15_*.R`):
+
+| Zona | razão pós/pré vs controle (zona-nível) | ihs, Conley 200 km | PPML, Conley 200 km | pré-tendência |
+|---|---:|---:|---:|---|
+| MONA | 0,37x | −0,088 (p<0,1) | −1,02 (ns) | falha (detecção, §7) |
+| APA | 2,63x (base: 13 embarcações) | −0,03 (ns) | +1,00 (p≈0,08) | falha (detecção, §7) |
+| anel 0–10 km | 0,88x | **−0,124\*** | **−1,08\*** | p = 0,074 (ok) |
+| anéis 10–100 km | — | ≈ 0 | ≈ 0 | — |
+
+A pré-tendência do MONA/APA fica IDÊNTICA à da amostra completa (o
+pré-período só contém frota pré-AIS por construção): a adoção de AIS
+explica parte do aumento pós, **não** a tendência de detecção.
+
+## 12. Onde a pergunta reformulada fica após o passo 1
+
+- **"A APA atraiu esforço"**: em ~70% é adoção de AIS. Na frota
+  continuamente observável há um aumento (2,6x no nível da zona; PPML
+  +1,0) mas frágil (13 embarcações; ihs ≈ 0; pré-tendência de detecção não
+  resolvida). **Não é reportável como efeito causal com os dados atuais.**
+- **Resultado robusto a tudo**: **queda de esforço no anel 0–10 km fora da
+  APA** (−12% ihs; PPML −1,08; p<0,05 com Conley; pré-tendência aceitável;
+  não depende da frota adotante). Um efeito de "evitação da borda", oposto
+  ao leakage clássico (H2 prevê aumento fora).
+- **Contribuição que se consolida**: a avaliação de UCs brasileiras por
+  AIS é confundida por dois processos documentáveis — detecção
+  diferencial por satélite (medida com cargueiros) e adoção de AIS pela
+  frota concentrada na área designada (medida por `firstTransmissionDate`).
+  O Knowledge Base deve tratar mandatos de AIS (NORMAM/Marinha, PREPS) como
+  "políticas" que alteram a observabilidade — item a catalogar.
+
+Próximos (ordem do RESUME_HERE): verificar se há norma de AIS obrigatório
+para a frota de espinhel com vigência ~2018 (explicaria a adoção); SDID
+sobre a frota pré-AIS; OISST; placebos geográficos; 2021–24.
