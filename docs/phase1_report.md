@@ -153,3 +153,69 @@ estimativa reportável:
 
 Ou seja: **a correção de cobertura exógena é o item crítico do projeto
 inteiro**, não um refinamento.
+
+## 9. Cobertura EXÓGENA (opção 1, autorizada em 10/09) — resultados
+
+**Dado construído.** Presença AIS por embarcação e célula-mês, 2014–2020
+(10 extrações do 4wings agrupadas por `VESSEL_ID`, ~460 MB, com
+`vesselType`): CARGO 720 mil h, FISHING 172 mil, OTHER 134 mil, GEAR 51 mil,
+CARRIER 7 mil, PASSENGER 6 mil. Agregado em `python/build_exogenous_coverage.py`
+→ `cargo_hours`, `nonfish_hours`, `fishing_pres` por célula-mês.
+
+**(a) Placebo com cargueiros — confirma o artefato de detecção.** O event
+study de ihs(cargo) por zona reproduz a pré-tendência da pesca (MONA:
++0,27/+0,29/+0,16 → 2017 → −0,03/−0,11/−0,35; APA: +0,14/+0,17/+0,05 →
++0,03/−0,06/−0,20; anéis: p > 0,05). Cargueiros não reagem a UC: **a
+detecção AIS perto das ilhas piorou relativamente ao oceano aberto ao longo
+de 2014–2020**, com queda forte em 2020. A causa da seção 3 está
+identificada com medida exógena.
+
+**(b) Correção — quatro formas funcionais, resultados NÃO convergem no MONA**
+(`outputs/tables/{exog_coverage,deflated,ppml}_eventstudy_trindade.csv`):
+
+| Forma | MONA leads (14/15/16) | MONA pós (18/19/20) | APA pós (18/19/20) |
+|---|---|---|---|
+| ihs(pesca) + controle linear ihs(cargo) | +0,14/+0,10/+0,01 (inalterado) | −0,10/−0,01/−0,05 | 0/+0,10/+0,09 |
+| d = ihs(pesca) − ihs(cargo) | −0,14/−0,19/−0,15 | −0,07/+0,10/**+0,30** | −0,04/+0,17/+0,30 |
+| razão pesca/cargo | +0,07/−0,05/−0,07 | −0,15/+0,02/**−0,22** | +0,06/+0,34/+0,26 |
+| PPML, log(cargo) como exposição | **−13/−13/−14** (separação) | −0,28/−0,22/−1,49 | +1,05/+1,80/+1,61 |
+
+Por que não converge: (i) o controle linear não absorve o lead porque a
+covariação célula-mês entre detecção de cargueiros e de pesqueiros é nula —
+elasticidade PPML de **−0,09** (cargueiros: AIS classe A, rotas fixas;
+pesqueiros: classe B, intermitentes; a recepção de satélite afeta ambos na
+tendência, não na célula-mês); (ii) `asinh` não é log em contagens de 0,1–0,3
+h, então a "deflação" depende da escala; (iii) a razão é dominada por
+denominadores minúsculos; (iv) **no MONA praticamente não há pesca observada
+em 2014–2016** (PPML separa) — o "efeito" de qualquer especificação depende
+de 2017 ser a referência.
+
+**(c) O que sobrevive.** A **APA** mostra aumento pós-designação em todas as
+formas funcionais com cobertura (TWFE +, deflacionado +0,30, PPML +1,8***
+com Conley 200 km) — exceto no SDID (−0,10). O **anel 0–10 km** cai em
+todas (−0,12 a −0,61; significância some com Conley). O **MONA** não tem
+resultado defensável: quase não havia esforço AIS lá antes do decreto.
+
+## 10. Conclusão da fase 1 e reformulação proposta (decisão do pesquisador)
+
+1. A cobertura exógena cumpriu o papel de **diagnóstico** (artefato
+   confirmado com medida independente da pesca) mas **não funciona como
+   correção no nível célula-mês**. A correção defensável é no nível
+   zona-ano (diferença de event studies, que é o que a linha "d" mostra) —
+   e ela exige aceitar que a referência 2017 domina o resultado.
+2. **A pergunta "o MONA reduziu a pesca?" é vazia para a frota observável
+   por AIS**: não havia esforço mensurável dentro do MONA antes de 2018. O
+   artigo deve dizer isso — é um achado de SI/limitação, não um resultado
+   nulo.
+3. **A pergunta que os dados sustentam é outra: a designação da APA (uso
+   sustentável) ATRAIU esforço para dentro dela**, vindo do anel
+   imediatamente externo — consistente em TWFE, deflacionado e PPML, com
+   Conley. Um "efeito de sinalização" da designação, inverso ao leakage
+   clássico. Falta: reconciliar com o SDID (que discorda), testar com
+   controles oceanográficos (OISST) e com placebos geográficos (APA
+   deslocada), e verificar se o aumento é de embarcações novas na região
+   ou realocação das existentes (dado por `VESSEL_ID` já baixado permite).
+4. Reformulação sugerida do caso principal: de "closures reduce effort?"
+   para **"sustainable-use designation attracts effort: evidence from
+   Brazil's largest MPA"**, mantendo o defeso do camarão como caso de
+   restrição temporal. A decisão é do pesquisador.
