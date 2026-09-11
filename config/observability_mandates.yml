@@ -1,0 +1,40 @@
+# Mandatos de OBSERVABILIDADE (rastreamento/AIS) — normas que alteram o que se
+# VÊ, não o que se FAZ. Categoria nova do Knowledge Base (docs/phase1_report.md
+# §12). Fonte da lista: página oficial do MPA "Atos normativos que tratam da
+# obrigatoriedade de adesão ao PREPS" (acesso 2026-09-11) + Portaria GM/MPA
+# 484/2025 (consolidação; DOU recuperado em data/legal/observability/).
+# ATENÇÃO: PREPS é rastreamento por SATÉLITE (VMS), NÃO é AIS. Nenhum dado
+# PREPS é público na API do GFW (404 em 2026-09-11) — pedido institucional.
+# Textos integrais das normas abaixo ainda NÃO recuperados (metadados da
+# página do MPA); retrieved: false até download oficial + checksum.
+system: PREPS (Programa Nacional de Rastreamento de Embarcações Pesqueiras por Satélite)
+technology: VMS por satélite (não AIS)
+consolidating_act:
+  norm_id: PORT_GM_MPA_484_2025
+  name: "Portaria GM/MPA nº 484, de 23/06/2025"
+  retrieved: true
+  files: [data/legal/observability/Portaria_GM_MPA_484_2025_dou.html]
+mandates_relevant_to_trindade_fleet:   # espinhel de superfície (drifting longlines)
+  - norm_id: INI_MPA_MMA_07_2014
+    name: "IN Interministerial MPA/MMA nº 07, de 30/10/2014"
+    modality: espinhel de superfície
+    preps_obligation: "embarcações >= 10 m OU AB > 15"
+    retrieved: false
+  - norm_id: PORT_INTERMIN_59A_2018
+    name: "Portaria Interministerial SG-PR/MMA nº 59-A, de 09/11/2018"
+    modality: "espinhel de superfície, linha de mão com isca viva, cerco (várias)"
+    preps_obligation: "todas as embarcações OU >= 10 m (conforme modalidade)"
+    retrieved: false
+    note: "in.gov.br asset_publisher devolve 403; recuperar via INLABS ou gov.br/mpa"
+  - norm_id: INI_SEAP_MMA_MD_02_2006
+    name: "IN Interministerial SEAP/MMA/MD nº 02, de 04/09/2006"
+    modality: base do PREPS (todas as modalidades industriais)
+    preps_obligation: ">= 15 m ou AB 15-50 conforme modalidade"
+    retrieved: false
+ais_mandate:
+  status: NÃO IDENTIFICADO como causa da adoção de 2018
+  evidence: "NORMAM-01/DPC estende AIS a classes de embarcações desde 30/07/2007 (SOLAS cap. V + lista da DPC); nenhuma norma localizada com prazo em 2018 para pesqueiros de espinhel"
+  hypotheses_for_2018_spike: ["adoção voluntária/comercial (segurança, seguradoras)", "equipamento combinado VMS+AIS instalado por exigência do PREPS (Port. 59-A/2018) — a verificar com fabricantes/MPA", "campanha GFW–Brasil (parceria a partir de ~2019)"]
+gfw_api_probe_2026_09_11:
+  brazil_vms_datasets_public: false
+  probed_ids: [public-bra-vms-fishing-effort, public-bra-vms, public-brazil-vms-fishing-effort, public-global-fishing-effort-vms]
