@@ -76,3 +76,29 @@ presença por embarcação, pedir por SEMESTRE (ano inteiro dá 524/429).
 6 regras em `outputs/policies/` (656/2022 validada; sardinha ×3 e
 piramutaba ×2 aguardam validação humana). 20 normas do corpus ainda sem
 regra estruturada — trabalho de SI que pode avançar em paralelo.
+
+## Lista de intervenções do pesquisador (fechada em 2026-09-11, noite)
+
+Decisões científicas
+1. Ratificar D15 (Trindade = caso de limitação/diagnóstico) — recomendação: manter.
+2. Título/estrutura: opção 1, 2 ou 3 de docs/title_and_structure_proposal.md
+   (com o camarão identificado, 2 ou 3 ficaram mais atraentes).
+3. Geometria do camarão (D3): faixa provisória de 200 km × MT+ZEE por UF;
+   tratamento do ES (calendário dez–fev) como controle espacial (C4).
+4. Ratificar D16 (mandatos de rastreamento como "políticas de observabilidade").
+
+Validação jurídica
+5. Validar 18 regras em outputs/policies/ (human_validated: false; open_issues explícitos).
+6. Confirmar como classificar "arrasto com tração motorizada" no GFW para C5 (variantes D8).
+
+Pedidos institucionais
+7. Dados PREPS/VMS ao MPA (não públicos na API do GFW).
+8. Textos integrais da IN IBAMA 189/2008 e Portaria Interministerial 59-A/2018 (INLABS ou MPA).
+
+Operacional
+9. Seguro-Defeso 2021-03+ (CGU 405 em 11/09) — retentar; se persistir, chave da API do Portal da Transparência.
+10. Git Credential Manager parou — `gh auth setup-git` num terminal do pesquisador.
+
+Próximos passos técnicos (sem intervenção): cobertura exógena por cargueiros
+no camarão; decomposição temporal de leakage (fev + mai + mar–abr); wild
+bootstrap por UF e permutação de anos; C5; migrar scripts 08–21 para alvos targets.
