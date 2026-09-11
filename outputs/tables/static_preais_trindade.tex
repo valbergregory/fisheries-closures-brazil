@@ -1,0 +1,41 @@
+
+\begingroup
+\centering
+\begin{tabular}{lcc}
+   \tabularnewline \midrule \midrule
+   Dependent Variables:                    & ihs\_y         & y\\  
+                                           & ihs Conley     & PPML Conley \\   
+   Model:                                  & (1)            & (2)\\  
+                                           &  OLS           & Poisson\\  
+   \midrule
+   \emph{Variables}\\
+   post $\times$ zone $=$ ring\_50\_100    & 0.0183         & -0.1758\\   
+                                           & (0.0480)       & (0.2983)\\   
+   post $\times$ zone $=$ ring\_25\_50     & 0.0131         & 0.0411\\   
+                                           & (0.0541)       & (0.3666)\\   
+   post $\times$ zone $=$ ring\_10\_25     & -0.0142        & -0.2003\\   
+                                           & (0.0554)       & (0.3859)\\   
+   post $\times$ zone $=$ ring\_0\_10      & -0.1243$^{**}$ & -1.084$^{**}$\\   
+                                           & (0.0497)       & (0.4721)\\   
+   post $\times$ zone $=$ apa              & -0.0315        & 0.9957$^{*}$\\   
+                                           & (0.0473)       & (0.5668)\\   
+   post $\times$ zone $=$ mona             & -0.0877$^{*}$  & -1.020\\   
+                                           & (0.0466)       & (0.8210)\\   
+   \midrule
+   \emph{Fixed-effects}\\
+   cell                                    & Yes            & Yes\\  
+   ym                                      & Yes            & Yes\\  
+   zone-month                              & Yes            & Yes\\  
+   \midrule
+   \emph{Fit statistics}\\
+   Observations                            & 173,712        & 130,548\\  
+   Squared Correlation                     & 0.14059        & 0.16807\\  
+   Pseudo R$^2$                            & 0.07142        & 0.32768\\  
+   BIC                                     & 369,213.0      & 554,975.5\\  
+   \midrule \midrule
+   \multicolumn{3}{l}{\emph{Conley (200km) standard-errors in parentheses}}\\
+   \multicolumn{3}{l}{\emph{Signif. Codes: ***: 0.01, **: 0.05, *: 0.1}}\\
+\end{tabular}
+\par\endgroup
+
+
