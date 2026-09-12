@@ -1,10 +1,21 @@
-# Ponto de retomada — atualizado em 2026-09-11 (noite)
+# Ponto de retomada — atualizado em 2026-09-12
 
 ## Estado em uma frase
 Fase 1 do caso Trindade concluída até o limite do que o AIS permite: o
 artefato de cobertura foi confirmado com medida exógena, o MONA não é
 avaliável (quase zero pesca observada antes do decreto), e o achado que
 sobrevive é **a APA de uso sustentável atraiu esforço após a designação**.
+
+## 12/09: tudo o que não dependia do pesquisador foi feito
+- Pipeline `targets` REAL (21 alvos, 14 executados, 2m48s) — `Rscript scripts/04_run_pipeline.R`.
+- Camarão: decomposição temporal (líquido +33 %), meses-placebo (maio rank
+  1/8; fevereiro não distinguível), C5 provisório, **cobertura exógena por
+  cargueiros confirma que maio NÃO é detecção**; C6 Seguro-Defeso completo
+  (72 meses) — compensação reprogramada para jan–fev. Ver
+  docs/case2_camarao_report.md §§6–9.
+- Item 9 da lista (CGU 405) RESOLVIDO. Os demais 9 itens continuam com o pesquisador.
+- Pendências técnicas restantes: wild bootstrap por UF (pacote não instalado);
+  decomposição de C5 por embarcação; ES como controle espacial (depende da D3).
 
 ## 11/09 (noite): Blocos A, B e C executados — ver docs/phase1_report.md §13 e docs/case2_camarao_report.md
 **Trindade encerrado como não identificável (D15).** **Camarão identificado:**
@@ -96,7 +107,7 @@ Pedidos institucionais
 8. Textos integrais da IN IBAMA 189/2008 e Portaria Interministerial 59-A/2018 (INLABS ou MPA).
 
 Operacional
-9. Seguro-Defeso 2021-03+ (CGU 405 em 11/09) — retentar; se persistir, chave da API do Portal da Transparência.
+9. ~~Seguro-Defeso 2021-03+~~ RESOLVIDO em 12/09 (série completa 2019–2024).
 10. Git Credential Manager parou — `gh auth setup-git` num terminal do pesquisador.
 
 Próximos passos técnicos (sem intervenção): cobertura exógena por cargueiros

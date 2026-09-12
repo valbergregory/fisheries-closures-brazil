@@ -112,3 +112,54 @@ cumprimento parcial não distinguível da variação mensal placebo, (iii) o
 saldo líquido da reforma nos meses afetados é um aumento de esforço. A
 narrativa muda de "cumprimento" para **"realocação assimétrica: a frota
 captura a abertura mais do que respeita o fechamento"**.
+
+## 7. C6 — Seguro-Defeso acompanha o novo calendário (2026-09-12, `scripts/25`)
+
+Série CGU completa 2019-01–2024-12 (72 meses; 107.927 município-mês;
+microdados fora do Git, D9). Beneficiários por mês de competência em
+RJ+SP+PR+SC+RS, participação no total anual, média 2023–24 menos 2019–22
+(`seguro_defeso_calendar_shift.csv`):
+
+| Meses | Δ participação (p.p.) |
+|---|---:|
+| janeiro–fevereiro | **+10,1** |
+| março–abril | −0,6 |
+| maio–junho | **−5,4** |
+
+Em todas as UFs o sinal é o mesmo (jan–fev: PR +16,6, RJ +11,3, SC +10,8,
+SP +10,1, RS +7,2; mai–jun: PR −12,9, SC −7,2, SP −4,9, RJ −3,8, RS −2,1).
+A compensação foi reprogramada exatamente para o novo período: o mecanismo
+de renda de reserva (H5) esteve ativo nos meses recém-fechados. Cautelas:
+o benefício cobre todos os defesos (não só camarão); 2019 tem janeiro
+anômalo (2,2 %), possivelmente início incompleto da série; 2024 tem
+dezembro baixo (competência ainda não paga na extração). Ainda não testado:
+tempestividade (atraso entre competência e pagamento) — os microdados
+trazem só a competência.
+
+## 8. Cobertura EXÓGENA no camarão (2026-09-12, `scripts/24`) — o resultado não é artefato de detecção
+
+Presença por embarcação na costa (14 extrações, 5,3 GB, `vesselType`):
+cargueiros/tanques 93 → 125 h/célula-mês (2018 → 2024).
+**Placebo com cargueiros**: em maio a detecção de cargueiros CAIU pós-2023
+(−0,123\*\*\*) enquanto o arrasto SUBIU (+0,238\*\*\*) — direção oposta,
+logo o efeito de maio não pode ser detecção. Fevereiro: cargo −0,063 vs
+arrasto −0,089 — mesma direção, parte pode ser detecção.
+**Com cobertura exógena como controle** (`camarao_exog_coverage.tex`):
+maio +0,242\*\*\* (cargo) / +0,247\*\*\* (não-pesqueiros); fevereiro
+−0,070\*\* / −0,069\*\* (era −0,089 com presença total). Conclusão: **C2
+robusto a detecção; C1 encolhe para ≈ −7 % e segue não distinguível dos
+meses-placebo (§6).**
+
+## 9. Estado consolidado do caso II (2026-09-12)
+
+| Estimando | Resultado | Identificação |
+|---|---|---|
+| C2 maio (proibido → livre) | +0,24 (2023) / +0,29 (2024), ihs; PPML +0,89 | leads nulos, placebo temporal nulo, maior entre 12 meses (RI p=0,125), robusto a cobertura exógena e SST |
+| C1 fevereiro (livre → proibido) | −0,07 a −0,09 (frota pré-2023); −0,16 (toda a frota) | não distinguível de meses-placebo; parte é detecção |
+| C3 antecipação (janeiro) | +0,07 | placebo temporal +0,09 → NÃO identificado |
+| C5 substituição de arte | espinhel de deriva +0,19, "fishing" +0,09 em fevereiro | provisório (depende da D8 e de decomposição por embarcação) |
+| C6 Seguro-Defeso | jan–fev +10,1 p.p.; mai–jun −5,4 p.p. em todas as UFs | descritivo; mecanismo operante |
+| Leakage temporal líquido | +72,6 mil h (+33 %) nos meses tratados, 2023–24 | dominado por maio |
+
+Pipeline `targets` (21 alvos) reproduz tudo em ~3 min a partir dos painéis;
+`Rscript scripts/04_run_pipeline.R`.

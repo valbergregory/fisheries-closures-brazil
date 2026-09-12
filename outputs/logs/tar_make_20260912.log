@@ -1,24 +1,33 @@
 - The project is out-of-sync -- use `renv::status()` for details.
 - The project is out-of-sync -- use `renv::status()` for details.
-+ checksums_gfw dispatched
-✔ checksums_gfw completed [240ms, 10.89 kB]
-+ cfg_file dispatched
-✔ cfg_file completed [0ms, 1.26 kB]
-+ script_pilot dispatched
-✔ script_pilot completed [0ms, 22.57 kB]
-+ rule_files dispatched
-✔ rule_files completed [0ms, 52.96 kB]
-+ checksums_legal dispatched
-✔ checksums_legal completed [0ms, 4.54 kB]
 + seguro_defeso_agg dispatched
-✔ seguro_defeso_agg completed [0ms, 1.75 MB]
-+ policy_sources_file dispatched
-✔ policy_sources_file completed [20ms, 5.51 kB]
-+ sst_camarao dispatched
-✖ sst_camarao errored
-✖ errored pipeline [33s, 7 completed, 0 skipped]
-Error:
-! Error in tar_make():
-  falhou: scripts/19_camarao_sst_mask.R (status OISST 2018 okOISST 2019 okOISST 2020 okOISST 2021 okOISST 2022 okOISST 2023 okOISST 2024 ok)
-  See https://books.ropensci.org/targets/debugging.html
+✔ seguro_defeso_agg completed [30ms, 4.90 MB]
++ trindade_vessels dispatched
+✔ trindade_vessels completed [3.7s, 27.66 kB]
++ cfg dispatched
+✔ cfg completed [0ms, 780 B]
++ panel_trindade_interim dispatched
+✔ panel_trindade_interim completed [23.3s, 24.35 MB]
++ policy_registry_validated_only dispatched
+✔ policy_registry_validated_only completed [10ms, 350 B]
++ policy_registry dispatched
+✔ policy_registry completed [0ms, 841 B]
++ policy_catalog dispatched
+✔ policy_catalog completed [0ms, 1.05 kB]
++ panel_camarao dispatched
+✔ panel_camarao completed [19.2s, 11.27 MB]
++ sst_trindade dispatched
+✔ sst_trindade completed [52.9s, 20.90 MB]
++ camarao_placebo dispatched
+✔ camarao_placebo completed [2.9s, 441 B]
++ camarao_models dispatched
+✔ camarao_models completed [6.3s, 65.30 MB]
++ camarao_leakage dispatched
+✔ camarao_leakage completed [4.3s, 1.02 kB]
++ trindade_full dispatched
+✔ trindade_full completed [20.7s, 220.76 MB]
++ trindade_placebos dispatched
+✔ trindade_placebos completed [28.7s, 8.36 MB]
+✔ ended pipeline [2m 47.8s, 14 completed, 7 skipped]
+Erro: objeto 'seconds' não encontrado
 Execução interrompida

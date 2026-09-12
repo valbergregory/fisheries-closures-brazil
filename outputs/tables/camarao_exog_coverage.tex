@@ -1,0 +1,44 @@
+
+\begingroup
+\centering
+\begin{tabular}{lccccc}
+   \tabularnewline \midrule \midrule
+   Dependent Variables: & ihs\_cargo & \multicolumn{3}{c}{ihs\_pre} & trawl\_hours\_prefleet\\
+                                           & placebo cargo   & pres            & cargo           & nonfish         & PPML cargo \\   
+   Model:                                  & (1)             & (2)             & (3)             & (4)             & (5)\\  
+                                           &  OLS            & OLS             & OLS             & OLS             & Poisson\\  
+   \midrule
+   \emph{Variables}\\
+   post $\times$ status $=$ new\_closed    & -0.0627$^{***}$ & -0.0895$^{***}$ & -0.0700$^{***}$ & -0.0692$^{***}$ & -0.8159$^{***}$\\   
+                                           & (0.0106)        & (0.0237)        & (0.0243)        & (0.0242)        & (0.1332)\\   
+   post $\times$ status $=$ new\_open      & -0.1230$^{***}$ & 0.2380$^{***}$  & 0.2419$^{***}$  & 0.2467$^{***}$  & 1.503$^{***}$\\   
+                                           & (0.0104)        & (0.0225)        & (0.0240)        & (0.0239)        & (0.1538)\\   
+   post $\times$ status $=$ closed\_both   & -0.0595$^{***}$ & 0.0018          & 0.0024          & 0.0040          & 0.0910\\   
+                                           & (0.0071)        & (0.0180)        & (0.0184)        & (0.0183)        & (0.1211)\\   
+   post $\times$ status $=$ mixed\_jan     & 0.0182$^{*}$    & 0.0664$^{***}$  & 0.0728$^{***}$  & 0.0693$^{***}$  & 0.2711$^{***}$\\   
+                                           & (0.0099)        & (0.0195)        & (0.0197)        & (0.0199)        & (0.0963)\\   
+   sst                                     & -0.0105$^{***}$ & 0.0179$^{***}$  & 0.0145$^{***}$  & 0.0150$^{***}$  & 0.0605\\   
+                                           & (0.0024)        & (0.0044)        & (0.0046)        & (0.0045)        & (0.0382)\\   
+   ihs\_pres                               &                 & 0.3625$^{***}$  &                 &                 &   \\   
+                                           &                 & (0.0247)        &                 &                 &   \\   
+   ihs\_cargo                              &                 &                 & 0.0258$^{**}$   &                 & 0.0147\\   
+                                           &                 &                 & (0.0108)        &                 & (0.0293)\\   
+   ihs\_nonf                               &                 &                 &                 & 0.1274$^{***}$  &   \\   
+                                           &                 &                 &                 & (0.0147)        &   \\   
+   \midrule
+   \emph{Fixed-effects}\\
+   cell-month                              & Yes             & Yes             & Yes             & Yes             & Yes\\  
+   year                                    & Yes             & Yes             & Yes             & Yes             & Yes\\  
+   \midrule
+   \emph{Fit statistics}\\
+   Observations                            & 126,672         & 126,672         & 126,672         & 126,672         & 27,055\\  
+   Squared Correlation                     & 0.96833         & 0.78042         & 0.76727         & 0.76856         & 0.57903\\  
+   Pseudo R$^2$                            & 0.77741         & 0.41173         & 0.39594         & 0.39745         & 0.72470\\  
+   BIC                                     & 337,965.2       & 487,137.2       & 494,500.9       & 493,797.6       & 2,329,147.7\\  
+   \midrule \midrule
+   \multicolumn{6}{l}{\emph{Clustered (cell) standard-errors in parentheses}}\\
+   \multicolumn{6}{l}{\emph{Signif. Codes: ***: 0.01, **: 0.05, *: 0.1}}\\
+\end{tabular}
+\par\endgroup
+
+

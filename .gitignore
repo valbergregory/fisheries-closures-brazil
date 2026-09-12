@@ -37,3 +37,6 @@ outputs/dashboard/*.parquet
 # SO
 Thumbs.db
 .DS_Store
+outputs/logs/*.err
+outputs/logs/*.py.log
+outputs/logs/*.R.log
