@@ -1,0 +1,37 @@
+- The project is out-of-sync -- use `renv::status()` for details.
+NOTE: 14,231/0 fixed-effects (99,617 observations) removed because of only 0 outcomes or singletons.
+== Decomposição temporal do leakage (2023–2024, frota pré-2023, PPML) ==
+        status n_months hours_obs   beta change change_per_month
+        <fctr>    <int>     <num>  <num>  <num>            <num>
+1:   open_both       14    473313  0.000      0                0
+2:  new_closed        2     22498 -0.353  -9519            -4759
+3:    new_open        2     82728  0.892  48813            24407
+4: closed_both        4     46187  0.184   7772             1943
+5:   mixed_jan        2     66784  0.481  25519            12759
+
+  fev (novo proibido): -9519 h
+  mai (novo livre):    +48813 h
+  mar–abr:             +7772 h
+  jan (misto):         +25519 h
+  LÍQUIDO 2023–24:     +72585 h (+33.3% do observado nos meses tratados)
+
+== Randomização sobre meses-placebo (jun–dez), spec ihs pré-2023 + cobertura + SST ==
+real: fev = -0.0895 | mai = +0.2380
+   placebo_month    beta     se
+           <int>   <num>  <num>
+1:             6  0.1940 0.0197
+2:             7  0.0935 0.0162
+3:             8  0.0200 0.0157
+4:             9 -0.0629 0.0142
+5:            10 -0.0588 0.0137
+6:            11 -0.0671 0.0143
+7:            12 -0.1173 0.0167
+placebos: média +0.0002, dp 0.1099, |max| 0.1940 | fev real -0.0895 (rank 2/8) | mai real +0.2380 (rank 1/8)
+
+== C5: efeito por arte (frota pré-2023, ihs, cobertura + SST) ==
+             geartype hours_total    fev fev_p   mai mai_p marabr
+               <char>       <num>  <num> <num> <num> <num>  <num>
+1:           TRAWLERS     2692070 -0.089  0.00 0.238     0  0.002
+2:      SET_LONGLINES     1088713 -0.006  0.73 0.078     0  0.046
+3:            FISHING      570476  0.087  0.00 0.152     0  0.132
+4: DRIFTING_LONGLINES      234128  0.190  0.00 0.111     0  0.127

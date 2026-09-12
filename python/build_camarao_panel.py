@@ -108,3 +108,32 @@ with out.open("w", newline="", encoding="utf-8") as fh:
                 w.writerow([x, y, round(dkm, 1), yr, mo, f"{trawl_all.get(k, 0):.4f}", f"{trawl_pre.get(k, 0):.4f}",
                             f"{other_all.get(k, 0):.4f}", f"{pres.get(k, 0):.4f}"])
 print(f"painel -> {out.relative_to(ROOT)} | anos {years[0]}-{years[-1]} | linhas {len(cells) * len(years) * 12}")
+
+# painel longo célula×mês×ARTE (toda a frota e frota pré-2023) para C5
+gear_all = defaultdict(float); gear_pre = defaultdict(float)
+for fp in sorted(glob.glob(str(ROOT / "data/raw/camarao/gfw_effort_vid_camarao_*.json"))):
+    d = json.loads(Path(fp).read_text(encoding="utf-8"))
+    if "entries" not in d:
+        continue
+    for _ds, recs in d["entries"][0].items():
+        for r in recs:
+            h = r.get("hours")
+            if not h:
+                continue
+            c = (cc(r["lon"]), cc(r["lat"]))
+            if c not in cells:
+                continue
+            y, m = r["date"].split("-"); g = (r.get("geartype") or "UNKNOWN").upper()
+            k = (c[0], c[1], int(y), int(m), g); gear_all[k] += h
+            ft = (r.get("firstTransmissionDate") or "")[:10]
+            if ft and ft < CUT:
+                gear_pre[k] += h
+outg = ROOT / "data/processed/panel_camarao_gear.csv"
+with outg.open("w", newline="", encoding="utf-8") as fh:
+    w = csv.writer(fh); w.writerow(["cell_lon", "cell_lat", "year", "month", "geartype", "hours", "hours_prefleet"])
+    for k in sorted(gear_all):
+        w.writerow([k[0], k[1], k[2], k[3], k[4], f"{gear_all[k]:.4f}", f"{gear_pre.get(k, 0):.4f}"])
+tot = defaultdict(float)
+for k, v in gear_all.items(): tot[k[4]] += v
+print("horas por arte:", {g: round(v) for g, v in sorted(tot.items(), key=lambda x: -x[1])})
+print(f"painel por arte -> {outg.relative_to(ROOT)} | linhas {len(gear_all)}")
