@@ -1,0 +1,24 @@
+- The project is out-of-sync -- use `renv::status()` for details.
+- The project is out-of-sync -- use `renv::status()` for details.
++ checksums_gfw dispatched
+✔ checksums_gfw completed [240ms, 10.89 kB]
++ cfg_file dispatched
+✔ cfg_file completed [0ms, 1.26 kB]
++ script_pilot dispatched
+✔ script_pilot completed [0ms, 22.57 kB]
++ rule_files dispatched
+✔ rule_files completed [0ms, 52.96 kB]
++ checksums_legal dispatched
+✔ checksums_legal completed [0ms, 4.54 kB]
++ seguro_defeso_agg dispatched
+✔ seguro_defeso_agg completed [0ms, 1.75 MB]
++ policy_sources_file dispatched
+✔ policy_sources_file completed [20ms, 5.51 kB]
++ sst_camarao dispatched
+✖ sst_camarao errored
+✖ errored pipeline [33s, 7 completed, 0 skipped]
+Error:
+! Error in tar_make():
+  falhou: scripts/19_camarao_sst_mask.R (status OISST 2018 okOISST 2019 okOISST 2020 okOISST 2021 okOISST 2022 okOISST 2023 okOISST 2024 ok)
+  See https://books.ropensci.org/targets/debugging.html
+Execução interrompida
