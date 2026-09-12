@@ -14,13 +14,15 @@ for (f in list.files("R", pattern = "^0[125].*[.]R$", full.names = TRUE)) source
 
 RSCRIPT <- if (nzchar(Sys.getenv("RSCRIPT"))) Sys.getenv("RSCRIPT") else file.path(R.home("bin"), "Rscript")
 run_r <- function(script, outputs) {
-  status <- system2(RSCRIPT, shQuote(script), stdout = file.path("outputs/logs", paste0(basename(script), ".log")), stderr = TRUE)
+  log <- file.path("outputs/logs", paste0(basename(script), ".log"))
+  status <- system2(RSCRIPT, shQuote(script), stdout = log, stderr = paste0(log, ".err"))
   if (!identical(status, 0L)) stop("falhou: ", script, " (status ", status, ")")
   stopifnot(all(file.exists(outputs))); outputs
 }
 run_py <- function(script, outputs) {
-  status <- system2("python", shQuote(script), stdout = file.path("outputs/logs", paste0(basename(script), ".log")), stderr = TRUE,
-                    env = "PYTHONIOENCODING=utf-8")
+  log <- file.path("outputs/logs", paste0(basename(script), ".log"))
+  Sys.setenv(PYTHONIOENCODING = "utf-8")
+  status <- system2("python", shQuote(script), stdout = log, stderr = paste0(log, ".err"))
   if (!identical(status, 0L)) stop("falhou: ", script, " (status ", status, ")")
   stopifnot(all(file.exists(outputs))); outputs
 }
