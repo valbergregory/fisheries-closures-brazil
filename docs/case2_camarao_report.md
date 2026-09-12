@@ -77,3 +77,38 @@ efeito); mar–abr −0,015 (n.s.).
 - Inferência por permutação de anos e wild cluster bootstrap por UF.
 - Decomposição de leakage temporal (protocolo §7): redução em fev + aumento
   em mai + variação em mar–abr = mudança líquida — implementável já.
+
+## 6. Adendo de 2026-09-12 — decomposição, meses-placebo e substituição (`scripts/22`)
+
+**Decomposição temporal do leakage** (PPML, frota pré-2023, 2023–2024;
+`camarao_leakage_decomposition.csv`): fevereiro −9.519 h; maio +48.813 h;
+mar–abr +7.772 h; janeiro +25.519 h; **líquido +72.585 h (+33 % do
+observado nos meses tratados)**. Antecipar o defeso liberou mais esforço em
+maio do que retirou em fevereiro — a mudança líquida de pressão nos meses
+afetados é POSITIVA. (Janeiro e mar–abr têm identificação fraca — ver abaixo.)
+
+**Randomização sobre meses-placebo** (jun–dez tratados um a um como se fossem
+o mês reformado; `camarao_placebo_months.csv`): coeficientes de −0,117 (dez)
+a +0,194 (jun), dp 0,11. **Maio (+0,238) é o maior de todos os meses
+(rank 1/8, p_RI = 0,125)**, mas junho (+0,194) é vizinho próximo — leitura
+mais plausível: transbordamento da abertura (temporada antecipada para
+mai–jun), não falha do placebo. **Fevereiro (−0,090) NÃO se distingue de
+dezembro (−0,117) nem de set–nov (−0,06)**: C1 não é identificável contra
+meses-placebo. Conclusão revisada: **C2 identificado em magnitude, marginal
+em RI com 7 placebos; C1 não identificado.**
+
+**C5 — substituição por arte** (`camarao_gear_substitution.csv`, frota
+pré-2023): em fevereiro, espinhel de deriva +0,190\*\*\* e "fishing"
+genérico +0,087\*\*\* sobem enquanto o arrasto cai −0,089\*\*\*; espinhel de
+fundo ≈ 0. Compatível com substituição de arte no mês recém-fechado (H2 na
+margem de modalidade), mas as duas artes também sobem em maio e mar–abr —
+parte é crescimento geral pós-2023. Precisa da leitura D8 e de decomposição
+por embarcação (o mesmo barco muda de arte?) para fechar.
+
+**Estado do caso após o adendo**: o resultado defensável é (i) a abertura de
+maio elevou o esforço de arrasto ~24–29 % (maior efeito entre todos os meses,
+leads e placebo temporal nulos), (ii) o fechamento de fevereiro teve
+cumprimento parcial não distinguível da variação mensal placebo, (iii) o
+saldo líquido da reforma nos meses afetados é um aumento de esforço. A
+narrativa muda de "cumprimento" para **"realocação assimétrica: a frota
+captura a abertura mais do que respeita o fechamento"**.
