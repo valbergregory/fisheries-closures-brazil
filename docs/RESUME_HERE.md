@@ -1,10 +1,32 @@
-# Ponto de retomada — atualizado em 2026-09-12
+# Ponto de retomada — atualizado em 2026-09-22
 
 ## Estado em uma frase
 Fase 1 do caso Trindade concluída até o limite do que o AIS permite: o
 artefato de cobertura foi confirmado com medida exógena, o MONA não é
 avaliável (quase zero pesca observada antes do decreto), e o achado que
 sobrevive é **a APA de uso sustentável atraiu esforço após a designação**.
+
+## 22/09: título e geometria DECIDIDOS; estudo completo entregue
+
+**D17 (título)**: "Moving the Closed Season: Asymmetric Effort Reallocation
+under Brazil's 2023 Shrimp-Trawl Calendar Reform" — opção 2, camarão central,
+Trindade como limitação.
+**D3 (geometria) FECHADA**: a distância à costa vinha da máscara do OISST e
+errava por até 7x; refeita com a costa do IBGE (`scripts/27`). Área = células
+oceânicas a ≤100 km, águas interiores excluídas. **Todos os resultados do
+camarão foram refeitos** e ficaram muito mais fortes.
+
+**Resultados finais**: maio (fechado→aberto) **+0,631*** (≈ +88 %)**,
+fevereiro (aberto→fechado) **−0,314*** (≈ −27 %)**; ambos rank 1/8 nos
+meses-placebo; cargueiros em direção oposta em maio; substituição de arte
+espelhada (arrasto 68→47 % em fevereiro, 46→75 % em maio); líquido
+**+73,9 mil h (+36 %)**; Seguro-Defeso deslocou +10,1 p.p. para jan–fev.
+**Wild bootstrap por UF (G=5): maio p=0,025 sobrevive; fevereiro p=0,39 não**
+(RS vai na direção contrária). C4 (ES como controle) inviável: 19 barcos.
+
+**Entregue**: `article/study.qmd` completo (PDF 14 p.), 8 figuras em
+inglês, 6 tabelas, 19 macros em `article/numbers.tex` (nenhum número digitado
+reescrever.**
 
 ## 12/09: tudo o que não dependia do pesquisador foi feito
 - Pipeline `targets` REAL (21 alvos, 14 executados, 2m48s) — `Rscript scripts/04_run_pipeline.R`.
@@ -92,10 +114,8 @@ regra estruturada — trabalho de SI que pode avançar em paralelo.
 
 Decisões científicas
 1. Ratificar D15 (Trindade = caso de limitação/diagnóstico) — recomendação: manter.
-2. Título/estrutura: opção 1, 2 ou 3 de docs/title_and_structure_proposal.md
-   (com o camarão identificado, 2 ou 3 ficaram mais atraentes).
-3. Geometria do camarão (D3): faixa provisória de 200 km × MT+ZEE por UF;
-   tratamento do ES (calendário dez–fev) como controle espacial (C4).
+2. ~~Título/estrutura~~ DECIDIDO em 22/09 (D17, opção 2) — revisável.
+3. ~~Geometria do camarão (D3)~~ FECHADA em 22/09 (100 km, costa do IBGE); C4 (ES) inviável.
 4. Ratificar D16 (mandatos de rastreamento como "políticas de observabilidade").
 
 Validação jurídica

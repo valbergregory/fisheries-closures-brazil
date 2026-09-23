@@ -53,6 +53,7 @@ macros <- c(
   sprintf("\\newcommand{\\seMay}{%.3f}", ct["status::new_open:post", 2]),
   sprintf("\\newcommand{\\pctMay}{%.0f}", 100 * (exp(ct["status::new_open:post", 1]) - 1)),
   sprintf("\\newcommand{\\pctFeb}{%.0f}", 100 * (exp(ct["status::new_closed:post", 1]) - 1)),
+  sprintf("\\newcommand{\\pctFebAbs}{%.0f}", abs(100 * (exp(ct["status::new_closed:post", 1]) - 1))),
   sprintf("\\newcommand{\\pWCBMay}{%.3f}", wcb[coef_name %like% "new_open", p_wcb]),
   sprintf("\\newcommand{\\pWCBFeb}{%.2f}", wcb[coef_name %like% "new_closed", p_wcb]),
   sprintf("\\newcommand{\\netHours}{%.1f}", sum(dec[status != "open_both", change]) / 1000),
