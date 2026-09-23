@@ -161,3 +161,90 @@ meses-placebo (§6).**
 
 Pipeline `targets` (21 alvos) reproduz tudo em ~3 min a partir dos painéis;
 `Rscript scripts/04_run_pipeline.R`.
+
+---
+
+# REANÁLISE DE 2026-09-22 — geometria corrigida (D3). As seções 1–9 acima
+# ficam SUPERADAS nos números; a metodologia permanece.
+
+## 10. O que mudou e por quê
+
+A coluna `dist_land_km` usada até 12/09 vinha da máscara terra/mar do OISST
+(0,25°), que trata quase toda a faixa costeira como oceano: a célula de maior
+esforço (−48,375; −26,875, em frente a Itajaí) aparecia a **159 km** da costa
+quando está a **23 km**. Com a distância geodésica à linha de costa do IBGE
+(`scripts/27_coast_distance.R`), a área de estudo passou a ser (D3): células
+oceânicas de 0,25° adjacentes a RJ–RS, **excluídas as águas interiores**
+(dentro dos polígonos estaduais: Lagoa dos Patos, baías — a Portaria alcança
+apenas MT e ZEE), **raio principal 100 km** (86 % do esforço; 64 % está a
+≤50 km). `R/24_camarao_prep.R` passa a ser a preparação canônica.
+
+## 11. Resultados (painel 324 células × 84 meses = 27.216 obs; 1.106 barcos de arrasto pré-2023)
+
+| Janela | (1) toda a frota | (3) frota pré-2023 | (4) + SST | (5) PPML | cluster UF | WCB (Webb, G=5) |
+|---|---:|---:|---:|---:|---:|---:|
+| **fevereiro** (livre→fechado) | −0,703\*\*\* | −0,334\*\*\* | **−0,314\*\*\*** (0,085) | — | −0,314 (0,274) | **p = 0,39** |
+| **maio** (fechado→livre) | +0,600\*\*\* | +0,640\*\*\* | **+0,631\*\*\*** (0,073) | — | +0,631\*\* (0,129) | **p = 0,025** |
+| mar–abr (fechado nos dois) | −0,086 | +0,092 | +0,116 | — | +0,116 (0,259) | p = 0,82 |
+| janeiro (parcial) | −0,058 | +0,246\*\*\* | +0,323\*\*\* | — | +0,323 (0,169) | p = 0,28 |
+
+Em nível: maio ≈ **+88 %** de horas de arrasto; fevereiro ≈ **−27 %**.
+
+**Event study** (`fig3`): maio tem leads +0,14/+0,02/−0,01 (nulos) e pós
+**+0,691\*\*\*/+0,629\*\*\***; fevereiro tem leads −0,20/+0,06/−0,01 e pós
+**−0,354\*\*\*/−0,334\*\***. Janeiro e março têm tendência prévia forte e
+**não são interpretáveis**.
+
+**Placebos.** (i) Meses-placebo (`fig4`): fevereiro e maio são os **dois
+extremos** entre os 8 meses (rank 1/8 cada; dp dos placebos 0,268).
+(ii) Temporal (reforma fictícia em 2021): fevereiro +0,042 (n.s.), maio
++0,161 (p = 0,063) — um décimo e um quarto dos efeitos reais.
+(iii) **Cargueiros** (detecção exógena): fevereiro −0,001 (n.s.) e maio
+**−0,074\*\*\*** — em maio a detecção CAI enquanto o arrasto SOBE, direções
+opostas. Com cargueiros como controle: fevereiro −0,346\*\*\*, maio
++0,773\*\*\*.
+(iv) **Especificidade espacial** (`fig5`, D18): o efeito decai
+monotonicamente com a distância à costa e desaparece além de 150 km, onde
+não há pescaria de camarão (0–50 km: −0,426/+0,680; >150 km: +0,011/+0,070).
+
+**Substituição de arte** (`fig6`): na frota pré-2023, a participação do
+arrasto nas horas de fevereiro cai de **68,1 % para 47,2 %** enquanto o
+espinhel de fundo sobe de 21,7 % para 30,0 % e as artes não classificadas de
+6,4 % para 16,8 %. Em maio o espelho: arrasto de **45,6 % para 75,1 %**,
+espinhel de 30,4 % para 11,5 %.
+
+**Decomposição temporal** (`fig8`): fevereiro −9,5 mil h; maio +47,6 mil h;
+mar–abr +11,4 mil h; janeiro +24,4 mil h → **líquido +73,9 mil h (+36 %)**
+sobre o contrafactual, em 2023–24.
+
+**Heterogeneidade por UF** (`camarao_by_uf.csv`): maio é positivo nas cinco
+UFs (PR +1,24; SC +0,83; RS +0,74; SP +0,36; RJ +0,25). Fevereiro é negativo
+em quatro (PR −1,47; SP −0,82; RJ −0,34; SC −0,20) e **positivo no RS
+(+0,32)** — a dispersão entre UFs é o que derruba a significância no wild
+bootstrap com G = 5.
+
+**Compensação** (`fig7`): Seguro-Defeso em RJ–RS desloca **+10,1 p.p.** para
+janeiro–fevereiro e **−5,4 p.p.** de maio–junho (média 2023–24 vs 2019–22),
+com o mesmo sinal nas cinco UFs.
+
+## 12. C4 (Espírito Santo como controle espacial) — NÃO VIÁVEL
+
+O ES tem calendário próprio (Art. 3º: 1º/dez–28/fev) e frota confinada ao
+estado (Art. 8º §1º), o que faria dele um controle ideal. Mas a extração
+(14 semestres, `data/raw/es/`) encontra **19 embarcações de arrasto e 2.271
+horas em sete anos**, contra 2,29 milhões de horas em RJ–RS. A frota de
+arrasto capixaba é pequena e/ou não observável por AIS: o controle não tem
+potência. Registrado como limitação; reforça o argumento de observabilidade.
+
+## 13. Leitura final do caso II
+
+1. **Maio (abertura) é o resultado firme**: +88 % de esforço, leads nulos,
+   placebos nulos, direção oposta à da detecção, presente nas cinco UFs e
+   sobrevivente ao wild bootstrap com 5 clusters.
+2. **Fevereiro (fechamento) é forte no desenho principal mas frágil na
+   inferência conservadora** (p = 0,39 com G = 5), porque o RS vai na direção
+   contrária. Leitura honesta: cumprimento parcial e heterogêneo.
+3. **A resposta é assimétrica** — a frota captura a abertura mais do que
+   respeita o fechamento — e **em parte é de composição, não de nível**:
+   quando o arrasto fecha, a mesma frota migra para espinhel.
+4. **O saldo da reforma é positivo em esforço** (+36 %), não neutro.
