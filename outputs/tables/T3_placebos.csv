@@ -1,0 +1,7 @@
+teste,fevereiro,maio
+efeito estimado (principal),"-0,314***","+0,631***"
+cluster por UF (G=5),"-0,314 (0,274)","+0,631** (0,129)"
+wild bootstrap Webb (p),0.391,0.025
+placebo temporal: reforma fictícia 2021,+0.042 (0.070),+0.161 (0.086)
+randomização: rank entre 8 meses,1/8,1/8
+placebo cargueiros (detecção),"-0,001 (n.s.)","-0,074*** (sinal oposto)"

@@ -3,12 +3,8 @@
 # (3) substituição por arte (C5, versão independente da D8).
 # Rodar diretamente: Rscript scripts/22_camarao_leakage_ri.R
 suppressPackageStartupMessages({ library(data.table); library(fixest) })
-p <- fread("data/processed/panel_camarao.csv")
-sst <- fread("data/interim/sst_camarao_monthly.csv")
-p <- merge(p, sst[, .(cell_lon, cell_lat, year, month, sst)], by = c("cell_lon", "cell_lat", "year", "month"), all.x = TRUE)
-p[, `:=`(cell = paste(cell_lon, cell_lat), post = as.integer(year >= 2023), ihs_pre = asinh(trawl_hours_prefleet), ihs_pres = asinh(presence_hours))]
-p[, status := fcase(month == 2, "new_closed", month == 5, "new_open", month %in% 3:4, "closed_both", month == 1, "mixed_jan", default = "open_both")]
-p[, status := factor(status, levels = c("open_both", "new_closed", "new_open", "closed_both", "mixed_jan"))]
+source("R/24_camarao_prep.R")
+p <- prep_camarao()
 
 # ---------- (1) decomposição temporal (PPML, frota pré-2023): obs - obs/exp(beta) por status ----------
 m <- fepois(trawl_hours_prefleet ~ i(status, post, ref = "open_both") + ihs_pres + sst | cell^month + year, data = p, cluster = ~cell)
@@ -47,6 +43,7 @@ flush(stdout())
 # ---------- (3) substituição por arte (C5) ----------
 cat("\n== C5: efeito por arte (frota pré-2023, ihs, cobertura + SST) ==\n")
 g <- fread("data/processed/panel_camarao_gear.csv")
+g <- merge(g, unique(p[, .(cell_lon, cell_lat)]), by = c("cell_lon", "cell_lat"))  # mesma área da D3
 top <- g[, .(h = sum(hours)), by = geartype][order(-h)][h > 100000, geartype]
 base <- p[, .(cell_lon, cell_lat, year, month, cell, post, status, ihs_pres, sst)]
 res <- list()

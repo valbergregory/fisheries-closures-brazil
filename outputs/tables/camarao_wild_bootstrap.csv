@@ -1,0 +1,5 @@
+coef_name,estimate,se_uf,t,p_wcb,ci_low,ci_high,G,B
+status::new_closed:post,-0.3136,0.2737,-1.146,0.3914,-1.169,0.5,6,999
+status::new_open:post,0.6315,0.129,4.895,0.025,0.08,1.168,6,999
+status::closed_both:post,0.1158,0.2589,0.447,0.8198,-0.57,0.834,6,999
+status::mixed_jan:post,0.3225,0.1691,1.907,0.2803,-0.09,0.729,6,999

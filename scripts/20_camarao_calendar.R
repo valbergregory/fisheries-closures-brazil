@@ -7,15 +7,8 @@
 # Inferência: cluster por célula e cluster duplo (célula, ano-mês). Conley
 # com 126k linhas provoca segfault neste ambiente — não usar aqui.
 suppressPackageStartupMessages({ library(data.table); library(fixest) })
-p <- fread("data/processed/panel_camarao.csv")
-sst <- fread("data/interim/sst_camarao_monthly.csv")
-p <- merge(p, sst[, .(cell_lon, cell_lat, year, month, sst)], by = c("cell_lon", "cell_lat", "year", "month"), all.x = TRUE)
-p[, `:=`(cell = paste(cell_lon, cell_lat), post = as.integer(year >= 2023), ym = year * 100L + month,
-         ihs_all = asinh(trawl_hours), ihs_pre = asinh(trawl_hours_prefleet),
-         ihs_pres = asinh(presence_hours), ihs_other = asinh(other_hours))]
-p[, status := fcase(month == 2, "new_closed", month == 5, "new_open", month %in% 3:4, "closed_both",
-                    month == 1, "mixed_jan", default = "open_both")]
-p[, status := factor(status, levels = c("open_both", "new_closed", "new_open", "closed_both", "mixed_jan"))]
+source("R/24_camarao_prep.R")
+p <- prep_camarao()
 cat("painel:", nrow(p), "| células:", uniqueN(p$cell), "| anos:", paste(range(p$year), collapse = "-"), "\n")
 print(p[, .(trawl_all = round(sum(trawl_hours)), trawl_prefleet = round(sum(trawl_hours_prefleet)),
             presence = round(sum(presence_hours))), by = year][order(year)])

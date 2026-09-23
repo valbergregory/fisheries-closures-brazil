@@ -1,0 +1,8 @@
+- The project is out-of-sync -- use `renv::status()` for details.
+The variables 'status::new_closed:post', 'status::new_open:post',
+'status::closed_both:post' and 'status::mixed_jan:post' have been removed
+because of collinearity (see $collin.var).
+PLACEBO TEMPORAL — reforma fictícia em 2021 (2018-2022):
+Error in coeftable(f)[1:4, ] : índice fora dos limites
+Calls: print
+Execução interrompida
