@@ -248,3 +248,53 @@ potência. Registrado como limitação; reforça o argumento de observabilidade.
    respeita o fechamento — e **em parte é de composição, não de nível**:
    quando o arrasto fecha, a mesma frota migra para espinhel.
 4. **O saldo da reforma é positivo em esforço** (+36 %), não neutro.
+
+## 14. Controle geográfico nacional (23/09) — resposta à pergunta "por que não usar toda a costa?"
+
+A pergunta do pesquisador apontou uma extensão que faltava. A reforma vale só
+para RJ–RS; o **Norte** (Portaria MDIC/MMA 75/2017, defeso 15/12–15/02) e o
+**Nordeste** (IN MMA 14/2004) têm defesos próprios que **não mudaram em
+2023** — logo o resto da costa é controle externo. Extraímos os mesmos dados
+(28 requisições; `data/raw/costa/`), aplicamos o mesmo critério D3 e
+estimamos a mesma especificação em cada trecho (`scripts/34`, `scripts/35`):
+
+| Região | células | horas de arrasto | fevereiro | maio |
+|---|---:|---:|---:|---:|
+| Norte (AP–MA) | 217 | 51.274 | +0,006 (p=0,81) | +0,001 (p=0,95) |
+| Nordeste (PI–BA) | 329 | 1.855 | −0,037\*\*\* | −0,003 (n.s.) |
+| **Sudeste/Sul (reformado)** | 324 | 2.288.501 | **−0,334\*\*\*** | **+0,640\*\*\*** |
+
+**Triplas diferenças**: fevereiro **−0,331\*\*\*** e maio **+0,735\*\*\***
+(p<0,001); com efeitos fixos região×ano, −0,332 e +0,736 — inalterados.
+`outputs/tables/ddd_costa.tex`, figura `fig9_controle_geografico.png`.
+
+Isso resolve em boa parte a fragilidade de fevereiro: o problema era a
+inferência com cinco conglomerados, e agora há um contrafactual externo — o
+arrasto de fevereiro não se moveu onde o calendário não mudou. O Nordeste tem
+efeito pequeno e significativo, mas sobre 1.855 horas (0,08 % do SE/S).
+
+## 15. Robustez econométrica adicional (`scripts/33`)
+
+| Teste | fevereiro | maio |
+|---|---|---|
+| asinh (principal) | −0,314\*\*\* | +0,631\*\*\* |
+| log(1+h) | −0,301\*\*\* | +0,559\*\*\* |
+| nível (horas) | −44,8\*\*\* | +71,2\*\*\* |
+| margem extensiva (presença) | −0,006 (n.s.) | +0,101\*\*\* |
+| fração pesca/presença | −0,040\*\*\* | +0,106\*\*\* |
+| *leave-one-state-out* | −0,074 (sem SP) a −0,580 (sem RS) | +0,544 a +0,741 |
+| sensibilidade a tendências não paralelas (M que anula) | 1,12 | **2,45** |
+| bootstrap de blocos latitudinais (IC 95 %) | [−0,749; +0,118] | **[+0,395; +0,932]** |
+| tercil de intensidade pré (alto) | −0,700 | +1,168 |
+
+Leituras: (i) fevereiro opera na **margem intensiva** (menos horas por célula
+ativa), maio nas duas; (ii) fevereiro **depende de São Paulo**; (iii) o efeito
+está concentrado nas células de maior intensidade pré-reforma — dose-resposta;
+(iv) maio passa em todos os testes, fevereiro em nenhum dos conservadores,
+mas é sustentado pelo controle nacional (§14).
+
+**Notas sobre estimadores heterogêneos**: como o tratamento é simultâneo
+(2023) e binário, Callaway–Sant'Anna e Sun–Abraham coincidem com o TWFE aqui —
+não há coortes escalonadas nem problema de comparações "proibidas". O
+`HonestDiD` não está disponível no CRAN neste ambiente; a sensibilidade de
+Rambachan–Roth foi implementada na variante *relative magnitudes*.

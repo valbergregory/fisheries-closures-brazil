@@ -138,3 +138,20 @@ g8 <- ggplot(dec, aes(lab, change/1000, fill = change > 0)) +
 ggsave(file.path(OUT, "fig8_decomposicao.png"), g8, width = 7, height = 3.2, dpi = 300)
 
 cat("figuras geradas em", OUT, ":\n"); print(list.files(OUT, pattern = "^fig"))
+
+## Fig 9 — controle geográfico: efeito por região da costa
+reg <- fread("outputs/tables/ddd_por_regiao.csv")
+reg[, regiao := factor(regiao, levels = c("N", "NE", "SES"),
+                       labels = c("North\n(closure unchanged)", "Northeast\n(closure unchanged)", "Southeast/South\n(REFORMED)"))]
+rl <- rbind(reg[, .(regiao, janela = "February (open -> closed)", b = fev, se = fev_se)],
+            reg[, .(regiao, janela = "May (closed -> open)", b = mai, se = mai_se)])
+g9 <- ggplot(rl, aes(regiao, b, fill = janela)) +
+  geom_hline(yintercept = 0, colour = "grey40") +
+  geom_col(position = position_dodge(.75), width = .68) +
+  geom_errorbar(aes(ymin = b - 1.96*se, ymax = b + 1.96*se), position = position_dodge(.75), width = .16, colour = "grey25") +
+  scale_fill_manual(values = c("#c0392b", "#1f77b4"), name = NULL) +
+  labs(title = "The effect appears only where the rule changed",
+       subtitle = "same specification estimated separately in each stretch of the Brazilian coast; North and Northeast kept their own (unchanged) shrimp closures",
+       x = NULL, y = "coefficient")
+ggsave(file.path(OUT, "fig9_controle_geografico.png"), g9, width = 8.5, height = 3.6, dpi = 300)
+cat("fig9 gerada\n")
