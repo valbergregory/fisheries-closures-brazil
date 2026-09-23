@@ -67,3 +67,18 @@ macros <- c(
   sprintf("\\newcommand{\\sdMayJun}{%.1f}", sd[month %in% 5:6, sum(diff)]))
 writeLines(macros, "article/numbers.tex")
 cat("\n== macros -> article/numbers.tex ==\n"); writeLines(macros)
+
+## T2 enxuta para o corpo do artigo (4 colunas) — evita estouro de margem
+dir.create("article/tables", showWarnings = FALSE, recursive = TRUE)
+etable(m$A, m$C, m$D, m$E, file = "article/tables/T2_main.tex", replace = TRUE,
+       headers = c("(1) all vessels", "(2) pre-2023 fleet", "(3) + SST", "(4) PPML"),
+       dict = c(ihs_all = "asinh(trawl hours)", ihs_pre = "asinh(trawl hours)",
+                trawl_hours_prefleet = "trawl hours", ihs_pres = "asinh(AIS presence)",
+                sst = "SST", cell = "cell", month = "month", year = "year",
+                `status::new_closed:post` = "February (open to closed)",
+                `status::new_open:post` = "May (closed to open)",
+                `status::closed_both:post` = "March-April (closed in both)",
+                `status::mixed_jan:post` = "January (partial)"),
+       title = "Effect of the calendar reform on trawling effort, by calendar window",
+       label = "tbl-main", digits = 3, fitstat = ~ n + r2, style.tex = style.tex("aer"))
+cat("T2 enxuta -> article/tables/T2_main.tex\n")
