@@ -5,3 +5,6 @@
 *.zip binary
 *.geojson text eol=lf
 *.Rproj text eol=crlf
+
+# Atos normativos baixados do DOU (fonte, não código): fora das estatísticas de linguagem do GitHub
+data/legal/**/*.html linguist-vendored=true
